@@ -22,8 +22,9 @@
 ## 設計書
 ER図  
 https://drive.google.com/file/d/1VQsoIDxbQsC_tNOey5eRolOrdtnZdOqE/view?usp=sharing  
-テーブル設計書  
+テーブル設計書＆アプリケーション詳細設計＆GEM一覧  
 https://docs.google.com/spreadsheets/d/1eZLa4jBUc4S43218TsmHao45qh9Jr4VH5_h4vw2zi_k/edit#gid=2133469642  
+  
 
 ## チャレンジ要素一覧
 
