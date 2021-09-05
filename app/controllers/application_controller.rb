@@ -20,4 +20,5 @@
       devise_parameter_sanitizer.permit(:sign_up,keys: [:name,:age,:adderss,:profile_image_id,
       :sex,:playing_game,:introduction])
     end
+    
   end
