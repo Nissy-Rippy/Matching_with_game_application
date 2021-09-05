@@ -1,0 +1,63 @@
+<h2>新規登録ページ<br/>いい出会いがありますことを祈っております(*´σｰ｀)</h2>
+
+<%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :ニックネーム %><br />
+    <%= f.text_field :name, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :年齢 %><br/>
+    <%= f.text_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :住所（都道府県） %><br/>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :性別 %><br/>
+    <%= f.label :男性 %>
+    <%= f.radio_button :sex, :man %>
+    <%= f.label :女性 %>
+    <%= f.radio_button :sex, :woman%>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :プレイ中のゲーム（正式名） %><br/>
+    <%= f.text_field :playing_game %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :メールアドレス %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :パスワード %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> 最低6文字以上)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :確認用のパスワード %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+<%= render "devise/shared/links" %>
+
+＊注意事項＊<br/>
+・当サイトは、18歳以上の方向け利用なため、<br/>
+・DM機能など特定の機能ご利用時名際には年齢確認を行っております。<br/>
+・そのため虚偽の記載のないようお願いいたします。
