@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 mx-auto">
-      <%= attachment_image_tag @user, :profile_image, :fill,300,300, fall_back: "no_image.jpg",size: "300x300" %>
+      <%= attachment_image_tag @user, :profile_image, :fill,300,300, fall_back: "no_image.jpg",size: "400x400" %>
       <div class="row mx-auto">
         <table>
           <thead>
@@ -14,6 +14,10 @@
            <th>10人</th>
           </tr>
           <tr>
+           <th><%= link_to "新規投稿", new_post_path, class: "btn btn-success" %></th>
+           <th></th>
+          </tr>
+          <tr>
            <th width="200">MYプロフィール</th>
            <th width="200"><%= link_to edit_user_path(@user) do %>
            <i class="fas fa-user-cog"></i>
@@ -24,27 +28,27 @@
           </thead>
           <tbody>
           <tr>
-           <td>名前</td>
+           <td>★名前★</td>
            <td><%= @user.name %></td>
           </tr>
           <tr>
-           <td>年齢</td>
+           <td>★年齢★</td>
            <td><%= @user.age %></td>
           </tr>
           <tr>
-           <td>住所</td>
+           <td>★住所★</td>
            <td><%= @user.address %></td>
           </tr>
           <tr>
-           <td>プレイ中のゲーム</td>
+           <td>★プレイ中のゲーム ★</td>
            <td><%= @user.playing_game %></td>
           </tr>
           <tr>
-           <td>プロフィール</td>
+           <td>★プロフィール★</td>
            <td></td>
           </tr>
           <tr>
-           <td colspan="2" class=" border round"><%= @user.introduction %></td>
+           <td colspan="2" class=" border rounded">・<%= @user.introduction %></td>
            <td></td>
           </tr>
           </tbody>
