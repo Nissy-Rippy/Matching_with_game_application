@@ -1,2 +1,18 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<div class="containe">
+  <div class="row w-50 mx-auto">
+    <div class="col-sm-6">
+          <h3>マイページ編集</h3>
+          <%= form_with model: @user, local: true do |f| %>
+          <%= f.label :紹介文 %>
+          <%= f.text_area :introduction, class: "form-control pb-1", placeholder: "なるべくゲームに関係する自己紹介にしましょう！"%>
+          <%= f.label :住所 %>
+          <%= f.text_field :address, class: "form-control pb-1" %>
+          <%= f.label :プレイ中のゲーム %>
+          <%= f.text_field :playing_game, class: "form-control pb-1" %>
+          <%= f.label :画像 %>
+          <%= f.attachment_field :profile_image, class: "form-control" %>
+          <%= f.submit "Update", class: "btn btn-success" %>
+          <% end %>
+    </div>
+  </div>
+</div>
