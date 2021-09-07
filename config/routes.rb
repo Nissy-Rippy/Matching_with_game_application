@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  
   devise_for :users
   root :to => "homes#top"
   get 'homes/about'
@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     get "users/unsubscribe" => "users#unsubscribe"
   end
   
-  resources :posts, only: [:index,:new,:show,:create,:destroy]
-  
+  resources :posts, only: [:index,:new,:show,:create,:destroy] do
+    resource :likes, only: [:create,:destroy]
+    resource :comments, only: [:create,:destroy]
+  end
 end

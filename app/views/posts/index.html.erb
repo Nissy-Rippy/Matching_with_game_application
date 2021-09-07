@@ -7,7 +7,11 @@
         <div class="card-body">
           <h5 class="card-title"><%= link_to a_post.post_title, post_path(a_post) %></h5>
           <p class="card-text"><%= a_post.description %></p>
-          <p class="card-text"><%= "💛 " %><%= "📚"%><%= " タグ" %></p>
+          <p class="card-text">
+            <div id="likes_btn_<%= a_post.id %>">
+             <%= render "likes/like", post: a_post %>
+             <i class="fas fa-comment-dots"></i><%= link_to a_post.comments.count, post_path(a_post)%></p>
+            </div>
           <p class="card-text"><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
         </div>
       </div>
