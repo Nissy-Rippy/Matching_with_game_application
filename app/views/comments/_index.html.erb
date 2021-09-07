@@ -1,8 +1,8 @@
       <table>
         <% comments.each do |post_comment| %>
         <tr>
-          <th><%= attachment_image_tag  post_comment.user, :profile_image, :fill,100,100, fallback: "no_image.jpg", size: "100x100" %></th>
-          <th><%= post_comment.user.name %></th>
+          <th width=50%><%= attachment_image_tag  post_comment.user, :profile_image, :fill,100,100, fallback: "no_image.jpg", size: "100x100" %></th>
+          <th width=50%><%= post_comment.user.name %></th>
         </tr>
         <tr>
           <th>

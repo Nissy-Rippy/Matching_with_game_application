@@ -32,13 +32,13 @@ class UsersController < ApplicationController
   end
 
   def unsubscribe
-      @user = current_user
+      
   end
 
  private
 
   def user_params
-      params.require(:user).permit(:name,:age,:introduction,:address,:playing_game,:profile_image)
+      params.require(:user).permit(:name,:age,:introduction,:address,:playing_game,:profile_image,:is_deleted)
   end
 
 end
