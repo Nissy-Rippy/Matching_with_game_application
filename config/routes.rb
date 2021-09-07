@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   get 'homes/about'
   
   resources :users, only: [:index,:show,:edit,:update] do
-    post "users/withdraw" => "users#withdraw"
-    get "users/unsubscribe" => "users#unsubscribe"
+    post "users/:id/withdraw" => "users#withdraw", as: "withdraw"
+    get "users/:id/unsubscribe" => "users#unsubscribe", as: "uns"
   end
   
   resources :posts, only: [:index,:new,:show,:create,:destroy] do

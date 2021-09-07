@@ -10,7 +10,7 @@
           <p class="card-text">
             <div id="likes_btn_<%= a_post.id %>">
              <%= render "likes/like", post: a_post %>
-             <i class="fas fa-comment-dots"></i><%= link_to a_post.comments.count, post_path(a_post)%></p>
+             <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i><%= link_to a_post.comments.count, post_path(a_post)%></p>
             </div>
           <p class="card-text"><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
         </div>

@@ -6,9 +6,17 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   
   
+  
   attachment :profile_image
   enum sex: {man: 0, woman: 1}
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-         
+  
+  #ログインじに退会済みの人が再度ログインできないようなコード
+  #falseの状態ならtrueを返す仕組みにしています！
+  
+  def active_for_authentication?
+    super && is_deleted == false
+  end
+    
 end
