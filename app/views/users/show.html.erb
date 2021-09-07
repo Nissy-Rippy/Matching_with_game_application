@@ -7,15 +7,22 @@
           <thead>
           <tr>
            <th>フォロー数</th>
-           <th>5人</th>
+           <th><%= link_to @user.followings.count, user_followings_path(@user) %></th>
           </tr>
           <tr>
            <th>フォロワー数</th>
-           <th>10人</th>
+           <th><%= link_to @user.followers.count, user_followers_path(@user) %></th>
+          </tr>
+          <tr>
+           <th>
+            <div class="follow_<%= @user.id %>">
+             <%= render "relationships/form", user: @user %>
+            </div>
+           </th>
           </tr>
           <tr>
            <th><%= link_to "新規投稿", new_post_path, class: "btn btn-success" %></th>
-           <th><%= link_to "退会ページ", user_uns_path(@user) %></th>
+           <th><%= link_to "退会ページ", user_uns_path(@user), class: "btn btn-danger" %></th>
           </tr>
           <tr>
            <th width="200">MYプロフィール</th>
