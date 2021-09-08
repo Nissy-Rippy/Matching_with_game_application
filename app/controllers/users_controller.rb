@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+ before_action :set_user
+
   def index
    #フォロ―ランキング上位4位の方を表示したい
    # @users_ranking = User.where.not(id: current_user.id).page(params[:page]).per(8).order("")
@@ -32,13 +34,17 @@ class UsersController < ApplicationController
   end
 
   def unsubscribe
-      
+
   end
+
+
 
  private
 
   def user_params
       params.require(:user).permit(:name,:age,:introduction,:address,:playing_game,:profile_image,:is_deleted)
   end
+  def set_user
 
+  end
 end

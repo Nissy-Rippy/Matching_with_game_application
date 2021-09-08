@@ -38,6 +38,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+  def create
+    #スーパークラスであるdeviseのcreateの方から情報を追ってくるための記述
+    super
+    #コンタクトメイラーのメソッドからemailとnameの情報を取得する
+    ContactMailer.send_when_sign_up(params[:user][:email],params[:user][:name]).deliver
+  end
+
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.

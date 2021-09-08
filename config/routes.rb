@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
   
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: "users/registrations"
+  }
+  
   root :to => "homes#top"
   get 'homes/about'
 
-  resources :users, only: [:index,:show,:edit,:update] do
+  resources :users, only: [:index,:show,:edit,:update,:create] do
     post "users/:id/withdraw" => "users#withdraw", as: "withdraw"
     get "users/:id/unsubscribe" => "users#unsubscribe", as: "uns"
     resource :relationships, only: [:create,:destroy]
