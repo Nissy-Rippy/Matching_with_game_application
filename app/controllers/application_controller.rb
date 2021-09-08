@@ -17,7 +17,7 @@
     protected
   
     def configure_permitted_parameters
-      devise_parameter_sanitizer.permit(:sign_up,keys: [:name,:age,:adderss,:profile_image_id,
+      devise_parameter_sanitizer.permit(:sign_up, keys: [:name,:age,:address,:profile_image_id,
       :sex,:playing_game,:introduction])
     end
     
