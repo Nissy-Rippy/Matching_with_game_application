@@ -5,7 +5,8 @@ class LikesController < ApplicationController
     #buildはアソシエーションしながらインスタンスをnewしてくれる。
     like = @post.likes.new(user_id: current_user.id)
     like.save
-    redirect_to request.referer
+    @post.create_notification_like!(current_user)
+    redirect_to request.refere
 
   end
 

@@ -18,13 +18,14 @@
       @post = Post.new(post_params)
       @post.user_id = current_user.id
       if @post.save
-        redirect_to posts_path
         flash[:notice] = "投稿完了です＾＾言い値が沢山もらえますように💛"
+        redirect_to posts_path
       else
         flash.now[:notice] = "記入ミスの可能性あり～(￣ー￣)ﾆﾔﾘ"
         render :new
       end
     end
+    
     def destroy
       @post = Post.find(params[:id])
       @post.destroy

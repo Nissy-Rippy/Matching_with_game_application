@@ -3,8 +3,10 @@ class CommentsController < ApplicationController
     @post = Post.find_by(params[:id])
     comment = current_user.comments.new(comment_params)
     comment.post_id = @post.id
-    comment.save
-    redirect_to request.referer
+    if comment.save
+      comment.create_notification_comment!(current_user, comment.id)
+      redirect_to request.referer
+    end
   end
 
   def destroy
@@ -12,6 +14,7 @@ class CommentsController < ApplicationController
     @comment.destroy
     
   end
+  
   private
   
   def comment_params
