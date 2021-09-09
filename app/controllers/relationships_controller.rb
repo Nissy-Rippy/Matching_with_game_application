@@ -3,6 +3,8 @@ class RelationshipsController < ApplicationController
     #フォローするためのコード
     follow = current_user.active_relationships.build(follower_id: params[:user_id])
     follow.save
+    @user = User.find_by(params[:relationship][:following_id])
+    @user.create_notification_follow!(current_user)
     redirect_to request.referer
   end
 
@@ -21,8 +23,7 @@ class RelationshipsController < ApplicationController
 
 
   def followers
-    @user = User.find_(params[:id])
+    @user = User.find_by(params[:id])
     @followers = @user.followers
-
   end
 end

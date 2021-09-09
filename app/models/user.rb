@@ -13,7 +13,10 @@ class User < ApplicationRecord
   has_many :passive_relationships, class_name: "Relationship", foreign_key: :follower_id, dependent: :destroy
   #中間テーブルを通して,followedモデルのユーザーを集めたモデルをfollowerと名づけた。
   has_many :followers, through: :passive_relationships, source: :following
-  
+  #通知をした人
+  has_many :active_notifications, class_name: "Notification", foreign_key: :visitor_id, dependent: :destroy
+  #通知を受けた人
+  has_many :passive_notifications, class_name: "Notification", foreign_key: :visited_id, dependent: :destroy
   
   attachment :profile_image
   enum sex: {man: 0, woman: 1}
@@ -30,5 +33,23 @@ class User < ApplicationRecord
   def followed_by?(user)
     #現ユーザーがこの人をフォローしているかどうか確かめるためのコード
    passive_relationships.find_by(following_id: user.id).present?
+  end
+  
+  def create_notification_follow!(current_user)
+    #連打でフォローされても通知は一回しか来ないように対策するために事前に検索している
+    tempt = Notification.where("visited_id = ? and visitor_id = ? and action = ?", current_user.id, id, "follow")
+    #もし通知が作られていなかったらつくるコード
+    if tempt.blank?
+      notification = current_user.active_notifications.new(
+        visited_id: id,#ここはuserクラスのためid飲みになっている
+        action: "follow"
+        )
+        #自分に対するフォローで自分に通知が来ないようにしている。
+        if notification.visited_id == notification.visitor_id
+          notification.checked == true
+        end
+        
+        notification.save if notification.valid?
+    end
   end
 end
