@@ -1,13 +1,14 @@
 class Post < ApplicationRecord
   
   attachment :image
+  
   belongs_to :user
   has_many :likes, dependent: :destroy
   has_many :comments, dependent: :destroy
   has_many :notifications, dependent: :destroy
-
   
   #投稿がすでにLikeされているか判断するためのメソッド
+  
   def liked_by?(user)
     likes.where(user_id: user.id).exists?
   end
@@ -23,8 +24,10 @@ class Post < ApplicationRecord
         post_id: id,
         action: "like"
         )
+        
         #自分の投稿に対するいいねは通知済みにする.通知送る側と受け取る側が同じ
         #つまりvisited = visitor
+        
         if notification.visited_id == notification.visitor_id
           notification.checked == true
         end
@@ -44,6 +47,8 @@ class Post < ApplicationRecord
       #まだ誰もコメントしていないときは投稿者にのみ通知する
       save_notification_comment!(current_user, comment_id, user_id) if tempt_ids.blank?
     end
+    
+    
       #ひとつの投稿に対して複数回コメントする可能性がある。複数回通知をする可能性がある。
     def save_notification_comment!(current_user, comment_id, visited_id)
       notification = current_user.active_notifications.new(

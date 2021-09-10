@@ -20,7 +20,7 @@
           <ul class="navbar-nav ml-auto">
           <% if user_signed_in? %>
             <li><%= link_to "MyPage", user_path(current_user), class: "fas fa-home nav-link text-light" %></li>
-            <li><%= link_to "Group一覧", root_path, class: "fas fa-users nav-link text-light" %></li>
+            <li><%= link_to "Group一覧", groups_path, class: "fas fa-users nav-link text-light" %></li>
             <li><%= link_to "タイムライン", posts_path , class: "fas fa-book-open nav-link text-light" %></li>
             <li><%= link_to "マッチング", root_path, class: "fas fa-sign-out-alt nav-link text-light" %></li>
             <span class="fa-stack">
