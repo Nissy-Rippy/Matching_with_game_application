@@ -23,14 +23,14 @@ class GroupsController < ApplicationController
   end
 
   def join
-    @group = Group.find(params[:id])
+    @group = Group.find_by(params[:id])
     @group.users << current_user
     redirect_to group_path(@group)
   end
 
   def destroy
     @group = Group.find(params[:id])
-    @group.destroy
+    @group.users.delete(current_user)
     redirect_to groups_path
   end
   
