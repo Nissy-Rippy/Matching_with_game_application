@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'chats/show'
   devise_for :users, controllers: {
     registrations: "users/registrations"
   }
@@ -28,4 +29,6 @@ Rails.application.routes.draw do
     get "join" => "groups#join"
   end
   
+  get "chats/:id" => "chats#show", as: "chat"
+  resources :chats, only: [:create]
 end
