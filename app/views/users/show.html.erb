@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 mx-auto">
-      <%= attachment_image_tag @user, :profile_image, :fill,300,300, fall_back: "no_image.jpg",size: "400x400" %>
+     <% if @user.id != current_user.id %>
+      <%= attachment_image_tag @user, :profile_image, :fill,300,300, fall_back: "no_image.jpg", size: "300x300" %>
+      <% else %>
+      <%= attachment_image_tag current_user, :profile_image, :fill,300,300, fall_back: "no_image.jpg", size: "300x300" %>
+      <% end %>
       <div class="row mx-auto">
         <table>
           <thead>
@@ -16,7 +20,8 @@
           <tr>
           <% if current_user != @user %>
             <%= link_to 'Begin Chat', chat_path(@user.id) %>
-          <% end %> 
+          <% end %>
+          <%= link_to "お問い合わせフォーム", new_contact_path %>
           </tr>
           <tr>
            <th>

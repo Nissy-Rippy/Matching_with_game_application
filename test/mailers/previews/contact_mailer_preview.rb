@@ -5,4 +5,6 @@
       contact = Contact.new(name: "Nissy", message: "お問い合わせメッセージ")
       ContactMailer.send_mail(contact)
     end
+    
+    
   end

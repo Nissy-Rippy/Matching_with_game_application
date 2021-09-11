@@ -1,12 +1,13 @@
 class NotificationsController < ApplicationController
   
   def index
-    #現在ログインしている人に紐づく通知一覧。
+    #現在ログインしている人に紐づく通知一覧。c
     @notifications = current_user.passive_notifications
     #このコードは、indexを開いてない未読の通知のみを集めている。
     @notifications.where(checked: false).each do |notification|
     notification.update_attributes(checked: true)
     end
+    
   end
   
   def destroy_all
