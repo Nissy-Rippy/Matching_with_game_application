@@ -13,6 +13,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="/"><span>Getching</span></a>
+        <div class="navbar-brand search-form">
+          <%= form_with url: user_search_path(current_user), method: :get, local: true do |f| %>
+          <%= f.text_field :keyword, value: @keyword %>
+          <%= f.submit "検索" %>
+          <% end %>
+          </div>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +40,7 @@
             <% else %>
              <%= link_to notifications_path do %>
               <i class="fas fa-bell fa-lg"></i>
-               <% end %>          
+               <% end %>
               <% end %>
             </span>
           <% end %>

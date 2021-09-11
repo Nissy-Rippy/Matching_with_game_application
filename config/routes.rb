@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'homes/about'
   
   resources :users, only: [:index, :show, :edit, :update, :create] do
+    get "search" => "users#search"
     post "users/:id/withdraw" => "users#withdraw", as: "withdraw"
     get "users/:id/unsubscribe" => "users#unsubscribe", as: "uns"
     resource :relationships, only: [:create, :destroy]

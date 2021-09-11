@@ -55,4 +55,9 @@ class User < ApplicationRecord
         notification.save if notification.valid?
     end
   end
+  
+  def self.search(keyword)
+    #playing_gameカラムのの部分一致検索を行うコード
+    where(["playing_game like?", "%#{keyword}%"])
+  end
 end
