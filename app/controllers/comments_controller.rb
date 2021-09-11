@@ -4,9 +4,9 @@ class CommentsController < ApplicationController
     comment = current_user.comments.new(comment_params)
     comment.post_id = @post.id
     if comment.save
-      comment.create_notification_comment!(current_user, comment.id)
-      redirect_to request.referer
+      @post.create_notification_comment!(current_user, comment.id)
     end
+    @comments = @post.comments.order(created_at: :desc)
   end
 
   def destroy

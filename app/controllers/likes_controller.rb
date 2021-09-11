@@ -6,7 +6,7 @@ class LikesController < ApplicationController
     like = @post.likes.new(user_id: current_user.id)
     like.save
     @post.create_notification_like!(current_user)
-    redirect_to request.refere
+    redirect_to request.referer
 
   end
 

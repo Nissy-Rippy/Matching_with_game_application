@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   root :to => "homes#top"
   get 'homes/about'
   
+  resources :contacts, only: [:new, :create]
+  
   resources :users, only: [:index, :show, :edit, :update, :create] do
     get "search" => "users#search"
     post "users/:id/withdraw" => "users#withdraw", as: "withdraw"

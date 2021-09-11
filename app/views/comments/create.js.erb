@@ -5,7 +5,7 @@ $("#post_<%= @post.id %>").html("コメント数: <%= @post.comments.count %>");
 
 <%# コメントクラスのタグをhtmlによって部分テンプレートをjsファイルに書き換えている記述　%>
 
-$(".comments").html("<%= j(render 'comments/index', post: @post, comments: @comments) %>");
+$(".comment-list").html("<%= j(render 'comments/index', post: @post, comments: @comments) %>");
 
 <%# 投稿後に入力欄を空白にするための記述%>
-$(".comments").val("");
+$("#comment_content").val("");
