@@ -36,7 +36,12 @@ class UsersController < ApplicationController
   def unsubscribe
 
   end
-
+  
+  def search
+   @users = User.search(params[:keyword])
+   @keyword = params[:keyword]
+   render :index
+  end
 
 
  private
@@ -44,6 +49,7 @@ class UsersController < ApplicationController
   def user_params
       params.require(:user).permit(:name,:age,:introduction,:address,:playing_game,:profile_image,:is_deleted)
   end
+  
   def set_user
 
   end

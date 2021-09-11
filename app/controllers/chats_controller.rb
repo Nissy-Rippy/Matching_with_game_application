@@ -20,7 +20,6 @@ class ChatsController < ApplicationController
     else
       #user_roomを取得できた場合。user_roomのデータを取得する。
       room = user_rooms.room
-    
     end
     #このチャットはルームに基づくチャットという記述
       @chats = @room.chats
