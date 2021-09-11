@@ -7,7 +7,7 @@
       データの復帰もすることができません・・・(;>_<;)<br/>
       もしそれでも辞めるというのなら下記のボタンをクリックしてください・・(><)</p>
       <%= link_to "退会する・・・", user_withdraw_path(current_user), method: :patch, class: "btn btn-danger" %>
-      <%= link_to "やっぱり続ける（￣ー￣）ﾆﾔﾘ", users_path, class: "btn btn-success" %>
+      <%= link_to "やっぱり続ける（￣ー￣）ﾆﾔﾘ", users_path, data: {confirm: "本当に退会してしまうんですね・・・ご利用ありがとうございました・・＞＜"}, class: "btn btn-success" %>
       
     </div>
   </div>
