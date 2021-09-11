@@ -9,7 +9,7 @@ class ContactMailer < ApplicationMailer
    def send_mail(contact)
      @contact = contact
      mail(
-       to: '6089more@gmail.com',
+       to: ENV["KEY"],
        subject: "お問い合わせ内容"
        )
    end
