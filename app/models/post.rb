@@ -1,6 +1,9 @@
 class Post < ApplicationRecord
 
   attachment :image
+  acts_as_taggable
+  
+
 
   belongs_to :user
   has_many :likes, dependent: :destroy

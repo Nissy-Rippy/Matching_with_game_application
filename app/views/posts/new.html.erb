@@ -5,6 +5,8 @@
           <%= form_with model: @post, local: true do |f| %>
           <%= f.label :タイトル %>
           <%= f.text_field :post_title, class: "form-control pb-1" %>
+          <%= f.label :post, :tag_list %>
+          <%= f.text_field :tag_list, value: @post.tag_list.join(","), placeholder: "注）タグ名の間は,で区切ってください！！", class: "form-control" %>
           <%= f.label :投稿内容 %>
           <%= f.text_area :description, class: "form-control pb-1", placeholder: "なるべくゲームに関係する投稿記事にしましょう！"%>
           <%= f.label :画像アップロード %>
