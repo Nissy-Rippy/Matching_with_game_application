@@ -30,8 +30,10 @@ Rails.application.routes.draw do
   
   resources :groups, only: [:index, :new, :show, :create, :destroy] do
     get "join" => "groups#join"
+    get "search" => "groups#search"
   end
   
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]
+
 end

@@ -1,16 +1,18 @@
 class GroupsController < ApplicationController
 
   def index
-    @groups = Group.all
+    @groups = Group.all.order(created_at: :desc)
   end
 
   def show
     @group = Group.find(params[:id])
+    @users = @group.users
   end
 
   def new
    @group = Group.new
   end
+
   def create
     @group = Group.new(group_params)
     @group.owner_id = current_user.id
@@ -33,10 +35,17 @@ class GroupsController < ApplicationController
     @group.users.delete(current_user)
     redirect_to groups_path
   end
-  
+
+  def search
+    @groups = Group.search(params[:keywords])
+    @keywords = params[:keywords]
+    render :index
+  end
+
  private
 
   def group_params
-   params.require(:group).permit(:name,:introduction,:image)
+   params.require(:group).permit(:name,:introduction,:image,:genre)
   end
+
 end

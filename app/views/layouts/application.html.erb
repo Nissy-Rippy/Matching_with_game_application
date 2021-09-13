@@ -52,8 +52,8 @@
     <div class="mb-10 pb-30 p-3">
       <%= yield %>
     </div>
-          <% if user_signed_in? %>
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <% if user_signed_in? %>
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <% end %>
   </body>
 </html>

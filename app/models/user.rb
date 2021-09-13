@@ -57,7 +57,13 @@ class User < ApplicationRecord
   end
   
   def self.search(keyword)
-    #playing_gameカラムのの部分一致検索を行うコード
-    where(["playing_game like?", "%#{keyword}%"])
+      #playing_gameカラムのの部分一致検索を行うコード
+    if keyword
+      where(["playing_game like?", "%#{keyword}%"])
+    else
+      User.all
+    end
   end
+  
+  
 end
