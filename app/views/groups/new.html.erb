@@ -14,14 +14,16 @@
     　　や説明などのメッセを送ることができます！<br/>
     ④勧誘や広告宣伝等の目的でご利用しないでください✖</p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"> <%= f.label :グループ名 %>
-      <%= f.text_field :name, class:"form-control" %></li>
-    <li class="list-group-item"><%= f.label :グループ画像 %>
-      <%= f.attachment_field :image, class: "form-control" %></li>
-    <li class="list-group-item"> <%= f.label :グループ紹介 %>
-      <%= f.text_field :introduction, class: "form-control" %></li>
-  </ul>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <%= f.label :グループ名 %>
+        <%= f.text_field :name, class:"form-control" %></li>
+      <li class="list-group-item"><%= f.label :グループ画像 %>
+        <%= f.attachment_field :image, class: "form-control" %></li>
+      <li class="list-group-item"> <%= f.label :ジャンル名 %>
+        <%= f.text_field :genre, class: "form-control" %></li>
+      <li class="list-group-item"> <%= f.label :グループ紹介 %>
+        <%= f.text_field :introduction, class: "form-control" %></li>
+    </ul>
   <div class="card-body">
     <a class="card-link"><%= f.submit "作成だぁぁー！！(。-∀-)" , class: "btn btn-success" %></a>
     <% end %>
