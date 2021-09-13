@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Getching</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/"><span>Getching</span></a>
+        <% if user_signed_in? %>
+        <div class="navbar-brand search-form">
+          <%= form_with url: user_search_path(current_user), method: :get, local: true do |f| %>
+          <%= f.text_field :keyword, value: @keyword %>
+          <%= f.submit "検索" %>
+          <% end %>
+          </div>
+          <% end %>
+        <button class="navbar-toggler tex" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+          <% if user_signed_in? %>
+            <li><%= link_to "MyPage", user_path(current_user), class: "fas fa-home nav-link text-light" %></li>
+            <li><%= link_to "Group一覧", groups_path, class: "fas fa-users nav-link text-light" %></li>
+            <li><%= link_to "タイムライン", posts_path , class: "fas fa-book-open nav-link text-light" %></li>
+            <li><%= link_to "マッチング", root_path, class: "fas fa-sign-out-alt nav-link text-light" %></li>
+            <span class="fa-stack">
+            <li>
+            <% if unchecked_notifications.any?%>
+             <%= link_to notifications_path do %>
+              <i class="fas fa-bell fa-stack-2x"></i>
+              <i class="fas fa-circle n-circle fa-stack-1x"></i>
+               <% end %>
+            <% else %>
+             <%= link_to notifications_path do %>
+              <i class="fas fa-bell fa-lg"></i>
+               <% end %>
+              <% end %>
+            </span>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mb-10 pb-30 p-3">
+      <%= yield %>
+    </div>
+      <% if user_signed_in? %>
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <% end %>
+  </body>
+</html>

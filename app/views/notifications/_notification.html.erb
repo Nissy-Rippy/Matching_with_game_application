@@ -1,0 +1,32 @@
+<div class="col-sm-12 mx-auto">
+ <div class="form-inline">
+ 
+     <% notifications.each do |notification| %>
+     <% visitor = notification.visitor %>
+     <% visited = notification.visited %>
+   
+    <div class="card text-center">
+    <div class="card-body">
+    <span><%= link_to user_path(visitor) do %>
+      <p class="card-text"> <%= attachment_image_tag visitor, :profile_image, :fill,60,60, fallback: "no_image.jpg", size: "60x60" %>
+      <% end %>
+    </span>
+    <strong><%= visitor.name %>さんが、</strong><br />
+    <% case notification.action %>
+    <% when "follow" then %>
+    <%= "あなたをフォローしましたよ！"%>
+    <p><a class="btn btn-primary"><%= time_ago_in_words(notification.created_at) %>ago</a></p>
+    
+    <% when "like" then %>
+    <%= "あなたの投稿にいいねしました！" %>
+    <p><a class="btn btn-primary"><%= time_ago_in_words(notification.created_at) %>ago</a></p>
+    <% when "comment" then %>
+    <strong><%= notification.post.user.name %></strong>
+    <%= "さんの投稿にコメントしました！" %>
+    <p><a class="btn btn-primary"><%= time_ago_in_words(notification.created_at) %>ago</a></p>
+    </div>
+    <% end %>
+    </div>
+    <% end %>
+ </div>
+</div>

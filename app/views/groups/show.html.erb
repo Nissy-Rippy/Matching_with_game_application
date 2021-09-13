@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 mx-auto">
+      
+      
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <svg class="bd-placeholder-img" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image"><title>placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%"><%= attachment_image_tag @group, :image,:fill,100,100 %></text></svg>
+               </div> 
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= @group.name %></h5>
+                <p class="card-text"><%= @group.users.count %>人<br/>
+                <%= @group.genre %> <br/>
+                <% if @group.users.include?(current_user) %>
+                <%= link_to "脱退する", group_path(@group), method: :delete %>
+                <% else %>
+                <%= link_to "参加する", group_join_path(@group) %><br><%= @group.introduction %></p>
+                <% end %>
+              </div>
+            </div>
+          </div>
+      </div>
+     <div class="card-deck">
+          <% @users.each do |user| %>
+              <div class="row text-center">
+                <div class="card" style="width: 18rem;">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="180"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect fill="#868e96" width="100%" height="180"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+                <div class="card-body">
+                  <h5 class="card-title">★<%= user.name %>★<%= user.age %>才</h5>
+                  <p class="card-text"><%= user.playing_game %></p>
+                  <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
+                </div>
+              </div>
+           </div>
+          <% end %>
+     </div>
+    
+    </div>
+  </div>
+</div>

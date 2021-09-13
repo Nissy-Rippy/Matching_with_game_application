@@ -1,0 +1,21 @@
+      
+    <%= form_with(model:[post,comment],url: post_comments_path(post.id,comment.id), method: :post, remmote: true) do |f| %>
+    <div id="rating">
+    <%= f.label :評価★%>
+    <%= f.hidden_field :rate, id: :"review_star" %>
+    </div>
+      <%# ratyの記載について　half機能を利用し半分の評価を可能にしていますこれは、ジャバスクリプトの記述になっています。%>
+      <script>
+        $("#rating").raty({
+          starOn: "<%= asset_path("star-on.png") %>",
+          starOff: "<%= asset_path("star-off.png") %>",
+          starHalf: "<%= asset_path("star-half.png") %>",
+          scoreName: "comment[rate]",<%# コメントモデルのrateカラムにデータを保存するための記述　%>
+          half: true,
+        });
+      </script>
+    <%= f.label :コメント %>
+    <%= f.text_area :content, placeholder: "　この投稿についてのコメント。
+    注意）犯罪防止のためコメントの削除機能はありませんのでご注意くださいませ。", class: "form-control" %>
+    <%= f.submit "コメントする" %>
+    <% end %>
