@@ -121,13 +121,6 @@ ActiveRecord::Schema.define(version: 2021_09_12_123600) do
     t.index ["name"], name: "index_tags_on_name", unique: true
   end
 
-  create_table "user_groups", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "room_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "user_rooms", force: :cascade do |t|
     t.integer "user_id"
     t.integer "room_id"
