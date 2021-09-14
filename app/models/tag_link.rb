@@ -1,0 +1,2 @@
+class TagLink < ApplicationRecord
+end
