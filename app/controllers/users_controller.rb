@@ -8,6 +8,8 @@ class UsersController < ApplicationController
    #自分以外のユーザーのデータを取得、降順にしておりかみなりで24件ごとにページを作る
   #@users = User.where.not(id: current_user.id).page(params[:page]).per(24).order("created_at DESC")
   @users = User.all.shuffle
+  
+  
   end
 
   def show
