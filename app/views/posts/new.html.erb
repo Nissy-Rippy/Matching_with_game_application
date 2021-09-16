@@ -1,18 +1,31 @@
-<div class="containe">
-  <div class="row w-50 mx-auto">
-    <div class="col-sm-6">
-          <h3>新規投稿ページ</h3>
-          <%= form_with model: @post, local: true do |f| %>
-          <%= f.label :タイトル %>
-          <%= f.text_field :post_title, class: "form-control pb-1" %>
-          <%= f.label :post, :tag_list %>
-          <%= f.text_field :tag_list, value: @post.tag_list.join(","), placeholder: "注）タグ名の間は,で区切ってください！！", class: "form-control" %>
-          <%= f.label :投稿内容 %>
-          <%= f.text_area :description, class: "form-control pb-1", placeholder: "なるべくゲームに関係する投稿記事にしましょう！"%>
-          <%= f.label :画像アップロード %>
-          <%= f.attachment_field :image, class: "form-control pb-1" %>
-          <%= f.submit "投稿完了(´∀｀*)", class: "btn btn-success" %>
-          <% end %>
-    </div>
-  </div>
-</div>
+<div class="container">
+  <div class="row mx-auto">
+    <div class="col-sm-12">
+          <h3 class="mt-3 mb-5 text-center">新規投稿ページ</h3>
+           <%= form_with model: @post, local: true do |f| %>
+            <div class="card">
+              <ul class="list-group list-group-flush width: 540;">
+                <li class="list-group-item">(*´σｰ｀)<%= f.label :タイトル %>(∀｀*ゞ)</li>
+                <li class="list-group-item"><%= f.text_field :post_title, class: "form-control con-4" %></li>
+                  <li class="list-group-item">タグ</li>
+                     <liu><%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+                     <div>
+                      <%= tag.label do %>
+                      <%= tag.check_box %>
+                      <%= tag.text %>
+                      <% end %>
+                     </div>
+                     <% end %>
+                    </div>
+
+                <li class="list-group-item"><%= f.label :投稿内容 %></li>
+                <li class="list-group-item"><%= f.text_area :description, class: "form-control", placeholder: "なるべくゲームに関係する投稿記事にしましょう！"%></li>
+                <li class="list-group-item"><%= f.label :画像アップロード %></li>
+                <li class="list-group-item"><%= f.attachment_field :image, class: "form-control" %></li>
+                <li class="list-group-item"> <%= f.submit "投稿完了(´∀｀*)", class: "btn btn-success" %></li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>

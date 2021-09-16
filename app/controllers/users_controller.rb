@@ -8,12 +8,13 @@ class UsersController < ApplicationController
    #自分以外のユーザーのデータを取得、降順にしておりかみなりで24件ごとにページを作る
   #@users = User.where.not(id: current_user.id).page(params[:page]).per(24).order("created_at DESC")
   @users = User.all.shuffle
-  
-  
+
+
   end
 
   def show
       @user = User.find(params[:id])
+      @posts = @user.posts
   end
 
   def edit
@@ -38,7 +39,7 @@ class UsersController < ApplicationController
   def unsubscribe
 
   end
-  
+
   def search
    @users = User.search(params[:keyword])
    @keyword = params[:keyword]
@@ -51,7 +52,7 @@ class UsersController < ApplicationController
   def user_params
       params.require(:user).permit(:name,:age,:introduction,:address,:playing_game,:profile_image,:is_deleted)
   end
-  
+
   def set_user
 
   end

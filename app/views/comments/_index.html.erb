@@ -1,8 +1,12 @@
-      <table>
+      <table class="mb-2 table table-hover">
         <% comments.each do |post_comment| %>
         <tr>
-          <th width=50%><%= attachment_image_tag  post_comment.user, :profile_image, :fill,100,100, fallback: "no_image.jpg", size: "100x100" %></th>
+          <th width=50%><%= link_to user_path(post_comment.user) do %>
+          <%= attachment_image_tag  post_comment.user, :profile_image, :fill,100,100, fallback: "no_image.jpg", size: "100x100" %>
+          <% end %>
+          </th>
           <th width=50%><%= post_comment.user.name %></th>
+          <th></th>
         </tr>
         <tr>
           <th>
@@ -10,15 +14,17 @@
               <span id="star-rate-<%= post_comment.id %>"></span>
             </div>
           </th>
+          <th></th>
         </tr>
         <tr>
-          <th><%= post_comment.content %></th>
+          <th colspan="2"><%= post_comment.content %></th>
+          <th></th>
         </tr>
         <% end %>
     　</table>
 
     　 <script>
-    　  <% comments.each do |post_comment| %>
+    　 <% comments.each do |post_comment| %>
           $('#star-rate-<%= post_comment.id %>').raty({
             starOn: "<%= asset_path('star-on.png') %>",
             starOff: "<%= asset_path('star-off.png') %>",
