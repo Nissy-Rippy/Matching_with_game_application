@@ -1,8 +1,8 @@
 
 <div class="containe">
-  <div class="row">
-    <div class="col-sm-6 mx-auto">
-        <div class="card-deck">
+  <div class="row mx-auto">
+    <div class="col-sm-12">
+        <div class="card-deck mb">
           <% @users.each do |user| %>
             <% if current_user.sex != user.sex %>
               <div class="row text-center">

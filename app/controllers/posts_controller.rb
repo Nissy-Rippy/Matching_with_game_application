@@ -2,6 +2,8 @@
 
     def index
       @posts = Post.all.order(created_at: :desc)
+      @posts = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts : Post.all
+      @post = Post.find_by(params[:id])
     end
 
     def new
@@ -37,7 +39,7 @@
   private
 
     def post_params
-      params.require(:post).permit(:description,:post_title,:image, :tag_list)
+      params.require(:post).permit(:description,:post_title,:image, tag_ids: [])
     end
 
   end

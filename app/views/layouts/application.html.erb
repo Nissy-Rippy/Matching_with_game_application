@@ -29,9 +29,10 @@
           <% if user_signed_in? %>
             <li><%= link_to "MyPage", user_path(current_user), class: "fas fa-home nav-link text-light" %></li>
             <li><%= link_to "Group一覧", groups_path, class: "fas fa-users nav-link text-light" %></li>
-            <li><%= link_to "タイムライン", posts_path , class: "fas fa-book-open nav-link text-light" %></li>
+            <li><%= link_to "タイムライン", posts_path , class: "fas fa-mail-bulk nav-link text-light" %></li>
             <li><%= link_to "マッチング", root_path, class: "fas fa-sign-out-alt nav-link text-light" %></li>
             <span class="fa-stack">
+              <li></li>
             <li>
             <% if unchecked_notifications.any?%>
              <%= link_to notifications_path do %>
@@ -44,16 +45,31 @@
                <% end %>
               <% end %>
             </span>
+            <% else %>
+
           <% end %>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="mb-10 pb-30 p-3">
+    
       <%= yield %>
-    </div>
+    
       <% if user_signed_in? %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <% end %>
   </body>
+  <footer class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 mx-auto text-center">
+           <%= link_to "お問い合わせフォーム", new_contact_path %>
+              <p>株式会社Getching<br/>
+              ・ 営業時間：　8:00　~　22:00<br/>
+              ・ 営業場所:   新宿三丁目サンセットビル　23階<br/>
+              ・ 企業情報:   令和三年設立、1部上場</p>
+            </div>
+          </div>
+        </div>
+    </footer>
 </html>
