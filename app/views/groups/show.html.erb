@@ -7,7 +7,7 @@
             <div><strong>グループ人数：<%= @group.users.count %>人</strong></div>
             <% if @group.users.include?(current_user) %>
             <%= link_to "脱退する", group_path(@group), method: :delete, class: "btn btn-danger" %>
-            <%= link_to "グループチャット", group_chat_path(@group), class: "btn btn-success" %>
+            <%= link_to "グループチャット", group_chat_path(@room), class: "btn btn-success" %>
             <% else %>
             <%= link_to "参加する", group_join_path(@group.users), class: "btn btn-info" %><br><%= @group.introduction %></p>
             <% end %>
