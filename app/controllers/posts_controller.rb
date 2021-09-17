@@ -1,8 +1,10 @@
   class PostsController < ApplicationController
 
     def index
-      @posts = Post.all.order(created_at: :desc)
       @posts = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts : Post.all
+      @posts = @posts.order(created_at: :desc)
+      
+      #find(params[:id])になおす
       @post = Post.find_by(params[:id])
     end
 

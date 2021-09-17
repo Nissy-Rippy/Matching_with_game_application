@@ -7,6 +7,7 @@ class GroupsController < ApplicationController
   def show
     @group = Group.find(params[:id])
     @users = @group.users
+    @room = @group.room
   end
 
   def new
@@ -37,7 +38,7 @@ class GroupsController < ApplicationController
   end
 
   def search
-    @groups = Group.search(params[:keywords])
+    @groups = Group.search(params[:group][:keywords])
     @keywords = params[:keywords]
     render :index
   end

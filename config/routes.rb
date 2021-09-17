@@ -32,7 +32,7 @@ Rails.application.routes.draw do
     get "join" => "groups#join"
     get "search" => "groups#search"
   end
-  get "chats/:id/new" => "chats#new", as: "group_chat"
+  get "chats/:room_id/index" => "chats#index", as: "group_chat"
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]
 
