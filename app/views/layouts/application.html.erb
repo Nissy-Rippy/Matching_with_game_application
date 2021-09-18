@@ -4,7 +4,6 @@
     <title>Getching</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -52,7 +51,9 @@
         </div>
       </div>
     </nav>
-    
+    <h3 class="text-center mt-2 mb-2">
+      <%= flash[:notice] %>
+    </h3>
       <%= yield %>
     
       <% if user_signed_in? %>

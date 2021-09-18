@@ -8,6 +8,7 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
     @users = @group.users
     @room = @group.room
+    #byebug
   end
 
   def new
@@ -26,7 +27,7 @@ class GroupsController < ApplicationController
   end
 
   def join
-    @group = Group.find_by(params[:id])
+    @group = Group.find_by(id:params[:group_id])
     @group.users << current_user
     redirect_to group_path(@group)
   end

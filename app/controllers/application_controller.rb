@@ -6,18 +6,15 @@
         homes_about_path
       end
     end
-    
+
     def after_sign_in_path_for(resource)
       users_path
     end
-  
-  
-  
+
     protected
-  
+
     def configure_permitted_parameters
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:name,:age,:address,:profile_image_id,
-      :sex,:playing_game,:introduction])
+      devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :age, :address, :profile_image_id, :sex, :playing_game, :introduction])
     end
-    
+
   end
