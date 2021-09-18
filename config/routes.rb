@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     get "users/:id/unsubscribe" => "users#unsubscribe", as: "uns"
     resource :relationships, only: [:create, :destroy]
     get "followings" => "relationships#followings", as: "followings"
-    get "followers" => "relationships#follower", as: "followers"
+    get "followers" => "relationships#followers", as: "followers"
   end
 
   resources :notifications, only: [:index] do
@@ -32,7 +32,7 @@ Rails.application.routes.draw do
     get "join" => "groups#join"
     get "search" => "groups#search"
   end
-  get "chats/:room_id/index" => "chats#index", as: "group_chat"
+  get "group/:group_id/chats" => "chats#index", as: "group_chat"
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]
 

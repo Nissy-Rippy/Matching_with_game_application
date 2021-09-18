@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  
   has_many :user_rooms, dependent: :destroy
   has_many :chats, dependent: :destroy
   
@@ -24,19 +25,25 @@ class User < ApplicationRecord
   
   attachment :profile_image
   enum sex: {man: 0, woman: 1}
+
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
-  #ログインじに退会済みの人が再度ログインできないようなコード
+         :recoverable, :rememberable, :trackable, 
+         :validatable
+
   #falseの状態ならtrueを返す仕組みにしています！
+  
+  
   
   def active_for_authentication?
     super && is_deleted == false
   end
   
+  
   def followed_by?(user)
     #現ユーザーがこの人をフォローしているかどうか確かめるためのコード
    passive_relationships.find_by(following_id: user.id).present?
   end
+  
   
   def create_notification_follow!(current_user)
     #連打でフォローされても通知は一回しか来ないように対策するために事前に検索している
@@ -64,6 +71,5 @@ class User < ApplicationRecord
       User.all
     end
   end
-  
   
 end
