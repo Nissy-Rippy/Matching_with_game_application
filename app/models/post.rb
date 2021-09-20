@@ -1,11 +1,11 @@
 class Post < ApplicationRecord
 
   attachment :image
-
+  validates :description, :post_title, {presence: true}
 
 
   belongs_to :user
- has_many :post_tags, dependent: :destroy
+  has_many :post_tags, dependent: :destroy
   has_many :tags, through: :post_tags, dependent: :destroy
   has_many :likes, dependent: :destroy
   has_many :comments, dependent: :destroy

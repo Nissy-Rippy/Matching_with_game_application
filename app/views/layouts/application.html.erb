@@ -9,10 +9,10 @@
   </head>
 
   <body>
+  <% if user_signed_in? %>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/"><span>Getching</span></a>
-        <% if user_signed_in? %>
+        <a class="navbar-brand" href="users_path"><span>Getching</span></a>
         <div class="navbar-brand search-form">
           <%= form_with url: user_search_path(current_user), method: :get, local: true do |f| %>
           <%= f.text_field :keyword, value: @keyword %>
@@ -60,7 +60,7 @@
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <% end %>
   </body>
-  <footer class="bg-black">
+  <footer class="bg-dark text-light">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 mx-auto text-center">

@@ -1,1 +1,33 @@
-<%= link_to "新規登録", new_user_registration_path %>
+<div class="main">
+
+      <div class="theTarget mt-5">
+        <div style="background-image: url(img/test1.jpg)"></div>
+        <div style="background-image: url(img/test2.jpg)"></div>
+        <div style="background-image: url(img/test3.jpg)"></div>
+        <div style="background-image: url(img/test4.jpg)"></div>
+        <div style="background-image: url(img/test5.jpg)"></div>
+      </div>
+      <!--メイン画像-->
+
+      <div class="img__inner">
+        <!--JS設定してから画像追加-->
+        <%= image_tag"test1.jpg",class:"main-img"%>
+        <%= image_tag"test2.jpg",class:"main-img"%>
+        <%= image_tag"test3.jpg",class:"main-img"%>
+        <%= image_tag"test4.jpg",class:"main-img"%>
+        <%= image_tag"test5.jpg",class:"main-img"%>
+      </div>
+      <div class="text-center mb-5">
+          <p><strong>Gameから始まる出会いへようこそ(; ･`д･´)</strong></p>
+　　 <%= link_to "やってみたい？❤", new_user_registration_path, class: "btn btn-success text-center col-3" %>
+      </div>
+
+
+
+</div>
+
+
+
+
+
+

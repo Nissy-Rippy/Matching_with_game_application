@@ -1,9 +1,9 @@
 <div class="container">
-  <di class="row mx-auto">
-    <div class="col-sm-6-mx-auto">
+  <div class="row mx-auto">
+    <div class="col-sm-10 mx-auto">
 
-          <h2 class="text-center mt-3">新規登録ページ</h2>
-          <h2 class="text-center mb-3">いい出会いがありますことを祈っております(*´σｰ｀)</h2>
+          <h3 class="text-center mt-3">新規登録ページ</h3>
+          <h5 class="text-center mb-3">いい出会いがありますことを祈っております!<br/>（*´σｰ｀)</h5>
           <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
           <%= render "devise/shared/error_messages", resource: resource %>
           <div class="card mx-auto text-center" style="width: 18rem;">
@@ -21,17 +21,17 @@
               <% if @minimum_password_length %>(<%= @minimum_password_length %> 最低6文字以上)
               <% end %><%= f.password_field :password, autocomplete: "new-password" %></li>
               <li class="list-group-item"> <%= f.label :確認用のパスワード %><%= f.password_field :password_confirmation, autocomplete: "new-password" %></li>
-              <li class="list-group-item"> <%= f.submit "Sign up", class: "btn btn-success" %></li>
+              <li class="list-group-item"> <%= f.submit "ようこそGetchingへ", class: "btn btn-success" %></li>
               <% end %>
-
             </ul>
           </div>
           <%= render "devise/shared/links" %>
-        <div class="border">  
+        <div class="border mx-auto">  
           ＊注意事項＊<br/>
           ・当サイトは、18歳以上の方向け利用なため、<br/>
           ・DM機能など特定の機能ご利用時名際には年齢確認を行っております。<br/>
-          ・そのため虚偽の記載のないようお願いいたします。
+          ・そのため虚偽の記載のないようお願いいたします。<br />
+          ・広告など発見しましたら通報の方( ｀・∀・´)ﾉﾖﾛｼｸｵﾈｶﾞｲｼﾏｽ。
         <div>
 
      </div>

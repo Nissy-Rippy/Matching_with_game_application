@@ -1,0 +1,13 @@
+ <% if chat.user_id == current_user.id %>
+ <tbody>
+  <tr>
+    <th><p style="text-align: left;"><%= attachment_image_tag chat.user , :profile_image, :fill,60,60, fallback: "no_image.jpg", size: "60x60", class: "rounded-circle" %><%= chat.message %></p></th>
+    <th></th>
+  </tr>
+  <% else %>
+  <tr>
+    <th></th>
+    <th><p style="text-align: right;"><%= chat.message %><%= attachment_image_tag chat.user , :profile_image, :fill,60,60, fallback: "no_image.jpg", size: "60x60", class: "rounded-circle" %></p></th>
+  </tr>
+</tbody>
+<% end %>

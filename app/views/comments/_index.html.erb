@@ -26,9 +26,9 @@
     　 <script>
     　 <% comments.each do |post_comment| %>
           $('#star-rate-<%= post_comment.id %>').raty({
-            starOn: "<%= asset_path('star-on.png') %>",
-            starOff: "<%= asset_path('star-off.png') %>",
-            starHalf: "<%= asset_path('star-half.png') %>",
+            starOn: "<%= asset_path("star-on.png") %>",
+            starOff: "<%= asset_path("star-off.png") %>",
+            starHalf: "<%= asset_path("star-half.png") %>",
             readOnly: true,<%#読み取り専用のコード%>
             half: true,<%# 半分評価の記述%>
             score: <%= post_comment.rate%><%#★評価の表示コード%>

@@ -20,3 +20,21 @@
 //= require_tree .
 
 
+$(function () {
+  // 初期画像の表示
+  let index = 0;
+  $('.main-img').eq(index).addClass('current-img');
+
+  setInterval(function () {
+    // 非表示
+    $('.main-img').eq(index).removeClass('current-img');
+    // 画像の最後判定
+    if (index == $('.main-img').length - 1) {
+      index = 0;
+    } else {
+      index++;
+    }
+    // 表示
+    $('.main-img').eq(index).addClass('current-img');
+  }, 3000);
+});
