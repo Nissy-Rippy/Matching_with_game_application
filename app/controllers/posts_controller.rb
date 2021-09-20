@@ -3,7 +3,6 @@
     def index
       @posts = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts : Post.all
       @posts = @posts.order(created_at: :desc)
-      
       #find(params[:id])になおす
       @post = Post.find_by(params[:id])
     end
@@ -29,7 +28,10 @@
         render :new
       end
     end
-
+   
+   def ranking
+     @posts = Post.all_ranking
+   end
 
     def destroy
       @post = Post.find(params[:id])

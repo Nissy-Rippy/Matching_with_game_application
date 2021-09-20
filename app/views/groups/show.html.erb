@@ -6,9 +6,7 @@
             <div><strong>カテゴリー：<%= @group.genre %></strong></div>
             <div><strong>グループ人数：<%= @group.users.count %>人</strong></div>
             <div><strong>グールプ説明：<%= @group.introduction %></strong></div>
-            
             <%#条件分岐によってボタンの種類を変える%>
-
             <% if @group.users.include?(current_user) %>
             <%= link_to "脱退する", group_path(@group), method: :delete, class: "btn btn-danger" %>
             <%# グループチャットのIDはルームのIDを入れている。%>
@@ -17,11 +15,8 @@
             <%= link_to "参加する", group_join_path(@group), class: "btn btn-info" %></p>
             <% end %>
           </div>
-          
         </div>
-        <h2 class="m-5 text-center">参加メンバー</h2>
-         
-         
+      <h2 class="m-5 text-center">参加メンバー</h2>
           <% @users.each do |user| %>
               <div class="row mx-auto">
                 <div class="card mb-3 mx-auto text-center" style="width: 18rem;">

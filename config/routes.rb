@@ -26,12 +26,14 @@ Rails.application.routes.draw do
   resources :posts, only: [:index, :new, :show, :create, :destroy] do
     resource :likes, only: [:create,:destroy]
     resource :comments, only: [:create, :destroy]
+    get "posts/:post_id/ranking" => "posts#ranking", as: "posts_ranking"
   end
 
   resources :groups, only: [:index, :new, :show, :create, :destroy] do
     get "join" => "groups#join"
     get "search" => "groups#search"
   end
+
   get "group/:group_id/chats" => "chats#index", as: "group_chat"
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]

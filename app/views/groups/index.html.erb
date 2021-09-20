@@ -4,7 +4,7 @@
       <h2>グループ一覧ページ</h2>
        <%= form_with model: @groups,url: group_search_path(@groups), method: :get, local: true do |f| %>
        <%= f.text_field :keywords, value: @keywords %>
-       <%= f.submit "カテゴリー検索" %>
+       <%= f.submit "カテゴリー検索",class: "mr-3" %><%= link_to "新規投稿", new_group_path, class: "btn btn-success col-4 text-center" %>
        <% end %>
        
         <% @groups.each do |group| %>
@@ -14,7 +14,6 @@
           <div><strong>グループ人数：<%= group.users.count %>人</strong></div>
           <div><%= link_to "詳細", group_path(group), class: "btn btn-info col-4 mb-1" %></div>
         <% end %>
-          <h5><%= link_to "新規投稿", new_group_path, class: "btn btn-success col-4 text-center" %></h5>
     </div>
   </div>
 </div>
