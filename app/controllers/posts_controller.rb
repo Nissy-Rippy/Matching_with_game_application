@@ -22,8 +22,8 @@
       @post = Post.new(post_params)
       @post.user_id = current_user.id
       if @post.save
-        flash[:notice] = "投稿完了です＾＾言い値が沢山もらえますように💛"
         redirect_to posts_path
+        flash[:notice] = "投稿完了です＾＾いいねが沢山もらえますように💛"
       else
         flash.now[:notice] = "記入ミスの可能性あり～(￣ー￣)ﾆﾔﾘ"
         render :new
@@ -34,8 +34,8 @@
     def destroy
       @post = Post.find(params[:id])
       @post.destroy
-      flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
       redirect_to
+      flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
     end
     
   private

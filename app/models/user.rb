@@ -2,12 +2,22 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   
+  #新規投稿の際のルール
+  validates :name, :playing_game, :address, :email, :age, :sex, {presence: true}
+  validates :age, {numericality: true}
+#  validates :address, inclusion: {in: ['都','道','府','県']}
+
+
+  #ユーザールームを使うことによってuserとroomの多対多の関係を成立させている。
   has_many :user_rooms, dependent: :destroy
+  #Userは沢山チャットをするので複数のchatt をする chatは一人のユーザーしか持てない。
   has_many :chats, dependent: :destroy
-  
+  #一人のユーザーは複数の投稿をすることができる。投稿は一人のuserしかもてない。
   has_many :posts, dependent: :destroy
   has_many :likes, dependent: :destroy
+  #userは沢山のコメントを書くことができて、コメントは一つのusrしかいない、
   has_many :comments, dependent: :destroy
+  #userとgroupの中間テーブル
   has_many :group_users, dependent: :destroy
   has_many :groups, through: :group_users
   #フォローするuser側からみて、フォローされる側のユーザーを集める。そのため外部キーはfollowing_idとなっている。
@@ -22,18 +32,16 @@ class User < ApplicationRecord
   has_many :active_notifications, class_name: "Notification", foreign_key: :visitor_id, dependent: :destroy
   #通知を受けた人
   has_many :passive_notifications, class_name: "Notification", foreign_key: :visited_id, dependent: :destroy
-  
+  #refile機能のためのせってい
   attachment :profile_image
+  #enum カラム名 をintegerで設定しています。
   enum sex: {man: 0, woman: 1}
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, 
          :validatable
 
-  #falseの状態ならtrueを返す仕組みにしています！
-  
-  
-  
+  #falseの状態ならtrueを返す仕組みにしています！退会機能においての
   def active_for_authentication?
     super && is_deleted == false
   end
