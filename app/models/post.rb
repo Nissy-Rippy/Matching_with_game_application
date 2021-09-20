@@ -64,4 +64,10 @@ class Post < ApplicationRecord
     end
       notification.save if notification.valid?
   end
+  #TOP５のランキング機能をつけています。
+  #groupにてlikeもでるのpost_idカラムを対象にlikeのpost_idの多い順に5つ並べるようなコードになっています。
+  def self.all_ranking
+    Post.find(Like.group(:post_id).order("count(post_id) desc").limit(5).pluck(:post_id))
+  end
+  
 end
