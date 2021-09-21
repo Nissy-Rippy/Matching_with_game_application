@@ -12,13 +12,9 @@
     <li class="list-group-item"><%= f.text_field :name %></li>
     <li class="list-group-item"><%= f.label :お問い合わせ内容 %></li>
     <li class="list-group-item"><%= f.text_area :message, placeholder: "（注）なるべく詳細にお願いします。", size: "100x5" %></li>
-    <li class="list-group-item"><%= f.submit "送信ヽ(´▽｀)/" , class: "btn  btn-success" %></li>
+    <li class="list-group-item"><%= f.submit "送信ヽ(´▽｀)/" , class: "btn  btn-success" %><a class="card-link"><%= link_to "戻る", users_path, class: "btn btn-danger" %></a></li>
   </ul>
 <% end %>
-  <div class="card-body">
-    <a class="card-link"><%= link_to "戻る", users_path %></a>
-    <a href="#" class="card-link">(∀｀*ゞ)</a>
-  </div>
 </div>
 
 

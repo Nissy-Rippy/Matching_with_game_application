@@ -8,6 +8,7 @@ class ContactsController < ApplicationController
     if @contact.save
       ContactMailer.send_mail(@contact).deliver
       redirect_to new_contact_path
+      flash[:notice] = "送信完了いたしました"
     else
       render :new
     end

@@ -55,11 +55,13 @@
       <%= flash[:notice] %>
     </h3>
       <%= yield %>
-    
+
       <% if user_signed_in? %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       <% end %>
   </body>
+
+
   <footer class="bg-dark text-light">
       <div class="container">
         <div class="row">

@@ -29,7 +29,9 @@
           </tr>
           <tr>
            <th><%= link_to "新規投稿", new_post_path, class: "btn btn-success" %></th>
+           <% if @user == current_user %>
            <th><%= link_to "退会ページ", user_uns_path(@user), class: "btn btn-danger" %></th>
+           <% end %>
           </tr>
           <tr>
            <th width="200">MYプロフィール</th>
@@ -72,11 +74,12 @@
 
       <h3 class="mt-2 mb-2 text-center">投稿履歴</h3>
       <div class="col-sm-6 mx-auto mt-5">
+       
        <% @posts.each do |a_post| %>
         <div class="card mb-3 pt-20">
           <svg class="bd-placeholder-img card-img-top" width="150" height="150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
            <div class="card-body">
-            <h5 class="card-title"><%= link_to a_post.post_title, post_path(a_post) %>　投稿者:　<%= a_post.user.name %> </h5>
+            <h5 class="card-title"><%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:<%= a_post.user.name %> </h5>
             <p class="card-text"><%= a_post.description %></p>
             <p class="card-text">
             <div id="likes_btn_<%= a_post.id %>">
@@ -87,8 +90,8 @@
           </div>
         </div>
         <% end %>
+        
         </div>
-
     </div>
   </div>
 </div>
