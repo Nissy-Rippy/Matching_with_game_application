@@ -3,7 +3,7 @@
     <div class="col-sm-6 mx-auto">
       <h4 class="text-center mt-3 mb-3">グループチャット(´∀｀*)</h4>
         <table class="message table mt-3 mb-3">
-              
+
           <thead>
               <tr>
                 <th style="text-align: left; font-size: 20px;"><%= "(*´σｰ｀)" %></th>
@@ -14,7 +14,7 @@
           <%= render "comment", chat: chat %>
           <% end %>
          </table>
-            
+
         <div class="text-center">
         <%= form_with model: @chat, remote: true do |f| %>
         <%= f.text_field :message %>
@@ -22,7 +22,7 @@
         <%= f.submit "送信(´・ω・｀)", class: "btn btn-success btn-sm chat-btn text-center" %>
         <% end %>
         </div>
-  
+
       </div>
     </div>
   </div>

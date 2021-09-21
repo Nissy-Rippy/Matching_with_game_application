@@ -10,11 +10,12 @@ Rails.application.routes.draw do
 
   resources :contacts, only: [:new, :create]
 
-  resources :users, only: [:index, :show, :edit, :update, :create] do
+  resources :users, only: [:index, :show, :edit, :update, :create, :edit] do
     get "search" => "users#search"
     post "users/:id/withdraw" => "users#withdraw", as: "withdraw"
     get "users/:id/unsubscribe" => "users#unsubscribe", as: "uns"
     resource :relationships, only: [:create, :destroy]
+    get "index" => "relationships#index", as: "relationships_index"
     get "followings" => "relationships#followings", as: "followings"
     get "followers" => "relationships#followers", as: "followers"
   end
@@ -23,7 +24,7 @@ Rails.application.routes.draw do
     delete "notifications/:id/destroy_all" => "notifications#destroy_all", as: "destroy_all"
   end
 
-  resources :posts, only: [:index, :new, :show, :create, :destroy] do
+  resources :posts, only: [:index, :new, :show, :create, :destroy,:edit] do
     resource :likes, only: [:create,:destroy]
     resource :comments, only: [:create, :destroy]
     get "posts/:post_id/ranking" => "posts#ranking", as: "posts_ranking"

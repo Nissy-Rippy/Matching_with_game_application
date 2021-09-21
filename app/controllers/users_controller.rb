@@ -2,10 +2,7 @@ class UsersController < ApplicationController
  before_action :set_user
 
   def index
-   #フォロ―ランキング上位4位の方を表示したい
-   # @users_ranking = User.where.not(id: current_user.id).page(params[:page]).per(8).order("")
-   #自分以外のユーザーのデータを取得、降順にしておりかみなりで24件ごとにページを作る
-   #@users = User.where.not(id: current_user.id).page(params[:page]).per(24).order("created_at DESC")
+
    @users = User.all.shuffle
   end
 

@@ -1,13 +1,8 @@
 <div class="container">
   <div clss="row">
     <div class="col-sm12 mx-auto">
-        <h1 class="text-center">タイムライン</h1>
-        <h3 class="text-center"><%= link_to "TOP５Ranking", post_posts_ranking_path(@posts) %><br/>
-        <%= link_to "フォロー中の方のタイムライン", edit_post_path(current_user)%></h3>
-        <%= form_tag posts_path, method: :get, class: "boards__searchForm text-center" do %>
-           <%= select_tag :tag_id, options_from_collection_for_select(Tag.all, :id, :name, params[:tag_id]),
-           {prompt: 'タグで絞り込み検索', onchange: 'submit(this.form);'} %>
-             <% end %>
+        <h1 class="text-center">フォロー中の方のタイムライン</h1>
+
            <% @posts.each do |a_post| %>
             <div class="card m-3">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>

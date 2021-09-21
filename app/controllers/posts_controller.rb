@@ -1,7 +1,7 @@
   class PostsController < ApplicationController
 
     def index
-      @posts = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts : Post.all
+      @posts = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts : Post.includes(:user,:tags,:post_tags)
       @posts = @posts.order(created_at: :desc)
       #find(params[:id])になおす
       @post = Post.find_by(params[:id])
@@ -11,6 +11,22 @@
       @post = Post.new
     end
 
+    def edit
+      @posts_all = Post.includes(:tags, :post_tags, :user)
+      @followings = current_user.followings
+      if @followings.present?
+        @posts = @posts_all.where(user_id: @followings).order("created_at DESC")
+
+        if @posts.nil?
+          redirect_to user_path(current_user)
+          flash[:notice] = "( ﾟдﾟ)ﾊｯ!ﾅｲﾀﾞﾄｯ！！"
+        end
+
+      else
+          redirect_to user_path(current_user)
+          flash[:notice] = "ﾌｫﾛｰｼﾃないだと・・・"
+      end
+    end
 
     def show
       @post = Post.find(params[:id])
@@ -31,7 +47,7 @@
         render :new
       end
     end
-   
+
    def ranking
      @posts = Post.all_ranking
    end
@@ -42,7 +58,7 @@
       redirect_to
       flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
     end
-    
+
   private
 
     def post_params
