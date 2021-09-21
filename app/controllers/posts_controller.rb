@@ -11,11 +11,14 @@
       @post = Post.new
     end
 
+
     def show
       @post = Post.find(params[:id])
-      @comment = Comment.new
+      @comment = Comment.find(params[:id])
+      #降順の並びにしている
       @comments = @post.comments.order(created_at: :desc)
     end
+
 
     def create
       @post = Post.new(post_params)
@@ -43,6 +46,7 @@
   private
 
     def post_params
+      #tag_idsは空の配列を入れてある。沢山作れるようにしている。
       params.require(:post).permit(:description,:post_title,:image, tag_ids: [])
     end
 

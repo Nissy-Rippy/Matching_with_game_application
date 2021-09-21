@@ -34,6 +34,7 @@ Rails.application.routes.draw do
     get "search" => "groups#search"
   end
 
+
   get "group/:group_id/chats" => "chats#index", as: "group_chat"
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]

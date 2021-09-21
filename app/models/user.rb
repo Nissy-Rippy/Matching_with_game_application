@@ -52,6 +52,9 @@ class User < ApplicationRecord
    passive_relationships.find_by(following_id: user.id).present?
   end
   
+  def matchers
+    Relationship.where(id: current_user.active_relationships.select(:following_id)).where(id: current_user.passive_relationships.select(:follower_id))
+  end
   
   def create_notification_follow!(current_user)
     #連打でフォローされても通知は一回しか来ないように対策するために事前に検索している
