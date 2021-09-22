@@ -25,7 +25,7 @@ class ChatsController < ApplicationController
       @chat = Chat.new(room_id: @room.id)
   end
   
-#グループチャットのアクション
+#グループチャットのアクション,routeを短くためにindexに書いています。
   def index
     @group = Group.find(params[:group_id])
     if @group.users.where(id: current_user.id).empty?
@@ -35,7 +35,7 @@ class ChatsController < ApplicationController
     #グループに紐づいているユーザー情報を取得
     @users = @group.users
     rooms = current_user.user_rooms.pluck(:room_id)
-    #userに紐づくroomのデータを取得している
+    #userに紐づくroomのデータを取得している、room_idとgroup_idについている。
     user_rooms = UserRoom.find_by(room_id: rooms,group_id: @group.id)
     #user_roomの情報が取得できない場合
     if user_rooms.nil?

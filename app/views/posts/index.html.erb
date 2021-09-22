@@ -2,8 +2,10 @@
   <div clss="row">
     <div class="col-sm12 mx-auto">
         <h1 class="text-center">タイムライン</h1>
-        <h3 class="text-center"><%= link_to "TOP５Ranking", post_posts_ranking_path(@posts) %><br/>
-        <%= link_to "フォロー中の方のタイムライン", edit_post_path(current_user)%></h3>
+        <h3 class="text-center"><%= link_to "TOP５Ranking", post_posts_ranking_path(@posts), class: "btn btn-dark" %>
+        <%= link_to "フォロー中の方のタイムライン", edit_post_path(current_user), class: "btn btn-info" %>
+        <%= link_to "昇順に並び替え", posts_path(sort: "created_at ASC"), class: "btn btn-success" %>
+        <%= link_to "降順に並び替え", posts_path(sort: "created_at DESC"), class: "btn btn-danger" %></h3>
         <%= form_tag posts_path, method: :get, class: "boards__searchForm text-center" do %>
            <%= select_tag :tag_id, options_from_collection_for_select(Tag.all, :id, :name, params[:tag_id]),
            {prompt: 'タグで絞り込み検索', onchange: 'submit(this.form);'} %>
@@ -12,25 +14,21 @@
             <div class="card m-3">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
                <div class="card-body">
-                <h5 class="card-title"><%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:<%= a_post.user.name %> </h5>
+                <h6 class="card-title"><%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:<%= a_post.user.name %> </h6>
                 <p class="card-text"><%= a_post.description %></p>
                 <p class="card-text">
                 <div id="likes_btn_<%= a_post.id %>">
-
                 <%= render "likes/like", post: a_post %>
+                </div>
                 <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i><%= link_to a_post.comments.count, post_path(a_post)%><i class="fas fa-tags">
                   <% a_post.tags.each do |tag| %>
                   #<%= tag.name %>
                   <% end %>
                   </i></p>
-                </div>
                 <p class="card-text"><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
               </div>
             </div>
           <% end %>
-
     </div>
   </div>
 </div>
-
-

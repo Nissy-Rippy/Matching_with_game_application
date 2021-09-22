@@ -1,16 +1,15 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      
+
       <h2 class="text-center">ログイン画面</h2>
       <%= form_with model: @user, url: user_session_path, local: true do |f| %>
-        
+
           <div class="card mx-auto text-center" style="width: 18rem;">
             <div class="card-header">
             　忘れてないよね？(。-∀-)
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"> <%= f.label :メールアドレス %><%= f.email_field :email, autofocus: true, autocomplete: "email" %></li>
               <li class="list-group-item"> <%= f.label :メールアドレス %><%= f.email_field :email, autofocus: true, autocomplete: "email" %></li>
               <li class="list-group-item"><%= f.label :パスワード %><%= f.password_field :password, autocomplete: "current-password" %></li>
               <% if devise_mapping.rememberable? %>
@@ -19,11 +18,8 @@
               <% end %>
             </ul>
           </div>
-          <div class="mx-auto">
-          <%= f.check_box :remember_me %><%= f.label :remember_me %><br/>
-          <% end %>
-          <%= render "devise/shared/links" %>
-          </div>
+        <% end %>
      </div>
     </div>
   </div>
+</div>

@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
  before_action :set_user
+ before_action :ensure_authenticate, only: [:update, :destroy, :edit]
 
   def index
-
+#userをランダムにシャッフルに並べる記述
    @users = User.all.shuffle
   end
 
@@ -19,6 +20,8 @@ class UsersController < ApplicationController
       user = User.find(params[:id])
       if user.update(user_params)
           redirect_to user_path(user)
+      else
+          render :edit
       end
   end
 
@@ -31,7 +34,7 @@ class UsersController < ApplicationController
   end
 
   def unsubscribe
-
+     @user = User.find(params[:id])
   end
   
   def search
@@ -46,6 +49,15 @@ class UsersController < ApplicationController
   def user_params
       params.require(:user).permit(:name,:age,:introduction,:address,:playing_game,:profile_image,:is_deleted)
   end
+  
+  def ensure_authenticate
+   @user = User.find(params[:id])
+   if @user != current_user
+    redirect_to user_path(@user)
+   end
+    
+  end
+  
   
   def set_user
   end

@@ -1,12 +1,12 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  
+
   #新規投稿の際のルール
   validates :name, :playing_game, :address, :email, :age, :sex, {presence: true}
   validates :age, {numericality: true}
-#  validates :address, inclusion: {in: ['都','道','府','県']}
-
+  #validates :address, inclusion: {in: %w(都 道 府 県)}
+  validates :address, format: { with: /.*[都道府県]/ }
 
   #ユーザールームを使うことによってuserとroomの多対多の関係を成立させている。
   has_many :user_rooms, dependent: :destroy
@@ -19,6 +19,7 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   #userとgroupの中間テーブル
   has_many :group_users, dependent: :destroy
+  #group_usersを通してgroupsと扱うことで多対多を可能にしている。
   has_many :groups, through: :group_users
   #フォローするuser側からみて、フォローされる側のユーザーを集める。そのため外部キーはfollowing_idとなっている。
   has_many :active_relationships, class_name: "Relationship", foreign_key: :following_id, dependent: :destroy
@@ -38,24 +39,19 @@ class User < ApplicationRecord
   enum sex: {man: 0, woman: 1}
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, 
+         :recoverable, :rememberable, :trackable,
          :validatable
 
   #falseの状態ならtrueを返す仕組みにしています！退会機能においての
   def active_for_authentication?
     super && is_deleted == false
   end
-  
-  
   def followed_by?(user)
     #現ユーザーがこの人をフォローしているかどうか確かめるためのコード
    passive_relationships.find_by(following_id: user.id).present?
   end
-  
-  def matchers
-    Relationship.where(id: current_user.active_relationships.select(:following_id)).where(id: current_user.passive_relationships.select(:follower_id))
-  end
-  
+
+
   def create_notification_follow!(current_user)
     #連打でフォローされても通知は一回しか来ないように対策するために事前に検索している
     tempt = Notification.where("visited_id = ? and visitor_id = ? and action = ?", current_user.id, id, "follow")
@@ -67,13 +63,14 @@ class User < ApplicationRecord
         )
         #自分に対するフォローで自分に通知が来ないようにしている。
         if notification.visited_id == notification.visitor_id
-          notification.checked == true
+          #trueに設定することによってチャック済みにしておく
+            notification.checked == true
         end
-        
         notification.save if notification.valid?
     end
   end
-  
+
+
   def self.search(keyword)
       #playing_gameカラムのの部分一致検索を行うコード
     if keyword
@@ -82,5 +79,5 @@ class User < ApplicationRecord
       User.all
     end
   end
-  
+
 end
