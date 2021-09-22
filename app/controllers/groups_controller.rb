@@ -50,4 +50,5 @@ class GroupsController < ApplicationController
    params.require(:group).permit(:name,:introduction,:image,:genre)
   end
 
+ 
 end

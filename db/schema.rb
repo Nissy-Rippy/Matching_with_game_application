@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_18_134034) do
+ActiveRecord::Schema.define(version: 2021_09_21_181223) do
 
   create_table "chats", force: :cascade do |t|
     t.integer "user_id"
@@ -142,10 +142,8 @@ ActiveRecord::Schema.define(version: 2021_09_18_134034) do
     t.datetime "updated_at", null: false
     t.integer "sex"
     t.boolean "is_deleted", default: false
-    t.string "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
 end
