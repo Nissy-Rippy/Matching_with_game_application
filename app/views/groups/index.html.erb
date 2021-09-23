@@ -6,9 +6,8 @@
        <%= f.text_field :keywords, value: @keywords %>
        <%= f.submit "カテゴリー検索",class: "mr-3" %><%= link_to "新規投稿", new_group_path, class: "btn btn-success col-4 text-center" %>
        <% end %>
-       
         <% @groups.each do |group| %>
-          <div class="mt-5 mb-2"><%= attachment_image_tag group, :image, :fill,450,350, fallback: "no_image.jpg", size: "450x350" %></div>
+          <div class="mt-5 mb-2"><%= attachment_image_tag group, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
           <div><strong>グループ名：<%= group.name %></strong></div>
           <div><strong>カテゴリー：<%= group.genre %></strong></div>
           <div><strong>グループ人数：<%= group.users.count %>人</strong></div>

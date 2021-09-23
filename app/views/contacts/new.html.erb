@@ -10,9 +10,13 @@
   <ul class="list-group list-group-flush text-center">
     <li class="list-group-item"><%= f.label :お名前（フルネーム%></li>
     <li class="list-group-item"><%= f.text_field :name %></li>
+    <li class="list-group-item"><%= f.label :電話番号 %></li>
+    <li class="list-group-item"><%= f.text_field :phone_number %></li>
+    <li class="list-group-item"><%= f.label :メールアドレス %></li>
+    <li class="list-group-item"><%= f.text_field :email %></li>
     <li class="list-group-item"><%= f.label :お問い合わせ内容 %></li>
-    <li class="list-group-item"><%= f.text_area :message, placeholder: "（注）なるべく詳細にお願いします。", size: "100x5" %></li>
-    <li class="list-group-item"><%= f.submit "送信ヽ(´▽｀)/" , class: "btn  btn-success" %><a class="card-link"><%= link_to "戻る", users_path, class: "btn btn-danger" %></a></li>
+    <li class="list-group-item"><%= f.text_area :message, placeholder: "（注）なるべく詳細にお願いします。" , class: "col-sm-8" %></li>
+    <li class="list-group-item"><%= f.submit "送信ヽ(´▽｀)/" , class: "btn  btn-success" %><a class="card-link"><%= link_to "お問い合わせしない！", users_path, class: "btn btn-danger" %></a></li>
   </ul>
 <% end %>
 </div>
