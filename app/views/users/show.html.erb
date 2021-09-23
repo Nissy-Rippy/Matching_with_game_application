@@ -1,76 +1,81 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 mx-auto">
-     <% if @user.id != current_user.id %>
-      <%= attachment_image_tag @user, :profile_image, :fill,300,300, fall_back: "no_image.jpg", size: "300x300" %>
-      <% else %>
-      <%= attachment_image_tag current_user, :profile_image, :fill,300,300, fall_back: "no_image.jpg", size: "300x300" %>
-      <% end %>
-      <div class="row mx-auto">
-        <table>
-          <thead>
-          <tr>
-           <th>フォロー数</th>
-           <th><%= link_to @user.followings.count, user_followings_path(@user) %></th>
-          </tr>
-          <tr>
-           <th>フォロワー数</th>
-           <th><%= link_to @user.followers.count, user_followers_path(@user) %></th>
-          </tr>
-          <tr>
-          <% if current_user != @user %>
-            <%= link_to 'Begin Chat', chat_path(@user.id) %>
-          <% end %>
-          <%= link_to "お問い合わせフォーム", new_contact_path %>
-          </tr>
-          <tr>
-           <th>
-            <div class="follow_<%= @user.id %>">
-             <%= render "relationships/form", user: @user %>
+    <div class="col-sm-8 mx-auto">
+     <h2 class="text-center mt-3">My Profile (｡-_-｡)</h2>
+      <div class="text-center mb-5 mt-5">
+        <%= attachment_image_tag @user, :profile_image, :fill,300,300, fallback: "no_image.jpg", size: "300x300", class: "rounded-circle" %>
+         </div>
+
+
+            <div class="follow">
+               <%= render "relationships/form", user: @user %>
             </div>
-           </th>
-          </tr>
-          <tr>
-           <th><%= link_to "新規投稿", new_post_path, class: "btn btn-success" %></th>
-           <th><%= link_to "退会ページ", user_uns_path(@user), class: "btn btn-danger" %></th>
-          </tr>
-          <tr>
-           <th width="200">MYプロフィール</th>
-           <th width="200"><%= link_to edit_user_path(@user) do %>
-           <i class="fas fa-user-cog"></i>
-           <% end %>
-           </th>
-           <th></th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-           <td>★名前★</td>
-           <td><%= @user.name %></td>
-          </tr>
-          <tr>
-           <td>★年齢★</td>
-           <td><%= @user.age %></td>
-          </tr>
-          <tr>
-           <td>★住所★</td>
-           <td><%= @user.address %></td>
-          </tr>
-          <tr>
-           <td>★プレイ中のゲーム ★</td>
-           <td><%= @user.playing_game %></td>
-          </tr>
-          <tr>
-           <td>★プロフィール★</td>
-           <td></td>
-          </tr>
-          <tr>
-           <td colspan="2" class=" border rounded">・<%= @user.introduction %></td>
-           <td></td>
-          </tr>
-          </tbody>
+         <table class="table-hover mx-auto pb-3 text-center border-2px">
+            <thead>
+            <tr>
+             <% if @user == current_user %>
+             <th><%= link_to "新規投稿", new_post_path, class: "btn btn-success" %></th>
+             <th><%= link_to "退会ページ", user_uns_path(@user), class: "btn btn-danger" %></th>
+             <% end %>
+            </tr>
+            <tr>
+             <th width="200">MYプロフィール</th>
+             <% if @user == current_user %>
+             <th width="200"><%= link_to edit_user_path(@user) do %>
+             <i class="fas fa-user-cog"></i>
+             <% end %>
+             <% end %>
+             </th>
+             <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+             <td>★名前★</td>
+             <td><%= @user.name %></td>
+            </tr>
+            <tr>
+             <td>★年齢★</td>
+             <td><%= @user.age %></td>
+            </tr>
+            <tr>
+             <td>★住所★</td>
+             <td><%= @user.address %></td>
+            </tr>
+            <tr>
+             <td>★プレイ中のゲーム ★</td>
+             <td><%= @user.playing_game %></td>
+            </tr>
+            <tr>
+             <td>★プロフィール★</td>
+             <td></td>
+            </tr>
+            <tr class="pb-2">
+             <td colspan="2" class=" border rounded form">★<%= @user.introduction %></td>
+             <td></td>
+            </tr>
+            </tbody>
         </table>
-      </div>
+
+
+      <h3 class="mt-2 mb-2 text-center">投稿履歴</h3>
+      <div class="col-sm-6 mx-auto mt-5">
+       <% @posts.each do |a_post| %>
+        <div class="card mb-3 pt-20">
+          <svg class="bd-placeholder-img card-img-top" width="150" height="150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+           <div class="card-body">
+            <h5 class="card-title"><%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:<%= a_post.user.name %> </h5>
+            <p class="card-text"><%= a_post.description %></p>
+            <p class="card-text">
+            <div id="likes_btn_<%= a_post.id %>">
+            <%= render "likes/like", post: a_post %>
+            </div>
+            <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i><%= link_to a_post.comments.count, post_path(a_post)%><i class="fas fa-tags"></i></p>
+            <p class="card-text"><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
+          </div>
+        </div>
+        <% end %>
+        </div>
     </div>
   </div>
 </div>
