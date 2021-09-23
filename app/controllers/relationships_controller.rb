@@ -1,19 +1,17 @@
 class RelationshipsController < ApplicationController
-
   def create
-    #フォローするためのコード
+    # フォローするためのコード
     follow = current_user.active_relationships.build(follower_id: params[:user_id])
     follow.save
-    @user = User.find_by(params[:user_id])
+    @user = User.find(params[:user_id])
     @user.create_notification_follow!(current_user)
-    redirect_to request.referer
   end
 
   def destroy
-    #フォロー解除のコード
+    # フォロー解除のコード
     follow = current_user.active_relationships.find_by(follower_id: params[:user_id])
     follow.destroy
-    redirect_to request.referer
+    @user = User.find(params[:user_id])
   end
 
   def followings
@@ -26,15 +24,14 @@ class RelationshipsController < ApplicationController
     @followers = @user.followers
   end
 
-   def index
-     @user = User.find(params[:user_id])
-     relations = Relationship.where(following_id: Relationship.where(following_id: current_user.id).pluck(:follower_id)).select {|r| r.follower_id == current_user.id}.pluck(:following_id)
-     if relations.present?
-       @users = User.find(relations)
-     else
-       redirect_to user_path(current_user)
-       flash[:notice] = "マッチングしてないみたい・・・( ；∀；)"
-     end
-   end
-
+  def index
+    @user = User.find(params[:user_id])
+    relations = Relationship.where(following_id: Relationship.where(following_id: current_user.id).pluck(:follower_id)).select { |r| r.follower_id == current_user.id }.pluck(:following_id)
+    if relations.present?
+      @users = User.find(relations)
+    else
+      redirect_to user_path(current_user)
+      flash[:notice] = "マッチングしてないみたい・・・( ；∀；)"
+    end
+  end
 end

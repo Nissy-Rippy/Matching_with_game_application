@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-
   get 'chats/show'
   devise_for :users, controllers: {
-    registrations: "users/registrations"
+    registrations: "users/registrations",
   }
 
   root :to => "homes#top"
@@ -24,8 +23,8 @@ Rails.application.routes.draw do
     delete "notifications/:id/destroy_all" => "notifications#destroy_all", as: "destroy_all"
   end
 
-  resources :posts, only: [:index, :new, :show, :create, :destroy,:edit] do
-    resource :likes, only: [:create,:destroy]
+  resources :posts, only: [:index, :new, :show, :create, :destroy, :edit] do
+    resource :likes, only: [:create, :destroy]
     resource :comments, only: [:create, :destroy]
     get "posts/:post_id/ranking" => "posts#ranking", as: "posts_ranking"
   end
@@ -35,9 +34,7 @@ Rails.application.routes.draw do
     get "search" => "groups#search"
   end
 
-
   get "group/:group_id/chats" => "chats#index", as: "group_chat"
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]
-
 end

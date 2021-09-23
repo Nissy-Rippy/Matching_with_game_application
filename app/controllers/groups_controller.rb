@@ -1,5 +1,4 @@
 class GroupsController < ApplicationController
-
   def index
     @groups = Group.all.order(created_at: :desc)
   end
@@ -8,11 +7,11 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
     @users = @group.users
     @room = @group.room
-    #byebug
+    # byebug
   end
 
   def new
-   @group = Group.new
+    @group = Group.new
   end
 
   def create
@@ -20,9 +19,9 @@ class GroupsController < ApplicationController
     @group.owner_id = current_user.id
     @group.users << current_user
     if @group.save
-       redirect_to groups_path
+      redirect_to groups_path
     else
-       render :new
+      render :new
     end
   end
 
@@ -44,11 +43,9 @@ class GroupsController < ApplicationController
     render :index
   end
 
- private
+  private
 
   def group_params
-   params.require(:group).permit(:name,:introduction,:image,:genre)
+    params.require(:group).permit(:name, :introduction, :image, :genre)
   end
-
- 
 end

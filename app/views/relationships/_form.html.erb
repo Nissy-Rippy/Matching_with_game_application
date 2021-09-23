@@ -1,5 +1,23 @@
-            <% if user.followed_by?(current_user) %>
-            <p><%= link_to "フォロー解除(;>_<;)", user_relationships_path(user.id), method: :delete, remote: true %>
-            <% else %>
-            <p><%= link_to "フォローする(´∀｀*)" , user_relationships_path(user.id), method: :post, remote: true %></p>
-            <% end %>
+            <table class="table-hover mx-auto pb-3 text-center border-2px">
+
+            <tr class="mb-3">
+             <th>フォロー数</th>
+             <th><%= link_to user.followings.count, user_followings_path(user) %></th>
+            </tr>
+            <tr>
+             <th>フォロワー数</th>
+             <th><%= link_to user.followers.count, user_followers_path(user) %></th>
+            </tr>
+            <tr>
+             <th>
+              <div>
+<% if user.followed_by?(current_user) %>
+<p><%= link_to "フォロー解除", user_relationships_path(user.id), method: :delete, remote: true %></p>
+<% else %>
+<p><%= link_to "フォローする", user_relationships_path(user.id), method: :post, remote: true %></p>
+<% end %>
+              </div>
+             </th>
+            </tr>
+
+                     </table>

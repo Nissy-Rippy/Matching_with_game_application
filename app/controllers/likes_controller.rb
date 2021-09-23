@@ -1,8 +1,7 @@
 class LikesController < ApplicationController
-
   def create
     @post = Post.find(params[:post_id])
-    #buildはアソシエーションしながらインスタンスをnewしてくれる。
+    # buildはアソシエーションしながらインスタンスをnewしてくれる。
     like = @post.likes.new(user_id: current_user.id)
     like.save
     @post.create_notification_like!(current_user)
@@ -14,5 +13,4 @@ class LikesController < ApplicationController
     like.destroy
     redirect_to request.referer
   end
-
 end

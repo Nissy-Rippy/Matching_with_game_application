@@ -6,23 +6,12 @@
         <%= attachment_image_tag @user, :profile_image, :fill,300,300, fallback: "no_image.jpg", size: "300x300", class: "rounded-circle" %>
          </div>
 
-          <table class="table-hover mx-auto pb-3 text-center border-2px">
-            <thead>
-            <tr class="mb-3">
-             <th>フォロー数</th>
-             <th><%= link_to @user.followings.count, user_followings_path(@user) %></th>
-            </tr>
-            <tr>
-             <th>フォロワー数</th>
-             <th><%= link_to @user.followers.count, user_followers_path(@user) %></th>
-            </tr>
-            <tr>
-             <th>
-              <div class="follow_<%= @user.id %>">
+
+            <div class="follow">
                <%= render "relationships/form", user: @user %>
-              </div>
-             </th>
-            </tr>
+            </div>
+         <table class="table-hover mx-auto pb-3 text-center border-2px">
+            <thead>
             <tr>
              <% if @user == current_user %>
              <th><%= link_to "新規投稿", new_post_path, class: "btn btn-success" %></th>

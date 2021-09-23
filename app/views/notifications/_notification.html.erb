@@ -3,7 +3,7 @@
      <% visitor = notification.visitor %>
      <% visited = notification.visited %>
    
-    <div class="card text-center mb-3">
+    <div class="card text-center">
     <div class="card-body">
     <span><%= link_to user_path(visitor) do %>
       <p class="card-text"> <%= attachment_image_tag visitor, :profile_image, :fill,60,60, fallback: "no_image.jpg", size: "60x60" %>
