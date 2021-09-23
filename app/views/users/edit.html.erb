@@ -1,7 +1,8 @@
-<div class="containe">
-  <div class="row w-50 mx-auto">
-    <div class="col-sm-6">
-          <h3>マイページ編集</h3>
+<div class="container">
+  <div class="row mx-auto">
+    <div class="col-sm-8 mx-auto">
+          <h3 class="text-center mt-3">マイページ編集</h3>
+          <div class="form-group m-5">
           <%= form_with model: @user, local: true do |f| %>
           <%= f.label :プロフィール %>
           <%= f.text_area :introduction, class: "form-control pb-1", placeholder: "なるべくゲームに関係する自己紹介にしましょう！"%>
@@ -10,9 +11,10 @@
           <%= f.label :プレイ中のゲーム %>
           <%= f.text_field :playing_game, class: "form-control pb-1" %>
           <%= f.label :画像 %>
-          <%= f.attachment_field :profile_image, class: "form-control" %>
+          <%= f.attachment_field :profile_image, class: "form-control mb-2" %>
           <%= f.submit "Update", class: "btn btn-success" %>
           <% end %>
+          </div>
     </div>
   </div>
 </div>

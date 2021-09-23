@@ -1,34 +1,18 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 mx-auto">
+    <div class="col-sm-6 m-5 mx-auto">
       <h2>グループ一覧ページ</h2>
        <%= form_with model: @groups,url: group_search_path(@groups), method: :get, local: true do |f| %>
        <%= f.text_field :keywords, value: @keywords %>
-       <%= f.submit "カテゴリー検索" %>
+       <%= f.submit "カテゴリー検索",class: "mr-3" %><%= link_to "新規投稿", new_group_path, class: "btn btn-success col-4 text-center" %>
        <% end %>
-        <table>
-          <thead>
-            <th width="200">グループ画像</th>
-            <th width="200">グループ名</th>
-            <th width="200">カテゴリー</th>
-            <th width="200">グループ人数</th>
-            <th width="200"></th>
-          </thead>
-          <tbody>
-          <% @groups.each do |group| %>
-          <tr>
-            <td><%= attachment_image_tag group, :image, :fill,100,100, fallback: "no_image.jpg", size: "100x100" %></td>
-            <td><%= group.name %></td>
-            <td><%= group.genre %></td>
-            <td><%= group.users.count %></td>
-            <td><%= link_to "詳細", group_path(group), class: "btn btn-success" %></td>
-          </tr>
-          <% end %>
-          </tbody>
-        </table>
-          <div class="text-center">
-            <h5><%= link_to "新規投稿", new_group_path %></h5>
-          </div>
+        <% @groups.each do |group| %>
+          <div class="mt-5 mb-2"><%= attachment_image_tag group, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
+          <div><strong>グループ名：<%= group.name %></strong></div>
+          <div><strong>カテゴリー：<%= group.genre %></strong></div>
+          <div><strong>グループ人数：<%= group.users.count %>人</strong></div>
+          <div><%= link_to "詳細", group_path(group), class: "btn btn-info col-4 mb-1" %></div>
+        <% end %>
     </div>
   </div>
 </div>
