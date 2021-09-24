@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-before_action :reject_user, { only: [:withdraw] }
+before_action :reject_user, only: [:withdraw]
 class Users::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
 
