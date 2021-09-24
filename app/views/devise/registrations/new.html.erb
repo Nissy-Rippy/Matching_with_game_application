@@ -22,10 +22,10 @@
               <% end %><%= f.password_field :password, autocomplete: "new-password" %></li>
               <li class="list-group-item"> <%= f.label :確認用のパスワード %><%= f.password_field :password_confirmation, autocomplete: "new-password" %></li>
               <li class="list-group-item"> <%= f.submit "ようこそGetchingへ", class: "btn btn-success" %></li>
+              <li class="list-group-item"> <%= render "devise/shared/links" %></li>
               <% end %>
             </ul>
           </div>
-          <%= render "devise/shared/links" %>
         <div class="border mx-auto">  
           ＊注意事項＊<br/>
           ・当サイトは、18歳以上の方向け利用なため、<br/>
@@ -36,4 +36,6 @@
 
      </div>
    </div>
+</div>
+</div>
 </div>
