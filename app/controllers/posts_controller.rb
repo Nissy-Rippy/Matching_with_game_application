@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     @tags = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts.includes(:user, :tags, :post_tags) : Post.includes(:user, :tags, :post_tags)
     @posts = @tags.order(params[:sort])
     # find(params[:id])になおす
-    @post = Post.find(params[:id])
+    @post = Post.find_by(params[:id])
   end
 
   def new
