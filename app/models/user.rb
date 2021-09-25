@@ -39,8 +39,7 @@ class User < ApplicationRecord
   enum sex: { man: 0, woman: 1 }
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable,
-         :validatable
+         :recoverable, :rememberable,:validatable
 
   # falseの状態ならtrueを返す仕組みにしています！退会機能においての
   def active_for_authentication?
