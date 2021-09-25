@@ -20,7 +20,7 @@ class RelationshipsController < ApplicationController
   end
 
   def followers
-    @user = User.find(params[:userid])
+    @user = User.find(params[:user_id])
     @followers = @user.followers
   end
 
@@ -29,9 +29,6 @@ class RelationshipsController < ApplicationController
     relations = Relationship.where(following_id: Relationship.where(following_id: current_user.id).pluck(:follower_id)).select { |r| r.follower_id == current_user.id }.pluck(:following_id)
     if relations.present?
       @users = User.find(relations)
-    else
-      redirect_to user_path(current_user)
-      flash[:notice] = "マッチングしてないみたい・・・( ；∀；)"
     end
   end
 end

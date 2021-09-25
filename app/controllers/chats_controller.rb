@@ -19,7 +19,7 @@ class ChatsController < ApplicationController
       @room = user_rooms.room
     end
     # このチャットはルームに基づくチャットという記述
-    @chats = @room.chats
+    @chats = Chat.includes(:user).where(room_id: @room.id)
     @chat = Chat.new(room_id: @room.id)
   end
 
@@ -50,7 +50,7 @@ class ChatsController < ApplicationController
     end
 
     # このチャットはルームに基づくチャットという記述
-    @chats = @room.chats
+    @chats = Chat.includes(:user).where(room_id: @room.id)
     @chat = Chat.new(room_id: @room.id)
   end
 

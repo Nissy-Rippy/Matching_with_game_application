@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     if comment.save
       @post.create_notification_comment!(current_user, comment.id)
     end
-    @comments = @post.comments.order(created_at: :desc)
+    @comments = @post.comments.includes(:user).order(created_at: :desc)
   end
 
   def destroy

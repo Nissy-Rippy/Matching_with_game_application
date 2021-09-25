@@ -2,7 +2,7 @@
   <div class="row mx-auto">
     <div class="col-sm-10 mx-auto">
           <h3 class="mt-3 mb-5 text-center">新規投稿ページ</h3>
-           <%= form_with model: @post, local: true do |f| %>
+           <%= form_with model: @post do |f| %>
             <div class="card">
               <ul class="list-group list-group-flush width: 540;">
                 <li class="list-group-item">(*´σｰ｀)<%= f.label :タイトル %>(∀｀*ゞ)</li>
