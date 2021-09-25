@@ -41,8 +41,8 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     if @post.save
-      redirect_to posts_path
-      flash[:notice] = "投稿完了です＾＾いいねが沢山もらえますように💛"
+       flash[:notice] = "投稿完了です＾＾いいねが沢山もらえますように💛"
+       redirect_to posts_path
     else
       flash.now[:notice] = "記入ミスの可能性あり～(￣ー￣)ﾆﾔﾘ"
       render :new
@@ -56,8 +56,8 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
-    redirect_to
     flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
+    redirect_to posts_path
   end
 
   private
