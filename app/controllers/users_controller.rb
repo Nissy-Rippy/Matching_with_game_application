@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    # @userに紐づくposts投稿記事のデータを取得。
     @posts = @user.posts
   end
 
