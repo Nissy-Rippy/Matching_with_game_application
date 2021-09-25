@@ -13,6 +13,7 @@ class User < ApplicationRecord
   has_many :chats, dependent: :destroy
   # 一人のユーザーは複数の投稿をすることができる。投稿は一人のuserしかもてない。
   has_many :posts, dependent: :destroy
+  # いいね機能との1対N
   has_many :likes, dependent: :destroy
   # userは沢山のコメントを書くことができて、コメントは一つのusrしかいない、
   has_many :comments, dependent: :destroy

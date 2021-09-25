@@ -7,7 +7,6 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
     @users = @group.users
     @room = @group.room
-    # byebug
   end
 
   def new

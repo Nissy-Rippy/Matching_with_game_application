@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
-  before_action :ensure_authenticate, { only: [:create, :destroy] }
   def index
-    @posts = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts : Post.includes(:user, :tags, :post_tags)
-    @posts = @posts.order(params[:sort])
+    # tag検索のためのコード、三項演算子になっている。
+    @tags = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts.includes(:user, :tags, :post_tags) : Post.includes(:user, :tags, :post_tags)
+    @posts = @tags.order(params[:sort])
     # find(params[:id])になおす
     @post = Post.find_by(params[:id])
   end
@@ -30,10 +30,11 @@ class PostsController < ApplicationController
   end
 
   def show
+    # コメントフォームにデータを送るための2つのデータ
     @post = Post.find(params[:id])
     @comment = Comment.find(params[:id])
     # 降順の並びにしている
-    @comments = @post.comments.order(created_at: :desc)
+    @comments = @post.comments.order(created_at: :desc).includes(:user)
   end
 
   def create
@@ -59,17 +60,10 @@ class PostsController < ApplicationController
     flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
   end
 
-    private
+  private
 
   def post_params
     # tag_idsは空の配列を入れてある。沢山作れるようにしている。
     params.require(:post).permit(:description, :post_title, :image, tag_ids: [])
   end
-
-  def ensure_authenticate
-    @user = User.find_by(params[:id])
-    if @user != current_user
-      redirect_to user_path(@user)
-    end
-  end
-  end
+end
