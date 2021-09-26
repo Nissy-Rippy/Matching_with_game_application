@@ -26,7 +26,7 @@
     font-family: serif;
   }
   .wrapper{
-    min-height: 65vh;
+    min-height: 100vh;
 }
 
 
@@ -58,10 +58,4 @@
     bottom: 0; /*下に固定するための記述*/
 }
 
-@media screen and (max-width:768px) {
-
-.navbar{
-  zoom: 0.5;
-}
-
-}
+// @media screen and (max-width:768px) {｝

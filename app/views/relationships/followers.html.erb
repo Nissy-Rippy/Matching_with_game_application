@@ -2,19 +2,18 @@
   <div class="row">
     <div class="col-sm-12 mx-auto">
       <h2 class="text-center">フォローしてくれてる人</h2>
-      <% if @followers.exists? %>
-          <% @followers.each do |user| %>
+            <% if @followers.exists? %>
+              <% @followers.each do |user| %>
               <div class="text-center w-50 mx-auto mb-3">
-                  <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
-                  <h5>★<%= user.name %>★<%= user.age %>才</h5>
-                  <p><%= user.playing_game %></p>
-                  <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
-                  </div>
-      <% end %>
-       <% else %>
-        <p>ユーザーはいません</p>
-      <% end %>
-
-      </div>
-    </div>
- </div>
+              <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
+              <h5>★<%= user.name %>★<%= user.age %>才</h5>
+              <p><%= user.playing_game %></p>
+              <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
+              </div>
+              <% end %>
+            <% else %>
+              <p>ユーザーはいません</p>
+            <% end %>
+          </div>
+        </div>
+     </div>

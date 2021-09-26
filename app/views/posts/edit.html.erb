@@ -1,15 +1,15 @@
 <div class="container">
   <div clss="row mx-auto">
-    <div class="col-sm-6 mx-auto">
+    <div class="col-sm-12 mx-auto">
         <h1 class="text-center">フォロー中の方のタイムライン</h1>
-
-        <% @posts.each do |a_post| %>
-                <div class="border　mx-auto mb-5">
+           <div class="row">
+                <% @posts.each do |a_post| %>
+                <div class="mx-auto mb-5">
                 <div><%= attachment_image_tag a_post, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
                 <session class="text-left">
                 <div>タイトル：<%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:　<%= a_post.user.name %> </div>
                 <div>内容：<%= a_post.description %></div>
-                <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="d-flex flex-row bd-highlight m-1">
                 <div id="likes_btn_<%= a_post.id %>">
                 <%= render "likes/like", post: a_post %>
                 </div>
@@ -23,6 +23,7 @@
                 <p><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
                 </div>
                 <% end %>
+              </div>
     </div>
   </div>
 </div>

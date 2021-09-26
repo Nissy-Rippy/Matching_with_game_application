@@ -9,7 +9,7 @@
   </head>
 
  <body>
-    <header class="sticky-top">
+    <header>
         <% if user_signed_in? %>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
@@ -56,26 +56,25 @@
       </div>
     </nav>
   </header>
-  
+
   <div class="wrapper">
-          <%= link_to "ログ合うｔ",destroy_user_session_path, method: :delete  %>
-          <h3 class="text-center mt-2 mb-2">
-            <%= flash[:notice] %>
-          </h3>
-            <%= yield %>
+    <%= link_to "ログ合うｔ",destroy_user_session_path, method: :delete  %>
+    <h3 class="text-center mt-2 mb-2">
+      <%= flash[:notice] %>
+    </h3>
+      <%= yield %>
   </div>
 
-           <footer>
-                <div class="mx-auto text-center bg-dark text-light">
-                 <%= link_to "お問い合わせフォーム", new_contact_path %>
-                    <div>株式会社Getching<br/>
-                    ・ 営業時間：　8:00　~　22:00<br/>
-                    ・ 営業場所:   新宿三丁目サンセットビル　23階<br/>
-                    ・ 企業情報:   令和三年設立、1部上場
-                    </div>
-                </div>
-           </footer>
-
+     <footer>
+          <div class="mx-auto text-center bg-dark text-light">
+           <%= link_to "お問い合わせフォーム", new_contact_path %>
+              <div>株式会社Getching<br/>
+              ・ 営業時間：　8:00　~　22:00<br/>
+              ・ 営業場所:   新宿三丁目サンセットビル　23階<br/>
+              ・ 企業情報:   令和三年設立、1部上場
+              </div>
+          </div>
+     </footer>
 </body>
 
 
