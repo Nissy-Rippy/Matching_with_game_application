@@ -19,8 +19,7 @@
 //= require turbolinks
 //= require_tree .
 
-
-$(function () {
+$(document),on('turbolinks:load', function () {
   // 初期画像の表示
   let index = 0;
   $('.main-img').eq(index).addClass('current-img');

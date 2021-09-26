@@ -1,17 +1,16 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 mx-auto">
+    <div class="col-sm-12 mx-auto">
 
         <% if @users.present? %>
          <h2 class="text-center" style="color: red;">マッチング（∀｀*ゞ）</h2>
             <% @users.each do |user| %>
-            <div class="row text-center">
-              <div class="card mx-auto mb-4 mt-4" style="width: 18rem;">
-                <%= attachment_image_tag user, :profile_image, fallback: "no_image.jpg" %>
-                <div class="card-body">
-                <h5 class="card-title">★<%= user.name %>★<%= user.age %>才</h5>
-                <p class="card-text"><%= user.playing_game %></p>
-                <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
+              <div class="text-center w-50 mx-auto mb-3">
+                  <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
+                  <h5>★<%= user.name %>★<%= user.age %>才</h5>
+                  <p><%= user.playing_game %></p>
+                  <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
+                  </div>
                 <% if current_user != @user %>
                 <%= link_to "DM(´∀｀*)", chat_path(@user.id), class: "btn btn-success" %>
                 <% end %>

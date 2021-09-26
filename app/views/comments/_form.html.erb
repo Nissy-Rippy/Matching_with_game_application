@@ -1,5 +1,6 @@
-      
-    <%= form_with(model:[post,comment],url: post_comments_path(post.id,comment.id), method: :post, remmote: true) do |f| %>
+
+
+    <%= form_with(model: comment, url: post_comments_path(post.id), method: :post, remmote: true) do |f| %>
     <div id="rating">
     <%= f.label :評価★%>
     <%= f.hidden_field :rate, id: :"review_star" %>

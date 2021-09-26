@@ -3,7 +3,7 @@
     <div class="col-sm-12">
       <h2 class="text-center">ログイン画面</h2>
      
-      <%= form_with model: @user, url: user_session_path, local: true do |f| %>
+      　<%= form_with model: @user, url: user_session_path, local: true do |f| %>
           <div class="card mx-auto text-center" style="width: 18rem;">
             <div class="card-header">忘れてないよね？(。-∀-)</div>
             <ul class="list-group list-group-flush">
@@ -11,6 +11,7 @@
               <li class="list-group-item"><%= f.label :パスワード %><%= f.password_field :password, autocomplete: "current-password" %></li>
               <li class="list-group-item"><%= f.label :確認パスワード %><%= f.password_field :password, autocomplete: "current-password" %></li>
               <li class="list-group-item"><%= f.submit "ログイン", class: "btn btn-success" %></li>
+              <li class="list-group-item"><%= link_to "Signupかな？ ", new_user_registration_path, class: "btn btn-success text-center col-3" %></li>
             </ul>
           </div>
        <% end %>

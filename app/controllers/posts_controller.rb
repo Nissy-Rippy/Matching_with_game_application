@@ -32,7 +32,7 @@ class PostsController < ApplicationController
   def show
     # コメントフォームにデータを送るための2つのデータ
     @post = Post.find(params[:id])
-    @comment = Comment.find(params[:id])
+    @comment = Comment.new
     # 降順の並びにしている
     @comments = @post.comments.order(created_at: :desc).includes(:user)
   end
@@ -41,8 +41,8 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     if @post.save
-       flash[:notice] = "投稿完了です＾＾いいねが沢山もらえますように💛"
-       redirect_to posts_path
+      flash[:notice] = "投稿完了です＾＾いいねが沢山もらえますように💛"
+      redirect_to posts_path
     else
       flash.now[:notice] = "記入ミスの可能性あり～(￣ー￣)ﾆﾔﾘ"
       render :new

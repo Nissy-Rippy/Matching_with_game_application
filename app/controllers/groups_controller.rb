@@ -25,7 +25,7 @@ class GroupsController < ApplicationController
   end
 
   def join
-    @group = Group.find(id: params[:group_id])
+    @group = Group.find(params[:group_id])
     @group.users << current_user
     redirect_to group_path(@group)
   end

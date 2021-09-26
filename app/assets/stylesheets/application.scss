@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
@@ -25,6 +25,11 @@
     font-size: 16px;
     font-family: serif;
   }
+  .wrapper{
+    min-height: 65vh;
+}
+
+
   // トップ画像
     .img__inner {
     width: 100%;
@@ -47,8 +52,16 @@
     opacity: 1;
     z-index: 20;
   }
-  
+
   footer{
     width: 100%;
     bottom: 0; /*下に固定するための記述*/
+}
+
+@media screen and (max-width:768px) {
+
+.navbar{
+  zoom: 0.5;
+}
+
 }
