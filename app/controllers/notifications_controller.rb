@@ -2,7 +2,7 @@ class NotificationsController < ApplicationController
   before_action :ensure_authenticate, only: [:destroy_all]
   def index
     # 現在ログインしている人に紐づく通知一覧。N+1  問題解決のため行っています。
-    @notifications = current_user.passive_notifications.includes(:visited, :visitor, :post)
+    @notifications = current_user.passive_notifications.includes(:visited, :visitor)
     # このコードは、indexを開いてない未読の通知のみを集めている。
     @notifications.where(checked: false).each do |notification|
       notification.update_attributes(checked: true)

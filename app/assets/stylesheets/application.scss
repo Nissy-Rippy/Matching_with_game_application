@@ -18,18 +18,18 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 // 全体の初期設定
+
  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     font-family: serif;
   }
+  
   .wrapper{
     min-height: 100vh;
-}
-
-
+  }
   // トップ画像
     .img__inner {
     width: 100%;
@@ -37,7 +37,8 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-  }
+    }
+    
   .main-img {
     width: 100%;
     position: absolute;
@@ -48,6 +49,7 @@
     /*変化するまでの時間を設定する*/
     transition: all 1s;
   }
+  
   .current-img {
     opacity: 1;
     z-index: 20;
@@ -58,4 +60,3 @@
     bottom: 0; /*下に固定するための記述*/
 }
 
-// @media screen and (max-width:768px) {｝

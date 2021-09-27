@@ -6,11 +6,10 @@
         <%= attachment_image_tag @user, :profile_image, :fill,300,300, fallback: "no_image.jpg", size: "300x300", class: "rounded-circle" %>
          </div>
 
-
             <div class="follow">
                <%= render "relationships/form", user: @user %>
             </div>
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+
          <table class="table-hover mx-auto pb-3 text-center border-2px">
             <thead>
             <tr>
@@ -18,6 +17,14 @@
              <th><%= link_to "新規投稿", new_post_path, class: "btn btn-success" %></th>
              <th><%= link_to "退会ページ", user_uns_path(@user), class: "btn btn-danger" %></th>
              <% end %>
+            </tr>
+            <tr class="mt-1">
+              <th></th>
+              <th class="mt-2">
+                <% if @user == current_user %>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-danger mt-1" %>
+                <% end %>
+              </th>
             </tr>
             <tr>
              <th width="200">MYプロフィール</th>
@@ -57,34 +64,33 @@
             </tr>
             </tbody>
         </table>
-
-
-      <h3 class="mt-2 mb-2 text-center">投稿履歴</h3>
-      <div class="col-sm-12 mx-auto mt-5">
-        <div class="row mx-auto">
-        <% @posts.each do |a_post| %>
-                <div class=" text-center mb-5">
-                <%= attachment_image_tag a_post, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %>
-                <session class="text-left">
-                <div>タイトル：<%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:　<%= a_post.user.name %> </div>
-                <div>内容：<%= a_post.description %></div>
-                <div class="d-flex flex-row bd-highlight m-1">
-                <div id="likes_btn_<%= a_post.id %>">
-                <%= render "likes/like", post: a_post %>
-                </div>
-                <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i><%= link_to a_post.comments.count, post_path(a_post)%><i class="fas fa-tags">
-                <% a_post.tags.each do |tag| %>
-                #<%= tag.name %><br/>
-                </session>
+                <h3 class="mt-2 mb-2 text-center">投稿履歴</h3>
+                  <div class="row mb-5 mt-5">
+                   <% @posts.each do |a_post| %>
+                  <div class="col-md-12 col-lg-6" style="text-align:center">
+                    <div style="display: inline-block;max-width:400px">
+                      <div class="w-25"><%= attachment_image_tag a_post, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
+                      <session class="text-left">
+                        <div>タイトル：<%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:　<%= a_post.user.name %> </div>
+                        <div>内容：<%= a_post.description %></div>
+                        <div class="d-flex flex-row bd-highlight m-1">
+                          <div id="likes_btn_<%= a_post.id %>">
+                            <%= render "likes/like", post: a_post %>
+                          </div>
+                          <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i>
+                          <%= link_to a_post.comments.count, post_path(a_post)%>
+                          <i class="fas fa-tags">
+                          <% a_post.tags.each do |tag| %>
+                            #<%= tag.name %><br/>
+                          <% end %>
+                          </i>
+                        </div>
+                        <p><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
+                      </session>
+                    </div>
+                  </div>
                 <% end %>
-                </i>
-                </div>
-                <p><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
-                </div>
-                <% end %>
-                </div>
-
-        </div>
+            </div>
     </div>
   </div>
 </div>

@@ -2,8 +2,8 @@
         <% comments.each do |post_comment| %>
         <tr>
           <th width=50%><%= link_to user_path(post_comment.user) do %>
-          <%= attachment_image_tag  post_comment.user, :profile_image, :fill,100,100, fallback: "no_image.jpg", size: "100x100" %>
-          <% end %>
+           <%= attachment_image_tag  post_comment.user, :profile_image, :fill,100,100, fallback: "no_image.jpg", size: "100x100" %>
+           <% end %>
           </th>
           <th width=50%><%= post_comment.user.name %></th>
           <th></th>
@@ -17,7 +17,7 @@
           <th></th>
         </tr>
         <tr>
-          <th colspan="2"><%= post_comment.content %></th>
+          <th colspan="1 text-left"><%= "コメント" %><br/>「<%= post_comment.content %>」</th>
           <th></th>
         </tr>
         <% end %>
@@ -31,7 +31,7 @@
             starHalf: "<%= asset_path("star-half.png") %>",
             readOnly: true,<%#読み取り専用のコード%>
             half: true,<%# 半分評価の記述%>
-            score: <%= post_comment.rate%><%#★評価の表示コード%>
+            score: <%= post_comment.rate %><%#★評価の表示コード%>
           });
       <% end %>
        </script>

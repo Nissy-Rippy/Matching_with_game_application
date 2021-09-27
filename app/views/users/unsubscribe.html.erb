@@ -1,14 +1,14 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 mx-auto text-center">
-
-      <h2>退会確認画面<br/>・・ﾟ(ﾟ´Д｀ﾟ)ﾟ</h2>
-      <p>退会されてしまうと、今まで投稿したデータや、<br/>イイネ、フォローした人などのデータが消えてしまいます。。
-      データの復帰もすることができません・・・(;>_<;)<br/>
-      もしそれでも辞めるというのなら下記のボタンをクリックしてください・・(><)</p>
-      <%= link_to "退会する・・・", user_withdraw_path(current_user), method: :post, data: {confirm: "本当に退会してしまうんですね・・・ご利用ありがとうございました・・＞＜"}, class: "btn btn-danger" %>
-      <%= link_to "やっぱり続ける（￣ー￣）ﾆﾔﾘ", users_path, class: "btn btn-success" %>
-
+      <div class="text-align">
+        <h2>退会確認画面<br/>・・ﾟ(ﾟ´Д｀ﾟ)ﾟ</h2>
+        <p>退会されてしまうと、今まで投稿したデータや、<br/>イイネ、フォローした人などのデータが消えてしまいます。。
+        データの復帰もすることができません・・・(;>_<;)<br/>
+        もしそれでも辞めるというのなら下記のボタンをクリックしてください・・(><)</p>
+        <%= link_to "退会する・・・", user_withdraw_path(current_user), method: :post, data: {confirm: "本当に退会してしまうんですね・・・ご利用ありがとうございました・・＞＜"}, class: "btn btn-danger" %>
+        <%= link_to "やっぱり続ける（￣ー￣）ﾆﾔﾘ", users_path, class: "btn btn-success" %>
+      </div>
     </div>
   </div>
 </div>

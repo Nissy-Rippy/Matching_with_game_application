@@ -4,8 +4,8 @@
     <div class="col-sm-12 mx-auto">
           <% @users.each do |user| %>
             <% if current_user.sex != user.sex %>
-              <div class="text-center w-50 mx-auto mb-3">
-                  <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
+              <div class="text-center w-50 mx-auto mb-3" style="max-width: 200px;">
+                  <%= attachment_image_tag user, :profile_image,:fill,200,200, fallback: "no_image.jpg", size: "200x200" %>
                   <h5>★<%= user.name %>★<%= user.age %>才</h5>
                   <p><%= user.playing_game %></p>
                   <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
