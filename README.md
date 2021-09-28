@@ -24,12 +24,12 @@ ER図
 https://drive.google.com/file/d/1VQsoIDxbQsC_tNOey5eRolOrdtnZdOqE/view?usp=sharing  
 テーブル設計書＆アプリケーション詳細設計＆GEM一覧  
 https://docs.google.com/spreadsheets/d/1eZLa4jBUc4S43218TsmHao45qh9Jr4VH5_h4vw2zi_k/edit#gid=2133469642  
-  
+- 　↑↑↑　上記に  利用しているGEMやモデル
 
 ## チャレンジ要素一覧
 
-https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcorOh4/edit#gid=0
-
+https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcorOh4/edit#gid=0  
+- 　↑↑↑　上記のURLに、実装した機能について記載しております！！！
 ## 開発環境
 
 - OS：Linux(CentOS)
@@ -38,6 +38,17 @@ https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcor
 - JS ライブラリ：jQuery
 - IDE：Cloud9
 
-## 使用素材
--
--
+## 機能面の情報!!  
+- Userのplaying_gameによる検索機能  
+- Userのマイページには、自分が投稿した記事一覧の表示  
+- Userの編集ページ  
+- 投稿記事一覧（タイムライン）！  
+- 投稿記事のいいねランキングＴＯＰ５表示＆フォローしてる方のみの投稿記事表示！  
+- 投稿に対するコメント評価機能  
+- グループ機能＆グループチャット機能&&グループ検索機能  
+- マッチングした際の、ＤＭ機能！！  
+- deviseによるログイン＆ログアウトそして、退会機能  
+- N+1問題解決のため、bulletを使用し通信速度の軽量化!!  
+- tag機能の付与&タグ検索の実装  
+## 開発者
+- Toyoda Yoshiteru  
