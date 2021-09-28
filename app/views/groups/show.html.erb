@@ -1,26 +1,28 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 mx-auto">
-            <div class="mt-5 mb-2 "><%= attachment_image_tag @group, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
+    <div class="col-sm-6 mx-auto">
+            <div class="mt-5 mb-2 text-center"><%= attachment_image_tag @group, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
+     <session class="col-sm-12 mx-auto">
             <div><strong>グループ名：<%= @group.name %></strong></div>
             <div><strong>カテゴリー：<%= @group.genre %></strong></div>
             <div><strong>グループ人数：<%= @group.users.count %>人</strong></div>
             <div><strong>グールプ説明：<%= @group.introduction %></strong></div>
             <%#条件分岐によってボタンの種類を変える%>
             <% if @group.users.include?(current_user) %>
-            <%= link_to "脱退する", group_path(@group), method: :delete, class: "btn btn-danger" %>
+             <%= link_to "脱退する", group_path(@group), method: :delete, class: "btn btn-danger" %>
             <%# グループチャットのIDはルームのIDを入れている。%>
-            <%= link_to "グループチャット", group_chat_path(@group), class: "btn btn-success" %>
+             <%= link_to "グループチャット", group_chat_path(@group), class: "btn btn-success" %>
             <% else %>
-            <%= link_to "参加する", group_join_path(@group), class: "btn btn-info" %></p>
+             <%= link_to "参加する", group_join_path(@group), class: "btn btn-info" %></p>
             <% end %>
           </div>
         </div>
+      </session>
 
       <h2 class="m-5 text-center">参加メンバー</h2>
           <% @users.each do |user| %>
               <div class="text-center w-50 mx-auto mb-3">
-                  <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
+                  <%= attachment_image_tag user, :profile_image,:fill,200,200, fallback: "no_image.jpg", size: "200x200" %>
                   <h5>★<%= user.name %>★<%= user.age %>才</h5>
                   <p><%= user.playing_game %></p>
                   <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
