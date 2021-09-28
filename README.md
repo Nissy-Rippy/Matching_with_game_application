@@ -36,7 +36,8 @@ https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcor
 - 言語：HTML,CSS,JavaScript,Ruby,SQL,jQuery
 - フレームワーク：Ruby on Rails　version 5
 - JS ライブラリ：jQuery
-- IDE：Cloud9
+- IDE：Cloud9  
+- GitHub Actions　CI/CDツール
 
 ## 機能面の情報!!  
 - Userのplaying_gameによる検索機能  
