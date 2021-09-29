@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    # tag検索のためのコード、三項演算子になっている。
+    # tag検索のためのコード、三項演算子になっている。N+!問題を解決するデータを結合させて記述になっている。
     @tags = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts.includes(:user, :tags, :post_tags) : Post.includes(:user, :tags, :post_tags)
     @posts = @tags.order(params[:sort])
     # find(params[:id])になおす
@@ -13,16 +13,16 @@ class PostsController < ApplicationController
 
   # followしている人の投稿のみを表示するページにしています。
   def edit
+    #N+1問題解決のためデータを結合させている。
     @posts_all = Post.includes(:tags, :post_tags, :user)
+    #カレントユーザーがフォローしている人のデータ取得
     @followings = current_user.followings
     if @followings.present?
-      @posts = @posts_all.where(user_id: @followings).order("created_at DESC")
-
+       @posts = @posts_all.where(user_id: @followings).order("created_at DESC")
       if @posts.nil?
         redirect_to user_path(current_user)
         flash[:notice] = "( ﾟдﾟ)ﾊｯ!ﾅｲﾀﾞﾄｯ！！"
       end
-
     else
       redirect_to user_path(current_user)
       flash[:notice] = "ﾌｫﾛｰｼﾃないだと・・・"
@@ -30,7 +30,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    # コメントフォームにデータを送るための2つのデータ
     @post = Post.find(params[:id])
     @comment = Comment.new
     # 降順の並びにしている
@@ -39,6 +38,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    #投稿とユーザー情報を紐付けている
     @post.user_id = current_user.id
     if @post.save
       flash[:notice] = "投稿完了です＾＾いいねが沢山もらえますように💛"
@@ -50,14 +50,16 @@ class PostsController < ApplicationController
   end
 
   def ranking
+    #　N+１問題解消のためデータを結合している.all_rankingはモデルに記載している。
     @posts = Post.includes(:user, :tags, :post_tags).all_ranking
   end
 
   def destroy
     @post = Post.find(params[:id])
-    @post.destroy
-    flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
-    redirect_to posts_path
+    if @post.destroy
+     flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
+     redirect_to posts_path
+    end
   end
 
   private

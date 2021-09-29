@@ -4,7 +4,10 @@ class Group < ApplicationRecord
   has_many :group_users
   has_many :users, through: :group_users
   has_one :room, dependent: :destroy
+  
+  #group 検索classメソッドを利用している。
   def self.search(keywords)
+    #部分検索が一番ユーザーにとっていいかなと思いました。検索項目は、genreです。
     where(["genre like?", "%#{keywords}%"])
   end
 end

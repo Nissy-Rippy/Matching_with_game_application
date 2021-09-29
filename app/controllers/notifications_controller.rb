@@ -16,7 +16,7 @@ class NotificationsController < ApplicationController
   end
 
   private
-
+  #urlのじかうちでできないようにしている。
   def ensure_authenticate
     @user = User.find(params[:id])
     if @user != current_user

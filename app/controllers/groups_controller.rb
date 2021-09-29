@@ -29,14 +29,17 @@ class GroupsController < ApplicationController
     @group.users << current_user
     redirect_to group_path(@group)
   end
-
+#脱退機能
   def destroy
+    #まず、グループを特定取得
     @group = Group.find(params[:id])
+    #特定したグループにいる複数のユーザーの中からカランとユーザーのみを削除する
     @group.users.delete(current_user)
     redirect_to groups_path
   end
 
   def search
+    #user検索の方でkeywordの単語を使っていたため、keywordsと複数形にしている
     @groups = Group.search(params[:group][:keywords])
     @keywords = params[:keywords]
     render :index

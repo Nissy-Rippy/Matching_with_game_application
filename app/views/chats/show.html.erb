@@ -1,18 +1,16 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 mx-auto">
-      
       <h4 class="mt-3 mb-3 text-center"><%= @user.name %>とのチャット(´∀｀*)</h4>
        <table class="message table">
-
-        <% @chats.each do |chat| %>
-       <%= render 'comment', chat: chat %>
-        <% end %>
-        </table>
+          <% @chats.each do |chat| %>
+           <%= render 'comment', chat: chat %>
+          <% end %>
+       </table>
         <%= form_with model: @chat, remote: true do |f| %>
-        <%= f.text_field :message %>
-        <%= f.hidden_field :room_id, value: @chat.room_id %>
-        <%= f.submit "送信(´・ω・｀)", class: "btn btn-success btn-sm chat-btn" %>
+         <%= f.text_field :message %>
+         <%= f.hidden_field :room_id, value: @chat.room_id %>
+         <%= f.submit "送信(´・ω・｀)", class: "btn btn-success btn-sm chat-btn" %>
         <% end %>
     </div>
   </div>

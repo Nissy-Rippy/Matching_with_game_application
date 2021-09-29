@@ -28,14 +28,14 @@
               </div>
             </div>
         
-          <%# コメント送信の部分テンプレート%>
-          <div class="comments mb-5 col-sm-6">
-            <%= render "comments/form", post: @post, comment: @comment %>
-          </div>
-          <%# コメント一覧表示%>
-          <div class="comment-list mx-auto text-center col-sm-12">
-            <%= render "comments/index", comments: @comments %>
-          </div>
+            <%# コメント送信の部分テンプレート%>
+            <div class="comments mb-5 col-sm-6">
+              <%= render "comments/form", post: @post, comment: @comment %>
+            </div>
+            <%# コメント一覧表示%>
+            <div class="comment-list mx-auto text-center col-sm-12">
+              <%= render "comments/index", comments: @comments %>
+            </div>
       </div>
     </div>
   </div>

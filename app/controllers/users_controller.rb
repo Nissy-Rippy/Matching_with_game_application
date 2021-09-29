@@ -28,7 +28,9 @@ class UsersController < ApplicationController
 
   def withdraw
     @user = current_user
+    #is_deletedのあたいだけupdateする
     @user.update(is_deleted: true)
+    #reset_Sessionにより、userのデータを消去する
     reset_session
     flash[:notice] = "またのご利用を心より願っています(^^ゞ"
     redirect_to root_path
@@ -38,10 +40,13 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  #userの検索機能
   def search
-    @users = User.search(params[:keyword])
-    @keyword = params[:keyword]
-    render :index
+    #@usersには検索により発見されたuserデータを格納
+  @users = User.search(params[:keyword])
+    #@keywordは検索ツールに打ち込んだデータを取得している。
+   @keyword = params[:keyword]
+   render :index
   end
 
   private
@@ -49,7 +54,7 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :age, :introduction, :address, :playing_game, :profile_image, :is_deleted)
   end
-
+  #urlを直接打ち込んでも使えないように設定しています
   def ensure_authenticate
     @user = User.find(params[:id])
     if @user != current_user

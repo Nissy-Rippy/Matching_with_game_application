@@ -1,6 +1,7 @@
 class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :post
+  #dependent: :destroyにより削除したものに紐づくものは削除できるようにしている。
   has_many :notifications, dependent: :destroy
   validates :content, presence: true
   # ratyの評価に対する記述で、数字制限の1以上5以下という設定にしている。そして空白もなし。

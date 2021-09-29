@@ -1,34 +1,35 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 mx-auto pt-5">
-    <%= form_with model: @group, local: true do |f| %>
     
-    <div class="card">
-  <div class="card-body">
-    <h5 class="card-title"><strong>グループ作成の時きたり！！(☆∀☆)</st></h5>
-    <p class="card-text">　注意）使用目的<br/>
-    ①ゲームに関するグループにすること<br/>
-    ②オフ会やイベントなどの際にご利用ください(^O^)<br/>
-    ③グループ作成者のみグループメンバーに、イベント<br/>
-    　　や説明などのメッセを送ることができます！<br/>
-    ④勧誘や広告宣伝等の目的でご利用しないでください✖</p>
-  </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item"> <%= f.label :グループ名 %>
-        <%= f.text_field :name, class:"form-control" %></li>
-      <li class="list-group-item"><%= f.label :グループ画像 %>
-        <%= f.attachment_field :image, class: "form-control" %></li>
-      <li class="list-group-item"> <%= f.label :ジャンル名 %>
-        <%= f.text_field :genre, class: "form-control" %></li>
-      <li class="list-group-item"> <%= f.label :グループ紹介 %>
-        <%= f.text_field :introduction, class: "form-control" %></li>
-    </ul>
-  <div class="card-body">
-    <a class="card-link"><%= f.submit "作成だぁぁー！！(。-∀-)" , class: "btn btn-success" %></a>
-    <% end %>
-  </div>
+     <%= form_with model: @group, local: true do |f| %>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><strong>グループ作成の時きたり！！(☆∀☆)</st></h5>
+            <p class="card-text">　注意）使用目的<br/>
+            ①ゲームに関するグループにすること<br/>
+            ②オフ会やイベントなどの際にご利用ください(^O^)<br/>
+            ③グループ作成者のみグループメンバーに、イベント<br/>
+            　　や説明などのメッセを送ることができます！<br/>
+            ④勧誘や広告宣伝等の目的でご利用しないでください✖</p>
+        </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <%= f.label :グループ名 %>
+              <%= f.text_field :name, class:"form-control" %></li>
+            <li class="list-group-item"><%= f.label :グループ画像 %>
+              <%= f.attachment_field :image, class: "form-control" %></li>
+            <li class="list-group-item"> <%= f.label :ジャンル名 %>
+              <%= f.text_field :genre, class: "form-control" %></li>
+            <li class="list-group-item"> <%= f.label :グループ紹介 %>
+              <%= f.text_field :introduction, class: "form-control" %></li>
+          </ul>
+        <div class="card-body">
+          <a class="card-link"><%= f.submit "作成だぁぁー！！(。-∀-)" , class: "btn btn-success" %></a>
+     <% end %>
+         </div>
+        </div>
       </div>
-    </div>
+    
     </div>
   </div>
 </div>
