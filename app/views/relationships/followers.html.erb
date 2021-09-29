@@ -4,12 +4,7 @@
       <h2 class="text-center">フォローしてくれてる人</h2>
             <% if @followers.exists? %>
               <% @followers.each do |user| %>
-              <div class="text-center w-50 mx-auto mb-3">
-              <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
-              <h5>★<%= user.name %>★<%= user.age %>才</h5>
-              <p><%= user.playing_game %></p>
-              <%= link_to "もっと知りたい", user_path(user), class: "btn btn-primary" %>
-              </div>
+               <%= render "users/index", user: user %>
               <% end %>
             <% else %>
               <p>ユーザーはいません</p>

@@ -1,0 +1,25 @@
+                <div class="row mb-5 mt-5">
+                <% posts.each do |a_post| %>
+                  <div class="col-md-12 col-lg-6" style="text-align:center">
+                    <div style="display: inline-block;max-width:400px">
+                      <div class="w-25"><%= attachment_image_tag a_post, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
+                      <session class="text-left">
+                        <div>タイトル：<%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:　<%= a_post.user.name %> </div>
+                        <div>内容：<%= a_post.description %></div>
+                        <div class="d-flex flex-row bd-highlight m-1">
+                          <div id="likes_btn_<%= a_post.id %>">
+                            <%= render "likes/like", post: a_post %>
+                          </div>
+                          <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i>
+                          <%= link_to a_post.comments.count, post_path(a_post)%>
+                          <i class="fas fa-tags">
+                          <% a_post.tags.each do |tag| %>
+                            #<%= tag.name %><br/>
+                          <% end %>
+                          </i>
+                        </div>
+                        <p><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
+                      </session>
+                    </div>
+                </div>
+                <% end %>
