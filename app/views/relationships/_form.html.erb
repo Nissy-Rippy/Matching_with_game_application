@@ -10,10 +10,12 @@
             <tr>
              <th>
               <div>
+               <% if user_signed_in? && @user != current_user %>
                <% if user.followed_by?(current_user) %>
                <p><%= link_to "フォロー解除", user_relationships_path(user.id), method: :delete, remote: true %></p>
                <% else %>
                <p><%= link_to "フォローする", user_relationships_path(user.id), method: :post, remote: true %></p>
+               <% end %>
                <% end %>
               </div>
              </th>
