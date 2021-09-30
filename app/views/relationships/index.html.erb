@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 mx-auto">
-        <% if @users.present? %>
-         <h2 class="text-center" style="color: red;">マッチング（∀｀*ゞ）</h2>
+        <% if @users.present?%>
+         <h2 class="text-center">マッチング（∀｀*ゞ）</h2>
               <% @users.each do |user| %>
                 <div class="text-center w-50 mx-auto mb-3" style="mx-width: 150px">
                   <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
@@ -12,8 +12,30 @@
                 </div>
               <% end %>
         <% else %>
-         <h2 class="text-center">( ﾟдﾟ)ﾊｯ!・・マッチング<br/>してないだと。。。</h2>
-      <% end %>
+         <h2 class="text-center mt-5 mb-5">( ﾟдﾟ)ﾊｯ!・・マッチングが・・・</h2>
+          <h3 class="text-left mt-5">あまりマッチできない方にアドバイス！！</h3>
+          <session class="text-left">
+           <h6>マッチングの秘訣(´∀｀*)ｳﾌﾌ</h6>
+            <P>
+             ①毎日ゲームに関する投稿をしてみる！<br/>
+             ②相手の投稿に対してしっかりコメントしてあげる！<br/>
+             ③グループに入っていろいろな方と触れ合う！そうすることで誰かがあなたを気に入るかも！？<br/>
+             ④自分の決まった画像をprofile_imageに設定しよう！！！<br/>
+             以上のことができればあなたに素敵なGameLifeがおとづれることでしょう！！
+            </P>
+           <session>
+             <session class ="text-right mt-5">
+               <h6>マッチングの先に待つもの・・(/ω＼*)</h6>
+                <p class="text-right m-3 mb-3">
+                ①マッチングにより・・DMが可能になる・・・<br/>
+                ②DMしているうちに仲良くなったリアルでもあったり・・<br/>
+                ③実際に会ってオフ会なんかして・・・付き合い・・<br/>
+                ④結婚中もあるかも！？<br/>
+                ⑤結婚報告によりポイント付与されて・・・<br/>
+                ⑥みんなハッピー！！(*´∀｀*)
+                </p>
+             </session>
+        <% end %>
      </div>
    </div>
 </div>

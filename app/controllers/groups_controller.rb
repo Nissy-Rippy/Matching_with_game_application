@@ -42,7 +42,7 @@ class GroupsController < ApplicationController
 
   def search
     #user検索の方でkeywordの単語を使っていたため、keywordsと複数形にしている
-    @groups = Group.search(params[:group][:keywords])
+    @groups = Group.search(params[:keywords])
     @keywords = params[:keywords]
     render :index
   end

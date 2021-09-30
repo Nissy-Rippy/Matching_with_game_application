@@ -1,13 +1,18 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 mx-auto">
-      <h2 class="text-center">フォローしてくれてる人</h2>
+      <h2 class="text-center">フォロワー</h2>
             <% if @followers.exists? %>
               <% @followers.each do |user| %>
                <%= render "users/index", user: user %>
               <% end %>
             <% else %>
-              <p>ユーザーはいません</p>
+              <h2 class="text-center mt-5">フォロワー０!!!</h2>
+               <h3 class="text-center mt-5 mb-5">
+                誰からもフォローされていないなんて・・・<br/>
+                もっとカッコイ画像を自分の画像に設定しよう！！<br/>
+                そしてたくさん投稿しよう何か変化が起きるはずだ！！！
+               </h3>
             <% end %>
           </div>
         </div>

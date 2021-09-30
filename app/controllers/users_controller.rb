@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   #userの検索機能
   def search
     #@usersには検索により発見されたuserデータを格納
-  @users = User.search(params[:keyword])
+   @users = User.search(params[:keyword])
     #@keywordは検索ツールに打ち込んだデータを取得している。
    @keyword = params[:keyword]
    render :index
