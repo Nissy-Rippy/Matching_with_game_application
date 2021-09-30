@@ -1,2 +1,4 @@
+<!--appendによって、部分テンプレートをjsに変換している。-->
 $('.message').append("<%= j(render 'comment', chat: @chats) %>");
+<!--メッセージを送ったらフォームを空白にするコードです-->
 $('input[type=text]').val("")

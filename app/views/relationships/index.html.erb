@@ -6,14 +6,14 @@
               <% @users.each do |user| %>
                 <div class="text-center w-50 mx-auto mb-3" style="mx-width: 150px">
                   <%= attachment_image_tag user, :profile_image,:fill,150,150, fallback: "no_image.jpg", size: "150x150" %>
-                  <h5>★<%= link_to user.name, user_path(user) %>★<%= user.age %>才</h5>
+                  <h5>★<%= link_to user.name, user_path(user) %>★<br><%= user.age %>才</h5>
                   <p><%= user.playing_game %></p>
                   <%= link_to "DM(´∀｀*)", chat_path(@user.id), class: "btn btn-success" %>
                 </div>
               <% end %>
         <% else %>
          <h2 class="text-center">( ﾟдﾟ)ﾊｯ!・・マッチング<br/>してないだと。。。</h2>
-        <% end %>
+      <% end %>
      </div>
    </div>
 </div>
