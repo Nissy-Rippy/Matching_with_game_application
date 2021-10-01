@@ -16,7 +16,6 @@ User.create!(name: "管理者",
              password_confirmation: "toyoda",
              admin: true)
 
-
 Tag.create([
     { name: '今日のゲーム' },
     { name: '一緒にゲームしない？' },
