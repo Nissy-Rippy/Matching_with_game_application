@@ -56,11 +56,13 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.find(params[:id])
-    if @post.destroy
+    @post = Post.find_by(params[:id])
+   if @post.destroy
      flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
      redirect_to posts_path
-    end
+   else
+     render :index
+   end
   end
 
   private
