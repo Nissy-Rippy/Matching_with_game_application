@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <h2 class="text-center">投稿一覧ページ</h2>
+        <h5 class="text-center">①名前　　②メールアドレス　③会員状況</h5>
+      <% @users.each do |user| %>
+       <div class="row border text-left mb-2">
+         <div class="col-sm-3 col-md-3">
+           ①<%= user.name %>
+         </div>
+         <div class="col-sm-3 col-md-3">
+           ②<%= user.email %>
+         </div>
+         <div class="col-sm-3 col-md-3">
+           <% if user.is_deleted == true %>
+            ③ 利用停止中
+           <% else %>
+            ③ 利用中
+           <% end %>
+         </div>
+         <div class="col-sm-3 col-md-3">
+           <%= link_to "利用停止/利用中", admin_user_path(user), method: :patch, class: "btn btn-danger" %>
+         </div>
+       </div>
+      <% end %>
+       </div>
+    </div>
+  </div>
+</div>

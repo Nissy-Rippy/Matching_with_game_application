@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :if_not_admin, only:[:destroy]
   def index
     # tag検索のためのコード、三項演算子になっている。N+!問題を解決するデータを結合させて記述になっている。
     @tags = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts.includes(:user, :tags, :post_tags) : Post.includes(:user, :tags, :post_tags)
@@ -68,4 +69,9 @@ class PostsController < ApplicationController
     # tag_idsは空の配列を入れてある。沢山作れるようにしている。
     params.require(:post).permit(:description, :post_title, :image, tag_ids: [])
   end
+    #管理者のみ許可
+  def if_not_admin
+    redirect_to root_path unless current_user.admin?
+  end
+
 end
