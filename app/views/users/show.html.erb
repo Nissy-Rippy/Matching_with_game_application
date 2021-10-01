@@ -17,7 +17,9 @@
              <% end %>
             </tr>
             <tr class="mt-1">
-              <th></th>
+             <% if current_user.admin? %>
+              <th><%= link_to "全ユーザー状態", admin_users_path, class: "btn btn-danger" %></th>
+            <% end %>
               <th class="mt-2">
                 <% if @user == current_user %>
                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-danger mt-1" %>
@@ -62,7 +64,7 @@
             </tr>
           </tbody>
         </table>
-        
+
           <h3 class="mt-2 mb-2 text-center">投稿履歴</h3>
             <div class="row mb-5 mt-5">
              <% @posts.each do |a_post| %>
@@ -81,7 +83,7 @@
                     <i class="fas fa-tags">
                     <% a_post.tags.each do |tag| %>
                       #<%= tag.name %><br/>
-                      　
+
                     <% end %>
                     </i>
                   </div>

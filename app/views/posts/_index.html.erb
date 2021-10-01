@@ -7,17 +7,24 @@
                         <div>タイトル：<%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:　<%= a_post.user.name %> </div>
                         <div>内容：<%= a_post.description %></div>
                         <div class="d-flex flex-row bd-highlight m-1">
+                          <!--いいねの部分テンプレート-->
                           <div id="likes_btn_<%= a_post.id %>">
                             <%= render "likes/like", post: a_post %>
                           </div>
+                          <!--コメントの部分テンプレート-->
                           <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i>
                           <%= link_to a_post.comments.count, post_path(a_post)%>
                           <i class="fas fa-tags">
                           <% a_post.tags.each do |tag| %>
-                            #<%= tag.name %><br/>
+                          #<%= tag.name %><br/>
+
                           <% end %>
                           </i>
                         </div>
+                        <!--管理者にのみ表示させるボタン-->
+                        <% if current_user.admin? %>
+                        <%= link_to "投稿削除", post_path(current_user), method: :delete, data: {confirm: "本当に削除しますか・・？"} %>
+                        <% end %>
                         <p><small class="text-muted"><%= a_post.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
                       </session>
                     </div>
