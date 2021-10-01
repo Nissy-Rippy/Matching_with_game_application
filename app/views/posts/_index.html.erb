@@ -4,7 +4,7 @@
                     <div style="display: inline-block;max-width:400px">
                       <div class="w-25"><%= attachment_image_tag a_post, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
                       <session class="text-left">
-                        <div>タイトル：<%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:　<%= a_post.user.name %> </div>
+                        <div>タイトル：<%= link_to a_post.post_title, post_path(a_post) %><br/>投稿者:　<%= link_to a_post.user.name,user_path(a_post.user) %> </div>
                         <div>内容：<%= a_post.description %></div>
                         <div class="d-flex flex-row bd-highlight m-1">
                           <!--いいねの部分テンプレート-->

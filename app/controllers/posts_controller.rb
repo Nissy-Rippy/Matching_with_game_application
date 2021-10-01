@@ -56,6 +56,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    byebug
     @post = Post.find_by(params[:id])
    if @post.destroy
      flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
