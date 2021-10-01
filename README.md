@@ -51,5 +51,6 @@ https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcor
 - deviseによるログイン＆ログアウトそして、退会機能
 - N+1問題解決のため、bulletを使用し通信速度の軽量化!!
 - tag機能の付与&タグ検索の実装
+- 管理者側の機能追加（会員情報の編集、投稿の削除機能）
 ## 開発者
 - Toyoda Yoshiteru
