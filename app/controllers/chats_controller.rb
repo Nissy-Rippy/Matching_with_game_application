@@ -20,6 +20,7 @@ class ChatsController < ApplicationController
     end
     # このチャットはルームに基づくチャットという記述
     @chats = @room.chats.includes(:user)
+    #viewページのフォームにあたいを送るための記述
     @chat = Chat.new(room_id: @room.id)
   end
 

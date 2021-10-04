@@ -17,9 +17,9 @@
              <% end %>
             </tr>
             <tr class="mt-1">
-             <% if current_user.admin? %>
+             <%# if current_user.admin? %>
               <th><%= link_to "全ユーザー状態", admin_users_path, class: "btn btn-danger" %></th>
-            <% end %>
+            <%# end %>
               <th class="mt-2">
                 <% if @user == current_user %>
                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-danger mt-1" %>
