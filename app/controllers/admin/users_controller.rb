@@ -1,5 +1,5 @@
 class Admin::UsersController < ApplicationController
-  #before_action :if_not_admin
+  before_action :if_not_admin
 
   def index
     @users = User.all
@@ -21,8 +21,8 @@ private
     params.require(:user).permit(:name, :age, :introduction, :address, :playing_game, :profile_image, :is_deleted)
   end
   
-  # def if_not_admin
-  #   redirect_to root_path unless current_user.admin?
-  # end
+  def if_not_admin
+    redirect_to root_path unless current_user.admin?
+  end
 
 end
