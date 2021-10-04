@@ -4,6 +4,10 @@
     <title>Getching</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <!--/font-awesome-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!--/Font Awesome Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=devise-width,initial-scale=1">
@@ -14,7 +18,7 @@
           <% if user_signed_in? %>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <div class="navbar-brand"><h3>
+          <div class="navbar-brand faa-float animated"><h3>
             <%= link_to users_path do %>
              <%= image_tag"logo.jpg", size: "120x70" %>
             <% end %>
@@ -32,10 +36,10 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
              <% if user_signed_in? %>
-                <li><%= link_to "MyPage", user_path(current_user), class: "fas fa-home nav-link text-light" %></li>
-                <li><%= link_to "Group一覧", groups_path, class: "fas fa-users nav-link text-light" %></li>
-                <li><%= link_to "タイムライン", posts_path , class: "fas fa-clock nav-link text-light" %></li>
-                <li><%= link_to "マッチング",  user_relationships_index_path(current_user), class: "fas fa-heartbeat nav-link text-light" %></li>
+                <li><%= link_to "MyPage", user_path(current_user), class: "fas fa-home faa-pulse animated nav-link text-light" %></li>
+                <li><%= link_to "Group一覧", groups_path, class: "fas fa-users faa-pulse animated nav-link text-light" %></li>
+                <li><%= link_to "タイムライン", posts_path , class: "fas fa-clock faa-pulse animated nav-link text-light" %></li>
+                <li><%= link_to "マッチング",  user_relationships_index_path(current_user), class: "fas fa-heart faa-pulse animated nav-link text-light" %></li>
               <span class="fa-stack">
                 <li>
                 <% if unchecked_notifications.any?%>
@@ -55,14 +59,14 @@
         </div>
       </nav>
     </header>
-  
+
     <div class="wrapper">
       <h3 class="text-center mt-2 mb-2">
         <%= flash[:notice] %>
       </h3>
         <%= yield %>
     </div>
-  
+
        <footer>
             <div class="mx-auto text-center bg-dark text-light">
              <%= link_to "お問い合わせフォーム", new_contact_path %>
