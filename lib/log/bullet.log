@@ -1,0 +1,2681 @@
+2021-09-21 12:13:25[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:14:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+
+2021-09-21 12:13:25[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+
+2021-09-21 12:13:25[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+
+2021-09-21 12:13:25[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:14:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+
+2021-09-21 12:13:25[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+
+2021-09-21 12:13:25[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832431394880'
+
+2021-09-21 12:15:40[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:14:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832418132720'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832418132720'
+
+2021-09-21 12:15:40[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832418132720'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832418132720'
+
+2021-09-21 12:15:40[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832418132720'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832418132720'
+
+2021-09-21 12:17:28[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:14:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832423202480'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832423202480'
+
+2021-09-21 12:17:28[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832423202480'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832423202480'
+
+2021-09-21 12:17:28[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832423202480'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832423202480'
+
+2021-09-21 12:17:53[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:14:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832425682740'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832425682740'
+
+2021-09-21 12:17:53[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832425682740'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832425682740'
+
+2021-09-21 12:17:53[WARN] user: ec2-user
+GET /posts
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:21:in `block in _app_views_posts_index_html_erb__2862081229098031951_69832425682740'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:10:in `_app_views_posts_index_html_erb__2862081229098031951_69832425682740'
+
+2021-09-21 15:21:49[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:21:in `edit'
+
+2021-09-21 15:21:49[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832423224140'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832423224140'
+
+2021-09-21 15:21:49[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832423224140'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832423224140'
+
+2021-09-21 15:22:03[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:21:in `edit'
+
+2021-09-21 15:22:03[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832422644060'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832422644060'
+
+2021-09-21 15:22:03[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832422644060'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832422644060'
+
+2021-09-21 15:25:48[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:21:in `edit'
+
+2021-09-21 15:25:48[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832378545840'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832378545840'
+
+2021-09-21 15:25:48[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832378545840'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832378545840'
+
+2021-09-21 15:26:00[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:23:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:21:in `edit'
+
+2021-09-21 15:26:00[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832432939960'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832432939960'
+
+2021-09-21 15:26:00[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832432939960'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832432939960'
+
+2021-09-21 15:28:37[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:24:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:24:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:22:in `edit'
+
+2021-09-21 15:28:37[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832430865500'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832430865500'
+
+2021-09-21 15:28:37[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832430865500'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832430865500'
+
+2021-09-21 15:29:26[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:24:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:24:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:22:in `edit'
+
+2021-09-21 15:29:26[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832425820460'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832425820460'
+
+2021-09-21 15:29:26[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832425820460'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832425820460'
+
+2021-09-21 15:29:50[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:24:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:24:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:22:in `edit'
+
+2021-09-21 15:29:50[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832425066560'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832425066560'
+
+2021-09-21 15:29:50[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832425066560'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832425066560'
+
+2021-09-21 15:36:57[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832382118740'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832382118740'
+
+2021-09-21 15:36:57[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832382118740'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832382118740'
+
+2021-09-21 15:37:35[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832479773620'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832479773620'
+
+2021-09-21 15:37:35[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832479773620'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832479773620'
+
+2021-09-21 15:42:22[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832432724920'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832432724920'
+
+2021-09-21 15:42:22[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832432724920'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832432724920'
+
+2021-09-21 16:11:25[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  User => [:posts]
+  Add to your query: .includes([:posts])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:22:in `concat'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:22:in `block in edit'
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:20:in `edit'
+
+2021-09-21 16:11:25[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832428393880'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832428393880'
+
+2021-09-21 16:11:25[WARN] user: ec2-user
+GET /posts/7/edit
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:17:in `block in _app_views_posts_edit_html_erb___1561836840717624836_69832428393880'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1561836840717624836_69832428393880'
+
+2021-09-21 16:39:17[WARN] user: ec2-user
+GET /posts/%23%3CPost::ActiveRecord_Relation:0x00007f063c651460%3E/posts/%23%3CPost::ActiveRecord_Relation:0x00007f063c651460%3E/ranking
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:11:in `block in _app_views_posts_ranking_html_erb__1852611246010700095_69832422022720'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `_app_views_posts_ranking_html_erb__1852611246010700095_69832422022720'
+
+2021-09-21 16:39:17[WARN] user: ec2-user
+GET /posts/%23%3CPost::ActiveRecord_Relation:0x00007f063c651460%3E/posts/%23%3CPost::ActiveRecord_Relation:0x00007f063c651460%3E/ranking
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:18:in `block in _app_views_posts_ranking_html_erb__1852611246010700095_69832422022720'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `_app_views_posts_ranking_html_erb__1852611246010700095_69832422022720'
+
+2021-09-21 16:39:17[WARN] user: ec2-user
+GET /posts/%23%3CPost::ActiveRecord_Relation:0x00007f063c651460%3E/posts/%23%3CPost::ActiveRecord_Relation:0x00007f063c651460%3E/ranking
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:18:in `block in _app_views_posts_ranking_html_erb__1852611246010700095_69832422022720'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `_app_views_posts_ranking_html_erb__1852611246010700095_69832422022720'
+
+2021-09-21 16:39:39[WARN] user: ec2-user
+GET /posts/%23%3CPost::ActiveRecord_Relation:0x00007f0641df0590%3E/posts/%23%3CPost::ActiveRecord_Relation:0x00007f0641df0590%3E/ranking
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:11:in `block in _app_views_posts_ranking_html_erb__1852611246010700095_69832379584360'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `_app_views_posts_ranking_html_erb__1852611246010700095_69832379584360'
+
+2021-09-21 16:39:39[WARN] user: ec2-user
+GET /posts/%23%3CPost::ActiveRecord_Relation:0x00007f0641df0590%3E/posts/%23%3CPost::ActiveRecord_Relation:0x00007f0641df0590%3E/ranking
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:18:in `block in _app_views_posts_ranking_html_erb__1852611246010700095_69832379584360'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `_app_views_posts_ranking_html_erb__1852611246010700095_69832379584360'
+
+2021-09-21 16:39:39[WARN] user: ec2-user
+GET /posts/%23%3CPost::ActiveRecord_Relation:0x00007f0641df0590%3E/posts/%23%3CPost::ActiveRecord_Relation:0x00007f0641df0590%3E/ranking
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:18:in `block in _app_views_posts_ranking_html_erb__1852611246010700095_69832379584360'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `each'
+  /home/ec2-user/environment/getching/app/views/posts/ranking.html.erb:7:in `_app_views_posts_ranking_html_erb__1852611246010700095_69832379584360'
+
+2021-09-22 14:28:08[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:5:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193290912580'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193290912580'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_38524600'
+
+2021-09-22 14:28:08[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:6:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193290912580'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193290912580'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_38524600'
+
+2021-09-22 14:28:08[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193290912580'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193290912580'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_38524600'
+
+2021-09-22 19:19:15[WARN] user: ec2-user
+POST /posts/3/comments.3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__1082892723493078570_70193366419580'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__1082892723493078570_70193366419580'
+  /home/ec2-user/environment/getching/app/views/comments/create.js.erb:6:in `_app_views_comments_create_js_erb___409737765013049244_70193366295080'
+
+2021-09-22 19:20:19[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:5:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193393454960'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193393454960'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193391595880'
+
+2021-09-22 19:20:19[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:6:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193393454960'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193393454960'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193391595880'
+
+2021-09-22 19:30:08[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193394224840'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193394224840'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193394051820'
+
+2021-09-22 19:30:18[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193364247980'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193364247980'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193363742920'
+
+2021-09-22 19:30:41[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193368201680'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193368201680'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193368037340'
+
+2021-09-22 19:31:51[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193395806600'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193395806600'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193395735880'
+
+2021-09-22 19:33:09[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193324139820'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193324139820'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193456257760'
+
+2021-09-22 19:33:57[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193291856060'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193291856060'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193291012500'
+
+2021-09-22 19:35:02[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193396352080'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193396352080'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193396275480'
+
+2021-09-22 19:35:18[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193395815800'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193395815800'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193395724060'
+
+2021-09-22 19:35:25[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193396138700'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193396138700'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193396020880'
+
+2021-09-22 19:42:54[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193324059000'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193324059000'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193323373940'
+
+2021-09-22 19:43:28[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193365990460'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193365990460'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193365856340'
+
+2021-09-22 19:43:37[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193395670680'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193395670680'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193395544720'
+
+2021-09-22 19:43:45[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193389486480'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193389486480'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193367691620'
+
+2021-09-22 19:44:36[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193365031560'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193365031560'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193364807620'
+
+2021-09-22 19:45:03[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193395207240'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193395207240'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193395105480'
+
+2021-09-22 19:45:59[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193367691840'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193367691840'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193323370000'
+
+2021-09-22 19:46:21[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193365453020'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193365453020'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193365259880'
+
+2021-09-22 19:46:47[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193395859080'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193395859080'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193395681140'
+
+2021-09-22 19:47:00[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:24:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193364526700'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `_app_views_notifications__notification_html_erb___229635107317631506_70193364526700'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193364118860'
+
+2021-09-22 19:47:59[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:22:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193366152880'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193366152880'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193366070740'
+
+2021-09-22 19:48:57[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193393949140'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193393949140'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:13:in `_app_views_notifications_index_html_erb__4561167095422670239_70193393745580'
+
+2021-09-22 19:50:44[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193366113720'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193366113720'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:14:in `_app_views_notifications_index_html_erb__4561167095422670239_70193366036960'
+
+2021-09-22 19:51:06[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193393658840'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193393658840'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:15:in `_app_views_notifications_index_html_erb__4561167095422670239_70193393550880'
+
+2021-09-22 19:51:36[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193366068340'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193366068340'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:15:in `_app_views_notifications_index_html_erb__4561167095422670239_70193365985440'
+
+2021-09-22 19:51:51[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193393738540'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193393738540'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:15:in `_app_views_notifications_index_html_erb__4561167095422670239_70193393606100'
+
+2021-09-22 19:54:53[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193366225560'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193366225560'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__4561167095422670239_70193366127200'
+
+2021-09-22 19:55:29[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193394067900'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193394067900'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__4561167095422670239_70193393975300'
+
+2021-09-22 19:55:32[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193366579620'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193366579620'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__4561167095422670239_70193366437820'
+
+2021-09-22 19:55:55[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193394408240'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193394408240'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__4561167095422670239_70193394335360'
+
+2021-09-22 19:57:07[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193368131300'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193368131300'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:14:in `_app_views_notifications_index_html_erb__4561167095422670239_70193367312800'
+
+2021-09-22 19:57:36[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193394668980'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193394668980'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:14:in `_app_views_notifications_index_html_erb__4561167095422670239_70193394599480'
+
+2021-09-22 19:57:40[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193369732320'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193369732320'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:14:in `_app_views_notifications_index_html_erb__4561167095422670239_70193369652360'
+
+2021-09-22 19:58:13[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193395348980'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193395348980'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:14:in `_app_views_notifications_index_html_erb__4561167095422670239_70193395276940'
+
+2021-09-22 19:59:10[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193370586880'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193370586880'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:14:in `_app_views_notifications_index_html_erb__4561167095422670239_70193370391480'
+
+2021-09-22 20:00:36[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___229635107317631506_70193395905460'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___229635107317631506_70193395905460'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:14:in `_app_views_notifications_index_html_erb__4561167095422670239_70193395813020'
+
+2021-09-22 20:49:19[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:33:17[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:34:28[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:34:43[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:34:54[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:35:05[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:36:31[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:37:48[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-22 22:42:28[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-23 11:50:36[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-23 11:53:48[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-23 11:54:00[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-24 01:12:35[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280957323800'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280957323800'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280957256220'
+
+2021-09-24 01:12:55[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280947077600'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280947077600'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280946984640'
+
+2021-09-24 01:13:02[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280999426940'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280999426940'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280898812600'
+
+2021-09-24 01:13:43[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280946668220'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280946668220'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280946562380'
+
+2021-09-24 01:16:42[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280955892280'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280955892280'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280955032400'
+
+2021-09-24 01:16:47[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280952715300'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280952715300'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280952663200'
+
+2021-09-24 01:17:38[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280956721740'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280956721740'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280956016600'
+
+2021-09-24 01:19:39[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280954839080'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280954839080'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280954749120'
+
+2021-09-24 01:19:44[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280956899040'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280956899040'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280956741500'
+
+2021-09-24 01:19:48[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70281069544280'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70281069544280'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70281067688840'
+
+2021-09-24 01:42:32[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__2856937140331693617_70280958160300'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__2856937140331693617_70280958160300'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__3540645682156885546_70280958018880'
+
+2021-09-24 02:43:16[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004998800020'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004998800020'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004998616840'
+
+2021-09-24 02:43:22[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004990942520'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004990942520'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004990666400'
+
+2021-09-24 02:43:38[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004993382560'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004993382560'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004993196600'
+
+2021-09-24 02:43:38[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70005001120100'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70005001120100'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004998948900'
+
+2021-09-24 02:43:46[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004993752300'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004993752300'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004993526140'
+
+2021-09-24 02:43:46[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70005003076600'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70005003076600'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70005002380320'
+
+2021-09-24 02:44:02[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004995453800'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004995453800'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004995276160'
+
+2021-09-24 02:44:05[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_32548880'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_32548880'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70005014838700'
+
+2021-09-24 02:44:09[WARN] user: ec2-user
+GET /posts/3
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004997376560'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004997376560'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004997166320'
+
+2021-09-24 02:56:43[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70005002802680'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70005002802680'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70005002633420'
+
+2021-09-24 02:57:23[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004993001400'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004993001400'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004992866640'
+
+2021-09-24 02:58:07[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70005047816020'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70005047816020'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70005003586760'
+
+2021-09-24 02:58:25[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004995237900'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004995237900'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004994277700'
+
+2021-09-24 03:03:57[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004998664160'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004998664160'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004996724820'
+
+2021-09-24 05:03:12[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70005014418400'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70005014418400'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70005014230920'
+
+2021-09-24 05:48:35[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__418320601899437651_70004998872160'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__418320601899437651_70004998872160'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3865352463118126298_70004993724400'
+
+2021-09-24 17:33:48[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_35270100'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_35270100'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_58333540'
+
+2021-09-24 17:34:21[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041790088380'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041790088380'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041789944160'
+
+2021-09-24 17:34:36[WARN] user: ec2-user
+POST /posts/1/comments.1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041770833220'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041770833220'
+  /home/ec2-user/environment/getching/app/views/comments/create.js.erb:6:in `_app_views_comments_create_js_erb___4402631913451636944_70041770751920'
+
+2021-09-24 17:34:39[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041774145580'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041774145580'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041774042880'
+
+2021-09-24 17:54:29[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_54760340'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_54760340'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041790434280'
+
+2021-09-24 17:54:29[WARN] user: ec2-user
+GET /posts/1
+AVOID eager loading detected
+  Comment => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-24 17:54:42[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041777346460'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041777346460'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041776761920'
+
+2021-09-24 17:54:42[WARN] user: ec2-user
+GET /posts/1
+AVOID eager loading detected
+  Comment => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-24 18:19:51[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041778309840'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041778309840'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041777611360'
+
+2021-09-24 18:20:04[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041770901720'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041770901720'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041770706200'
+
+2021-09-24 18:21:40[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041790067180'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041790067180'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041778433540'
+
+2021-09-24 18:32:47[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041766466180'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041766466180'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041765148880'
+
+2021-09-24 18:32:47[WARN] user: ec2-user
+GET /posts/1
+AVOID eager loading detected
+  Comment => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-24 18:33:51[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041769027740'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041769027740'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041767054860'
+
+2021-09-24 18:34:45[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041774209260'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041774209260'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041771476000'
+
+2021-09-24 18:34:56[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_54143620'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_54143620'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041778413360'
+
+2021-09-24 18:35:35[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041776353440'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041776353440'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041774836420'
+
+2021-09-24 18:38:31[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041778225640'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041778225640'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041777523300'
+
+2021-09-24 18:38:31[WARN] user: ec2-user
+GET /posts/1
+AVOID eager loading detected
+  Comment => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-24 18:38:52[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___3974285211350963260_70041764765360'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___3974285211350963260_70041764765360'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___1293075044804546588_70041790343380'
+
+2021-09-24 18:41:57[WARN] user: ec2-user
+GET /posts/1
+AVOID eager loading detected
+  Comment => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-24 19:05:38[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041823422620'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041778632220'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041778632220'
+
+2021-09-24 19:05:54[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041833146320'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041833049060'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041833049060'
+
+2021-09-24 19:07:49[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041790077300'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041778906320'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041778906320'
+
+2021-09-24 19:07:53[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041832372100'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041832259160'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041832259160'
+
+2021-09-24 19:08:07[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041778424220'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041778035860'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041778035860'
+
+2021-09-24 19:14:04[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041861863480'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041861738360'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041861738360'
+
+2021-09-24 19:15:03[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041831727680'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041831532020'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041831532020'
+
+2021-09-24 19:15:07[WARN] user: ec2-user
+GET /group/5/chats
+USE eager loading detected
+  Chat => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/chats/_comment.html.erb:11:in `_app_views_chats__comment_html_erb___2989068470605492436_70041764248080'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:14:in `block in _app_views_chats_index_html_erb___3635601678960869716_70041760412940'
+  /home/ec2-user/environment/getching/app/views/chats/index.html.erb:13:in `_app_views_chats_index_html_erb___3635601678960869716_70041760412940'
+
+2021-09-24 19:17:51[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041861821500'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041861821500'
+
+2021-09-24 19:17:51[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041861821500'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041861821500'
+
+2021-09-24 19:17:51[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041861821500'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041861821500'
+
+2021-09-24 19:18:11[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=3
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041826451060'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041826451060'
+
+2021-09-24 19:18:11[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=3
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041826451060'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041826451060'
+
+2021-09-24 19:18:11[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=3
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041826451060'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041826451060'
+
+2021-09-24 19:21:09[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041832553220'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041832553220'
+
+2021-09-24 19:21:09[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041832553220'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041832553220'
+
+2021-09-24 19:21:09[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041832553220'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041832553220'
+
+2021-09-24 19:21:09[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+AVOID eager loading detected
+  Tag => [:post_tags, :posts]
+  Remove from your query: .includes([:post_tags, :posts])
+Call stack
+
+2021-09-24 19:23:40[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041862743760'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041862743760'
+
+2021-09-24 19:40:28[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041767254260'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041767254260'
+
+2021-09-24 19:40:28[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041767254260'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041767254260'
+
+2021-09-24 19:40:28[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041767254260'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041767254260'
+
+2021-09-24 19:43:06[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041823424100'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041823424100'
+
+2021-09-24 19:43:06[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041823424100'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041823424100'
+
+2021-09-24 19:43:06[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041823424100'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041823424100'
+
+2021-09-24 19:43:06[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+AVOID eager loading detected
+  Tag => [:posts, :post_tags]
+  Remove from your query: .includes([:posts, :post_tags])
+Call stack
+
+2021-09-24 19:43:36[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041833453760'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041833453760'
+
+2021-09-24 19:43:36[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041833453760'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041833453760'
+
+2021-09-24 19:43:36[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041833453760'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041833453760'
+
+2021-09-24 19:43:36[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+AVOID eager loading detected
+  Tag => [:posts, :post_tags]
+  Remove from your query: .includes([:posts, :post_tags])
+Call stack
+
+2021-09-24 19:44:05[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041778575460'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041778575460'
+
+2021-09-24 19:44:05[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041778575460'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041778575460'
+
+2021-09-24 19:44:05[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041778575460'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041778575460'
+
+2021-09-24 19:44:05[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+AVOID eager loading detected
+  Tag => [:posts, :post_tags]
+  Remove from your query: .includes([:posts, :post_tags])
+Call stack
+
+2021-09-24 19:51:05[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041826252620'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041826252620'
+
+2021-09-24 19:51:05[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041826252620'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041826252620'
+
+2021-09-24 19:51:05[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_70041826252620'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_70041826252620'
+
+2021-09-24 19:51:12[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___2575199354394261072_46030680'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_46030680'
+
+2021-09-24 19:51:12[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_46030680'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_46030680'
+
+2021-09-24 19:51:12[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=1
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___2575199354394261072_46030680'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___2575199354394261072_46030680'
+
+2021-09-24 20:03:13[WARN] user: ec2-user
+GET /posts/4
+AVOID eager loading detected
+  Comment => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-24 20:04:37[WARN] user: ec2-user
+GET /posts/4
+AVOID eager loading detected
+  Comment => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2021-09-24 22:37:54[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70186991729120'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70186991729120'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70186990253260'
+
+2021-09-24 22:41:02[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70186990109360'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70186990109360'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70186989979640'
+
+2021-09-24 22:41:46[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70186998037480'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70186998037480'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70186998003520'
+
+2021-09-24 22:42:07[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70186989414020'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70186989414020'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70186989341780'
+
+2021-09-24 22:42:26[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70186994281540'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70186994281540'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70186999106100'
+
+2021-09-24 22:42:48[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_47104520'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_47104520'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187148438280'
+
+2021-09-24 22:43:20[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70186993851840'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70186993851840'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70186993744640'
+
+2021-09-24 22:46:16[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187086037860'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187086037860'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187082380160'
+
+2021-09-24 22:46:35[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187049197100'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187049197100'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187049108280'
+
+2021-09-24 22:47:04[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187086263980'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187086263980'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187086230760'
+
+2021-09-24 22:47:24[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187080926900'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187080926900'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187086621520'
+
+2021-09-24 22:47:43[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70186997321020'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70186997321020'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70186997191800'
+
+2021-09-24 23:12:18[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187088331340'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187088331340'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187080747180'
+
+2021-09-24 23:12:18[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187088331340'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187088331340'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187080747180'
+
+2021-09-24 23:12:18[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187088331340'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187088331340'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187080747180'
+
+2021-09-24 23:12:49[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187082515620'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187082515620'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187089121140'
+
+2021-09-24 23:12:49[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187082515620'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187082515620'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187089121140'
+
+2021-09-24 23:12:49[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187082515620'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187082515620'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187089121140'
+
+2021-09-24 23:20:58[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187088890380'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187088890380'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187082232220'
+
+2021-09-24 23:20:58[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187088890380'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187088890380'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187082232220'
+
+2021-09-24 23:20:58[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187088890380'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187088890380'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187082232220'
+
+2021-09-25 00:33:38[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187049384740'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187049384740'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187049305800'
+
+2021-09-25 00:33:38[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187049384740'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187049384740'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187049305800'
+
+2021-09-25 00:33:38[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__1303824391667796887_70187049384740'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__1303824391667796887_70187049384740'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___114730350722711892_70187049305800'
+
+2021-09-25 00:34:02[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb__1582342995843140943_70186990960740'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb__1582342995843140943_70186990960740'
+
+2021-09-25 00:34:02[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb__1582342995843140943_70186990960740'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb__1582342995843140943_70186990960740'
+
+2021-09-25 00:34:02[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb__1582342995843140943_70186990960740'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb__1582342995843140943_70186990960740'
+
+2021-09-25 00:34:19[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb__4056855992709379539_70186999244740'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb__4056855992709379539_70186999244740'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb__3888501505841475524_70186999283820'
+
+2021-09-25 03:49:08[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_43505580'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_43505580'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_63437280'
+
+2021-09-25 04:06:50[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125391541200'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125391541200'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125391375140'
+
+2021-09-25 04:06:50[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125391541200'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125391541200'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125391375140'
+
+2021-09-25 04:06:50[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125391541200'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125391541200'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125391375140'
+
+2021-09-25 04:07:39[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125384973620'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125384973620'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125384838700'
+
+2021-09-25 04:07:39[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125384973620'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125384973620'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125384838700'
+
+2021-09-25 04:07:39[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125384973620'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125384973620'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125384838700'
+
+2021-09-25 04:10:36[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125396034220'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125396034220'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125395933960'
+
+2021-09-25 04:10:36[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125396034220'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125396034220'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125395933960'
+
+2021-09-25 04:10:36[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125396034220'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125396034220'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125395933960'
+
+2021-09-25 04:19:16[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visitor]
+  Add to your query: .includes([:visitor])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:3:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125386776760'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125386776760'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125386705520'
+
+2021-09-25 04:19:16[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:visited]
+  Add to your query: .includes([:visited])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:4:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125386776760'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125386776760'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125386705520'
+
+2021-09-25 04:19:16[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb___4134685386154102809_70125386776760'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb___4134685386154102809_70125386776760'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb__1874317792706598648_70125386705520'
+
+2021-09-25 04:25:43[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125397288300'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125397288300'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125397069420'
+
+2021-09-25 04:26:25[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125390186680'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125390186680'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125389845780'
+
+2021-09-25 04:28:50[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125390474000'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125390474000'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125389467900'
+
+2021-09-25 04:30:02[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:5:in `block (2 levels) in _app_views_comments__index_html_erb___797011697762381441_70125397129460'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125397129460'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125397129460'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125396950220'
+
+2021-09-25 04:35:19[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125386411100'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125386411100'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125385391080'
+
+2021-09-25 04:38:39[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125390276820'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125390276820'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125388396400'
+
+2021-09-25 04:39:35[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125383538760'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125383538760'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125383023100'
+
+2021-09-25 04:42:11[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125396963720'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125396963720'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125393481300'
+
+2021-09-25 04:42:56[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125391372780'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125391372780'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125390671600'
+
+2021-09-25 04:43:36[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125393790640'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125393790640'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125393099320'
+
+2021-09-25 04:45:47[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_61694780'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_61694780'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125397433160'
+
+2021-09-25 04:46:01[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125384581180'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125384581180'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125383843320'
+
+2021-09-25 04:46:04[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_57592220'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_57592220'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_31400220'
+
+2021-09-25 04:48:24[WARN] user: ec2-user
+GET /posts/1
+USE eager loading detected
+  Comment => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:4:in `block in _app_views_comments__index_html_erb___797011697762381441_70125384464420'
+  /home/ec2-user/environment/getching/app/views/comments/_index.html.erb:2:in `_app_views_comments__index_html_erb___797011697762381441_70125384464420'
+  /home/ec2-user/environment/getching/app/views/posts/show.html.erb:29:in `_app_views_posts_show_html_erb___2139599067466662490_70125383129760'
+
+2021-09-25 04:49:57[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___3963372148190501174_70125396445020'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___3963372148190501174_70125396445020'
+
+2021-09-25 04:49:57[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___3963372148190501174_70125396445020'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___3963372148190501174_70125396445020'
+
+2021-09-25 04:49:57[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___3963372148190501174_70125396445020'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___3963372148190501174_70125396445020'
+
+2021-09-25 04:52:45[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:17:in `block in _app_views_posts_index_html_erb___3963372148190501174_70125396847800'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___3963372148190501174_70125396847800'
+
+2021-09-25 04:52:45[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___3963372148190501174_70125396847800'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___3963372148190501174_70125396847800'
+
+2021-09-25 04:52:45[WARN] user: ec2-user
+GET /posts?utf8=%E2%9C%93&tag_id=2
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:24:in `block in _app_views_posts_index_html_erb___3963372148190501174_70125396847800'
+  /home/ec2-user/environment/getching/app/views/posts/index.html.erb:13:in `_app_views_posts_index_html_erb___3963372148190501174_70125396847800'
+
+2021-09-26 01:43:20[WARN] user: ec2-user
+GET /users/5
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:75:in `block in _app_views_users_show_html_erb__3374603530215165899_69906147116860'
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:64:in `_app_views_users_show_html_erb__3374603530215165899_69906147116860'
+
+2021-09-26 01:43:20[WARN] user: ec2-user
+GET /users/5
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:75:in `block in _app_views_users_show_html_erb__3374603530215165899_69906147116860'
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:64:in `_app_views_users_show_html_erb__3374603530215165899_69906147116860'
+
+2021-09-26 01:43:20[WARN] user: ec2-user
+GET /users/5
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:75:in `block in _app_views_users_show_html_erb__3374603530215165899_69906095123280'
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:64:in `_app_views_users_show_html_erb__3374603530215165899_69906095123280'
+
+2021-09-26 01:43:20[WARN] user: ec2-user
+GET /users/5
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:75:in `block in _app_views_users_show_html_erb__3374603530215165899_69906095123280'
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:64:in `_app_views_users_show_html_erb__3374603530215165899_69906095123280'
+
+2021-09-26 01:43:31[WARN] user: ec2-user
+GET /users/5
+USE eager loading detected
+  Post => [:post_tags]
+  Add to your query: .includes([:post_tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:75:in `block in _app_views_users_show_html_erb__3374603530215165899_69906073906480'
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:64:in `_app_views_users_show_html_erb__3374603530215165899_69906073906480'
+
+2021-09-26 01:43:31[WARN] user: ec2-user
+GET /users/5
+USE eager loading detected
+  Post => [:tags]
+  Add to your query: .includes([:tags])
+Call stack
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:75:in `block in _app_views_users_show_html_erb__3374603530215165899_69906073906480'
+  /home/ec2-user/environment/getching/app/views/users/show.html.erb:64:in `_app_views_users_show_html_erb__3374603530215165899_69906073906480'
+
+2021-09-27 17:22:01[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-27 17:22:09[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-27 17:22:16[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-27 17:24:14[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-09-27 17:25:18[WARN] user: ec2-user
+GET /notifications
+AVOID eager loading detected
+  Notification => [:post]
+  Remove from your query: .includes([:post])
+Call stack
+
+2021-10-01 20:49:07[WARN] user: ec2-user
+DELETE /posts/13
+USE eager loading detected
+  Comment => [:notifications]
+  Add to your query: .includes([:notifications])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:60:in `destroy'
+
+2021-10-01 20:52:17[WARN] user: ec2-user
+DELETE /posts/13
+USE eager loading detected
+  Comment => [:notifications]
+  Add to your query: .includes([:notifications])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:60:in `destroy'
+
+2021-10-01 21:01:26[WARN] user: ec2-user
+DELETE /posts/13
+USE eager loading detected
+  Comment => [:notifications]
+  Add to your query: .includes([:notifications])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:61:in `destroy'
+
+2021-10-01 21:03:06[WARN] user: ec2-user
+DELETE /posts/13
+USE eager loading detected
+  Comment => [:notifications]
+  Add to your query: .includes([:notifications])
+Call stack
+  /home/ec2-user/environment/getching/app/controllers/posts_controller.rb:61:in `destroy'
+
+2021-10-04 01:46:47[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358107616500'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358107616500'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358108467660'
+
+2021-10-04 01:46:47[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358112886500'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358112886500'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358176788680'
+
+2021-10-04 01:46:47[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_59460760'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_59460760'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_29059900'
+
+2021-10-04 01:47:00[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358110833100'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358110833100'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358110091020'
+
+2021-10-04 01:47:06[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358151044380'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358151044380'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358150960440'
+
+2021-10-04 02:10:50[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358114793860'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358114793860'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358111767360'
+
+2021-10-04 02:10:53[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358178043100'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358178043100'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358177940740'
+
+2021-10-04 02:11:19[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358161357760'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358161357760'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358161272380'
+
+2021-10-04 02:13:05[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358161188320'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358161188320'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358161123420'
+
+2021-10-04 02:18:27[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Notification => [:post]
+  Add to your query: .includes([:post])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358156440360'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358156440360'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358156410460'
+
+2021-10-04 02:18:58[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358113147740'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358113147740'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358113104880'
+
+2021-10-04 02:19:06[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358161270860'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358161270860'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358161207180'
+
+2021-10-04 02:21:41[WARN] user: ec2-user
+GET /notifications
+USE eager loading detected
+  Post => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:21:in `block in _app_views_notifications__notification_html_erb__572281331192160671_70358176614100'
+  /home/ec2-user/environment/getching/app/views/notifications/_notification.html.erb:2:in `_app_views_notifications__notification_html_erb__572281331192160671_70358176614100'
+  /home/ec2-user/environment/getching/app/views/notifications/index.html.erb:11:in `_app_views_notifications_index_html_erb___1254845421574696745_70358176537460'
+
