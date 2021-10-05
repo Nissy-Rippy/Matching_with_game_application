@@ -77,3 +77,4 @@ gem "dotenv-rails"
 gem 'acts-as-taggable-on'
 gem 'listen'
 gem 'rubocop-airbnb'
+gem 'whenever', require: false
