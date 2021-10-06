@@ -52,5 +52,7 @@ https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcor
 - N+1問題解決のため、bulletを使用し通信速度の軽量化!!
 - tag機能の付与&タグ検索の実装
 - 管理者側の機能追加（会員情報の編集、投稿の削除機能）
+- batch機能を今のところは（開発環境でのみ実装しています。）
 ## 開発者
 - Toyoda Yoshiteru
+

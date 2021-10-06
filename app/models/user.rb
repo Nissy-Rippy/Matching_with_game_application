@@ -16,8 +16,8 @@ class User < ApplicationRecord
   # いいね機能との1対N
   has_many :likes, dependent: :destroy
   # userは沢山のコメントを書くことができて、コメントは一つのusrしかいない、
-  has_many :comments, dependent: :destroy
-  # userとgroupの中間テーブル
+  has_many :comments, dependent: :destroyuserとgroupの中間テーブル
+  # 
   has_many :group_users, dependent: :destroy
   # group_usersを通してgroupsと扱うことで多対多を可能にしている。
   has_many :groups, through: :group_users
