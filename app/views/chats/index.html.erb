@@ -18,6 +18,7 @@
 
         <div class="text-center">
          <%= form_with model: @chat, remote: true do |f| %>
+          <%= f.attachment_field :item_image %>
           <%= f.text_field :message %>
           <%= f.hidden_field :room_id, value: @group.room.id %>
           <%= f.submit "送信(´・ω・｀)", class: "btn btn-success btn-sm chat-btn text-center" %>
