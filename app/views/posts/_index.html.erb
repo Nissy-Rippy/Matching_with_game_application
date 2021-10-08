@@ -12,9 +12,9 @@
                             <%= render "likes/like", post: a_post %>
                           </div>
                           <!--コメントの部分テンプレート-->
-                          <i class="fas fa-comment-dots" id="post_<%= a_post.id %>"></i>
+                          <i class="fas fa-comment-dots faa-ring animated" id="post_<%= a_post.id %>"></i>
                           <%= link_to a_post.comments.count, post_path(a_post)%>
-                          <i class="fas fa-tags">
+                          <i class="fas fa-tags faa-float animated">
                           <% a_post.tags.each do |tag| %>
                           #<%= tag.name %><br/>
 
