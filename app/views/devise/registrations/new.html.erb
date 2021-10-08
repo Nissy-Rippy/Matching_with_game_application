@@ -8,17 +8,17 @@
           <%= render "devise/shared/error_messages", resource: resource %>
           <div class="card mx-auto text-center" style="width: 18rem;">
             <div class="card-header">
-              ＊18歳以下の方はお戻りください
+              ＊18歳未満の方はお戻りください
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><%= f.label :ニックネーム %><%= f.text_field :name, autofocus: true, autocomplete: "email" %></li>
-              <li class="list-group-item"><%= f.label :年齢（年齢確認あり） %><%= f.text_field :age %></li>
+              <li class="list-group-item"><%= f.label :ニックネーム %><%= f.text_field :name, autofocus: true %></li>
+              <li class="list-group-item"><%= f.label :年齢（年齢確認あり） %><%= f.text_field :age, placeholder: "18以上の方のみ！！" %></li>
               <li class="list-group-item"><%= f.label :住所（都道府県） %><%= f.text_field :address %></li>
               <li class="list-group-item"><%= f.label :性別： %><%= f.label :男性 %><%= f.radio_button :sex, :man %><%= f.label :女性 %><%= f.radio_button :sex, :woman%></li>
-              <li class="list-group-item"><%= f.label :プレイ中のゲーム（正式名） %><%= f.text_field :playing_game %></li>
+              <li class="list-group-item"><%= f.label :ゲーム機種：プレイ中のゲーム %><%= f.text_field :playing_game, placeholder: "[：]を忘れずに！！" %></li>
               <li class="list-group-item"> <%= f.label :メールアドレス %><%= f.email_field :email, autofocus: true, autocomplete: "email" %></li>
               <li class="list-group-item"><%= f.label :パスワード %>
-              <% if @minimum_password_length %>(<%= @minimum_password_length %> 最低6文字以上)
+              <% if @minimum_password_length %>(最低6文字以上)
               <% end %><%= f.password_field :password, autocomplete: "new-password" %></li>
               <li class="list-group-item"> <%= f.label :確認用のパスワード %><%= f.password_field :password_confirmation, autocomplete: "new-password" %></li>
               <li class="list-group-item"> <%= f.submit "ようこそGetchingへ", class: "btn btn-success" %></li>
@@ -26,12 +26,12 @@
               <% end %>
             </ul>
           </div>
-        <div class="border mx-auto">  
+        <div class="border mx-auto">
           ＊注意事項＊<br/>
           ・当サイトは、18歳以上の方向け利用なため、<br/>
           ・DM機能など特定の機能ご利用時名際には年齢確認を行っております。<br/>
           ・そのため虚偽の記載のないようお願いいたします。<br />
-          ・広告など発見しましたら通報の方( ｀・∀・´)ﾉﾖﾛｼｸｵﾈｶﾞｲｼﾏｽ。
+          ・広告など発見しましたら通報の方<br/>( ｀・∀・´)ﾉﾖﾛｼｸｵﾈｶﾞｲｼﾏｽ。
         <div>
 
      </div>

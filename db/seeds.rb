@@ -11,9 +11,9 @@ User.create!(name: "管理者",
              address: "北海道",
              age: "20",
              sex: "man",
-             email: "60896089more@gmail.com",
-             password:  "toyoda",
-             password_confirmation: "toyoda",
+             email: ENV["MAIL"],
+             password:  ENV["PASS"],
+             password_confirmation: ENV["PASS"],
              admin: true)
 
 Tag.create([
