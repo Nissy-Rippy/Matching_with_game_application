@@ -9,6 +9,14 @@
           <% end %>
        </table>
         <%= form_with model: @chat, remote: true do |f| %>
+         <div class="item_image_btn">
+          <%# idでfileとしている。そうすることによって他のdivタグにクラスを追加することによって同じ効果の物を作ることができる %>
+          <%= f.attachment_field :item_image, id: "file" %>
+         </div>
+         <%# img_fieldクラスに onClickとイベント機能をつけてクリックするid=fileクラスのコードが発動する %>
+         <div id="img_field" onClick="$('#file').click()" >
+          <i class="fas fa-camera"></i>
+         </div>
          <%= f.text_field :message %>
          <%= f.hidden_field :room_id, value: @chat.room_id %>
          <%= f.submit "送信(´・ω・｀)", class: "btn btn-success btn-sm chat-btn" %>

@@ -28,7 +28,7 @@ https://docs.google.com/spreadsheets/d/1eZLa4jBUc4S43218TsmHao45qh9Jr4VH5_h4vw2z
 
 ## チャレンジ要素一覧
 
-https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcorOh4/edit#gid=0
+https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcorOh4/edit#gid=0  
 - 　↑↑↑　上記のURLに、実装した機能について記載しております！！！
 ## 開発環境
 
@@ -52,5 +52,7 @@ https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcor
 - N+1問題解決のため、bulletを使用し通信速度の軽量化!!
 - tag機能の付与&タグ検索の実装
 - 管理者側の機能追加（会員情報の編集、投稿の削除機能）
+- batch機能を今のところは（開発環境でのみ実装しています。）
 ## 開発者
 - Toyoda Yoshiteru
+

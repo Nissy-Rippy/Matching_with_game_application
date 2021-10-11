@@ -65,6 +65,6 @@ class ChatsController < ApplicationController
 
   def chat_params
     # 部屋のid番号も必要
-    params.require(:chat).permit(:message, :room_id)
+    params.require(:chat).permit(:message, :room_id, :item_image)
   end
 end
