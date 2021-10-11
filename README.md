@@ -28,8 +28,8 @@ https://docs.google.com/spreadsheets/d/1eZLa4jBUc4S43218TsmHao45qh9Jr4VH5_h4vw2z
 
 ## チャレンジ要素一覧
 
-https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcorOh4/edit#gid=0  
-- 　↑↑↑　上記のURLに、実装した機能について記載しております！！！
+https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcorOh4/edit#gid=0
+- ↑↑↑　上記のURLに、実装した機能について記載しております！！！
 ## 開発環境
 
 - OS：Linux(CentOS)
