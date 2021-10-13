@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #
+  #ユーザーのdevise,userのコントローラーの新規登録をカスタマイズしている
   devise_for :users, controllers: {
     registrations: "users/registrations",
   }
@@ -11,12 +11,13 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :users, only:[:index, :update]
   end
-  #action mailerのルート
+  #action_mailerのルート
   resources :contacts, only: [:new, :create]
   #デバイスではないuserのroute
   resources :users, only: [:index, :show, :edit, :update, :create, :edit] do
     get "search" => "users#search"
     post "users/:id/withdraw" => "users#withdraw", as: "withdraw"
+    #退会のアクションroute
     get "users/:id/unsubscribe" => "users#unsubscribe", as: "uns"
     #フォロー、フォロワー、マッチングページに関するroute
     resource :relationships, only: [:create, :destroy]
@@ -30,7 +31,9 @@ Rails.application.routes.draw do
   end
   #投稿に関するroute
   resources :posts, only: [:index, :new, :show, :create, :destroy, :edit] do
+  #いいねのroute
     resource :likes, only: [:create, :destroy]
+  #followのいいね
     resource :comments, only: [:create, :destroy]
     get "posts/:post_id/ranking" => "posts#ranking", as: "posts_ranking"
   end
@@ -44,5 +47,6 @@ Rails.application.routes.draw do
   get 'chats/show'
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]
-  
+  #ビデオに関するroute
+  resources :videos
 end

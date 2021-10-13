@@ -34,6 +34,8 @@ class User < ApplicationRecord
   has_many :active_notifications, class_name: "Notification", foreign_key: :visitor_id, dependent: :destroy
   # 通知を受けた人
   has_many :passive_notifications, class_name: "Notification", foreign_key: :visited_id, dependent: :destroy
+  #ビデオmodelとのアソシエイトコード
+  has_many :videoes, dependent: :destroy
   # refile機能のためのせってい
   attachment :profile_image
   # enum カラム名 をintegerで設定しています。

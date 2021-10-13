@@ -20,14 +20,13 @@
 ゲーム仲間の行動が気になる時、家にいて時間がある時、全国のゲーム好きな方と繋がりたい時、ゲーム好きな方と繋がりたいとき、寂しい時
 
 ## 設計書
-ER図
+- ER図
 https://drive.google.com/file/d/1VQsoIDxbQsC_tNOey5eRolOrdtnZdOqE/view?usp=sharing
-テーブル設計書＆アプリケーション詳細設計＆GEM一覧
+- テーブル設計書＆アプリケーション詳細設計＆GEM一覧
 https://docs.google.com/spreadsheets/d/1eZLa4jBUc4S43218TsmHao45qh9Jr4VH5_h4vw2zi_k/edit#gid=2133469642
-- 　↑↑↑　上記に  利用しているGEMやモデル
+- ↑↑↑　上記に  利用しているGEMやモデル
 
 ## チャレンジ要素一覧
-
 https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcorOh4/edit#gid=0
 - ↑↑↑　上記のURLに、実装した機能について記載しております！！！
 ## 開発環境
