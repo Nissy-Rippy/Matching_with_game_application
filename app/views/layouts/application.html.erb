@@ -36,9 +36,10 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
              <% if user_signed_in? %>
-                <li><%= link_to "MyPage", user_path(current_user), class: "fas fa-home faa-pulse animated nav-link text-light" %></li>
-                <li><%= link_to "Group一覧", groups_path, class: "fas fa-users faa-pulse animated nav-link text-light" %></li>
-                <li><%= link_to "タイムライン", posts_path , class: "fas fa-clock faa-pulse animated nav-link text-light" %></li>
+                <li><%= link_to "Home", user_path(current_user), class: "fas fa-home faa-pulse animated nav-link text-light" %></li>
+                <li><%= link_to "Group", groups_path, class: "fas fa-users faa-pulse animated nav-link text-light" %></li>
+                <li><%= link_to "タイムライン", posts_path, class: "fas fa-clock faa-pulse animated nav-link text-light" %></li>
+                <li><%= link_to "ムービー", videos_path, class: "fas fa-video faa-pulse animated nav-link text-light" %></li>
                 <li><%= link_to "マッチング",  user_relationships_index_path(current_user), class: "fas fa-heart faa-pulse animated nav-link text-light" %></li>
               <span class="fa-stack">
                 <li>
