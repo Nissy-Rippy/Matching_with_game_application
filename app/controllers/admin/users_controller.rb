@@ -2,9 +2,9 @@ class Admin::UsersController < ApplicationController
   before_action :if_not_admin
 
   def index
-    @users = User.all
+    @users = User.all.order("created_at DESC")
   end
-  
+
   def update
     @user = User.find(params[:id])
     if @user.is_deleted == false
@@ -16,11 +16,11 @@ class Admin::UsersController < ApplicationController
   end
 
 private
-  
+
   def user_params
-    params.require(:user).permit(:name, :age, :introduction, :address, :playing_game, :profile_image, :is_deleted)
+    params.require(:user).permit(:is_deleted)
   end
-  
+
   def if_not_admin
     redirect_to root_path unless current_user.admin?
   end
