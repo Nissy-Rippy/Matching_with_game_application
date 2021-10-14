@@ -1,0 +1,17 @@
+    <div class="container mt-3">
+     <div class="row mx-auto">
+      <div class="col-sm-6 mx-auto">
+
+       <h1><span class="badge badge-secondary text-center">新規動画アップロード！</span></h1>
+        <div class="form-group">
+         <%= form_with model: @video, method: :post, local: true do |f| %>
+          <p class="btn btn-secondary">タイトル(￣ー￣)ﾆﾔﾘ</p><br/><%= f.text_field :title, placeholder: "タイトル良いと人は見るよー！(ΦωΦ)ﾌﾌﾌ…", class: "form-control col-sm-9" %> <br>
+          <p class="btn btn-secondary">説明文：(>_<)</p><br/><%= f.text_area :introduction, placeholder: "どんな内容なのかな！！", class: "form-control col-sm-9" %> <br>
+          <p class="btn btn-secondary">動画(´艸｀*)</p><%= f.file_field :video,　class: "form-control col-sm-9" %> <br>
+         <%= f.submit "Create Video", class: "btn btn-secondary" %>
+         <% end %>
+        </div>
+
+      </div>
+     </div>
+    </div>

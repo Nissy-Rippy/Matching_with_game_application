@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @video = Video.find_by(user_id: @user.id)
     # @userに紐づくposts投稿記事のデータを取得。
     @posts = @user.posts.includes(:tags, :post_tags)
   end
