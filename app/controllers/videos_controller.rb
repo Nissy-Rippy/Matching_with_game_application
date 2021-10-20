@@ -15,7 +15,15 @@ class VideosController < ApplicationController
   def new
     @video = Video.new
   end
-
+  
+  def search
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+  
+  
   def create
     @video = Video.new(video_params)
     @video.user_id = current_user.id
