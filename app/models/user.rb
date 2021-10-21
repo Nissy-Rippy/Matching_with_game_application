@@ -7,6 +7,7 @@ class User < ApplicationRecord
   validates :age, numericality: { less_than_or_equal_to: 100, greater_than_or_equal_to: 18 }
   # 正規表現を利用して、都道府県のどれかの文字をつけないとエラーを出るようにしている。
   validates :address, format: { with: /.*[都道府県]/ }
+  #validates :playing_game, format: { with: /\w+::\w/ }
   # ユーザールームを使うことによってuserとroomの多対多の関係を成立させている。
   has_many :user_rooms, dependent: :destroy
   # Userは沢山チャットをするので複数のchatt をする chatは一人のユーザーしか持てない。
@@ -33,6 +34,8 @@ class User < ApplicationRecord
   has_many :active_notifications, class_name: "Notification", foreign_key: :visitor_id, dependent: :destroy
   # 通知を受けた人
   has_many :passive_notifications, class_name: "Notification", foreign_key: :visited_id, dependent: :destroy
+  #ビデオmodelとのアソシエイトコード
+  has_many :videoes, dependent: :destroy
   # refile機能のためのせってい
   attachment :profile_image
   # enum カラム名 をintegerで設定しています。

@@ -15,7 +15,7 @@
               <li class="list-group-item"><%= f.label :年齢（年齢確認あり） %><%= f.text_field :age, placeholder: "18以上の方のみ！！" %></li>
               <li class="list-group-item"><%= f.label :住所（都道府県） %><%= f.text_field :address %></li>
               <li class="list-group-item"><%= f.label :性別： %><%= f.label :男性 %><%= f.radio_button :sex, :man %><%= f.label :女性 %><%= f.radio_button :sex, :woman%></li>
-              <li class="list-group-item"><%= f.label :ゲーム機種：プレイ中のゲーム %><%= f.text_field :playing_game, placeholder: "[：]を忘れずに！！" %></li>
+              <li class="list-group-item"><%= f.label :ゲーム機種：プレイ中のゲーム %><%= f.text_field :playing_game, placeholder: "[::]を忘れずに！！" %></li>
               <li class="list-group-item"> <%= f.label :メールアドレス %><%= f.email_field :email, autofocus: true, autocomplete: "email" %></li>
               <li class="list-group-item"><%= f.label :パスワード %>
               <% if @minimum_password_length %>(最低6文字以上)
