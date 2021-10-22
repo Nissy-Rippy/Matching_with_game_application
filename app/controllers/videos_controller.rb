@@ -18,6 +18,7 @@ class VideosController < ApplicationController
   
   #この記述によりjson形式であたいを返し、jbuilderを利用できるようにしている。
   def search
+    @videos = Video.search(params[:key_word])
     respond_to do |format|
       format.html
       format.json
