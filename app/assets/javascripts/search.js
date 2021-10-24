@@ -5,7 +5,7 @@ $(document).on('turbolinks:load', function(){
 
   function builtHTML(data){
     let html = `
-    <li><a href="videos/${data.userid}" data-method="get">"${data.title}"<a></li>
+    <li><a href="/videos/${data.id}/edit" data-method="get">${data.title}<a></li>
     `
     searchResult.append(html);
   }
@@ -29,6 +29,7 @@ $(document).on('turbolinks:load', function(){
       data: { key_word: target },
       dataType: 'json'
     })
+
     .done(function(data){
       searchResult.empty();
 
