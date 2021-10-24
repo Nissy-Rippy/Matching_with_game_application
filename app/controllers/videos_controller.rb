@@ -15,17 +15,20 @@ class VideosController < ApplicationController
   def new
     @video = Video.new
   end
-  
+
   #この記述によりjson形式であたいを返し、jbuilderを利用できるようにしている。
   def search
     @videos = Video.where("title like?", "%#{params[:key_word]}%")
     respond_to do |format|
       format.html
       format.json
-      end
+    end
   end
-  
-  
+
+  def edit
+    @videos = Video.find_by(id: params[:id])
+  end
+
   def create
     @video = Video.new(video_params)
     @video.user_id = current_user.id
