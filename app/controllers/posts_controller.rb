@@ -60,6 +60,8 @@ class PostsController < ApplicationController
     if @post.destroy
      flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
      redirect_to posts_path
+    else
+      render :index
     end
   end
 

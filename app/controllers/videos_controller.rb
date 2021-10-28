@@ -37,7 +37,6 @@ class VideosController < ApplicationController
       @video.save
       flash[:notice] = "動画投稿完了しました＾＾"
     rescue Exception => e
-      flash[:notice] = "投稿に失敗しました！"
       puts e.message
       puts e.backtrace.inspect
     ensure
@@ -46,9 +45,13 @@ class VideosController < ApplicationController
   end
 
   def destroy
-    @video = Video.find(params[:id])
-    @video.destroy
-    redirect_to videos_path
+    begin
+      @video = Video.find(params[:id])
+      @video.destroy
+      redirect_to videos_path
+    rescue
+      render :index
+    end
   end
 
 private
