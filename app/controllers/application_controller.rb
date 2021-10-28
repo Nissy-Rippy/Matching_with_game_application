@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     flash[:notice] = "正常にログインできました！いい出会いを＾＾"
     homes_about_path
   end
-#ログアウトした時のページ遷移先
+　#ログアウトした時のページ遷移先
   def after_sign_out_path_for(resource)
     root_path
   end

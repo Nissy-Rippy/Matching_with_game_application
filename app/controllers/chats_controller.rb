@@ -26,6 +26,7 @@ class ChatsController < ApplicationController
   # グループチャットのアクション,routeを短くためにindexに書いています。
   def index
     @group = Group.find(params[:group_id])
+    #このif文によりグループにいない人はチャットできないようになっています。
     if @group.users.where(id: current_user.id).empty?
       redirect_to group_path(@group)
       return
@@ -66,4 +67,5 @@ class ChatsController < ApplicationController
     # 部屋のid番号も必要
     params.require(:chat).permit(:message, :room_id, :item_image)
   end
+
 end
