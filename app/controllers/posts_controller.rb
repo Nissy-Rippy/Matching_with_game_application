@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     @tags = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts.includes(:user, :tags, :post_tags) : Post.includes(:user, :tags, :post_tags)
     @posts = @tags.order(params[:sort])
     # find(params[:id])になおす
-    @post = Post.find_by(params[:id])
+    @post = Post.find_by(id: params[:id])
   end
 
   def new
@@ -56,13 +56,13 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.find(params[:id])
-    if @post.destroy
+    @post = Post.find_by(id: params[:id])
+   if @post.destroy
      flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
      redirect_to posts_path
-    else
-      render :index
-    end
+   else
+     render :index
+   end
   end
 
   private
