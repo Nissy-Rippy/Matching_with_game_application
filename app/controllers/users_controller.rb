@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :set_user
   before_action :ensure_authenticate, only: [:update, :destroy, :edit]
 
   def index
@@ -19,11 +18,16 @@ class UsersController < ApplicationController
   end
 
   def update
-    user = User.find(params[:id])
-    if user.update(user_params)
+    begin
+      user = User.find(params[:id])
+      if user.update(user_params)
+        redirect_to user_path(user)
+      else
+        render :edit
+      end
+    rescue
+      flash[:notice] = "IDが取得できませんでした！ごめんなさい！"
       redirect_to user_path(user)
-    else
-      render :edit
     end
   end
 
@@ -63,6 +67,4 @@ class UsersController < ApplicationController
     end
   end
 
-  def set_user
-  end
 end
