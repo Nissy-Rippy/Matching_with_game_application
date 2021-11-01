@@ -18,16 +18,16 @@ class PostsController < ApplicationController
     @posts_all = Post.includes(:tags, :post_tags, :user)
     #カレントユーザーがフォローしている人のデータ取得
     @followings = current_user.followings
-    if @followings.present?
-       @posts = @posts_all.where(user_id: @followings).order("created_at DESC")
-      if @posts.nil?
-        redirect_to user_path(current_user)
-        flash[:notice] = "( ﾟдﾟ)ﾊｯ!ﾅｲﾀﾞﾄｯ！！"
+      if @followings.present?
+         @posts = @posts_all.where(user_id: @followings).order("created_at DESC")
+        if @posts.nil?
+          redirect_to user_path(current_user)
+          flash[:notice] = "( ﾟдﾟ)ﾊｯ!ﾅｲﾀﾞﾄｯ！！"
+        end
+      else
+         redirect_to user_path(current_user)
+         flash[:notice] = "ﾌｫﾛｰｼﾃないだと・・・"
       end
-    else
-      redirect_to user_path(current_user)
-      flash[:notice] = "ﾌｫﾛｰｼﾃないだと・・・"
-    end
   end
 
   def show

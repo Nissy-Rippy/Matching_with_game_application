@@ -1,0 +1,23 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+    　　<h2 class="text-center mb-5">動画詳細ページ</h2>
+           <% if @videos.video.attached? %>
+            <div class="row mx-auto mt-12">
+              <!--動画を埋め込むコード,typeはmp４としていて、controlsにて動画を利用しやすくしている。-->
+              <!--<%# video_tag @video.video %>と書いてしまうと、データを /app/assets/ の方に探しに行ってしまうのでrails_blob_pathとしている-->
+                <div class="col-sm-8 mx-auto">
+                  <video width=100% height=100% src="<%= rails_blob_path(@videos.video) %>" type="/mp4" controls ></video><br/>
+                </div>
+                <div calss="col-sm-8 text-center">
+                    <p class="pt-2"><strong>タイトル<br/></strong>「<%= link_to @videos.title, user_path(@videos.user_id) %>」</p>
+                    <p><strong>説明文<br/></strong>「<%= @videos.introduction %>」</p>
+                </div>
+            </div>
+          <% else %>
+            <h2 class="text-center">まだ動画は投稿されていません！！</h2>
+          <% end %>
+     </div>
+    </div>
+  </div>
+

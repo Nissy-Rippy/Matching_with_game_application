@@ -16,21 +16,48 @@ class VideosController < ApplicationController
     @video = Video.new
   end
 
+  #この記述によりjson形式であたいを返し、jbuilderを利用できるようにしている。
+  def search
+    @videos = Video.where("title like?", "%#{params[:key_word]}%")
+    unless @videos.nil?
+      respond_to do |format|
+        format.html { redirect_to videos_path, notice: "検索結果がありませんでした！(´∀｀*)ｳﾌﾌ" }
+        format.json
+      end
+    else
+      respond_to do |format|
+        format.html { redirect_to new_video_path, notice: "何のデータもないよ（　＾ω＾）・・・？投稿しよう！！"}
+        format.json
+      end
+    end
+  end
+
+  def edit
+    @videos = Video.find_by(id: params[:id])
+  end
+
   def create
     @video = Video.new(video_params)
     @video.user_id = current_user.id
-    if @video.save
+    begin
+      @video.save
       flash[:notice] = "動画投稿完了しました＾＾"
+    rescue Exception => e
+      puts e.message
+      puts e.backtrace.inspect
+    ensure
       redirect_to videos_path
-    else
-      render :new
     end
   end
 
   def destroy
-    @video = Video.find(params[:id])
-    @video.destroy
-    redirect_to videos_path
+    begin
+      @video = Video.find(params[:id])
+      @video.destroy
+      redirect_to videos_path
+    rescue
+      render :index
+    end
   end
 
 private
