@@ -4,7 +4,6 @@
   　　　<%# <card>機能はホームページのコードを利用しています　%>
   　　　<h5 class="mt-2 text-center fas fa-exclamation-triangle faa-flash animated"><strong>(´・ω・｀)コメントしてね</strong></h5>
            <div class="row mb-5 mt-5">
-              
             <div class="col-md-12 col-lg-6" style="text-align:center">
               <div style="display: inline-block;max-width:400px">
                 <div class="w-25"><%= attachment_image_tag @post, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>
@@ -15,8 +14,8 @@
                     <div id="likes_btn_<%= @post.id %>">
                       <%= render "likes/like", post: @post %>
                     </div>
-                    <i class="fas fa-comment-dots" id="post_<%= @post.id %>"></i>
-                    <%= link_to @post.comments.count, post_path(@post)%>
+                    <i class="fas fa-comment-dots" id="post_<%= @post.id %>">
+                    <%= link_to @post.comments.count, post_path(@post)%></i>
                     <i class="fas fa-tags">
                     <% @post.tags.each do |tag| %>
                       #<%= tag.name %><br/>
@@ -27,12 +26,11 @@
                 </session>
               </div>
             </div>
-        
             <%# コメント送信の部分テンプレート%>
             <div class="comments mb-5 col-sm-6">
               <%= render "comments/form", post: @post, comment: @comment %>
             </div>
-            <%# コメント一覧表示%>
+            <%# コメント一覧表示の部分テンプレート%>
             <div class="comment-list mx-auto text-center col-sm-12">
               <%= render "comments/index", comments: @comments %>
             </div>

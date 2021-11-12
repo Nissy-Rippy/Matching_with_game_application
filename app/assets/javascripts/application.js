@@ -19,13 +19,16 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).on('turbolinks:load', function () {
-  // 初期画像の表示
-  let index = 0;
-  $('.main-img').eq(index).addClass('current-img');
 
+//ターボリンクスを再読み込みするように設定している。
+$(document).on('turbolinks:load', function () {
+  // 初期画像の表示をここする
+  let index = 0;
+  // addclassで(main-img)に(current-img)のクラスを追加している。
+  $('.main-img').eq(index).addClass('current-img');
+  // setIntervalにより一定のタイムングで特定の処理を行うようにしている。
   setInterval(function () {
-    // 非表示
+    // (current-img)のクラスを取り除いている。
     $('.main-img').eq(index).removeClass('current-img');
     // 画像の最後判定
     if (index == $('.main-img').length - 1) {
@@ -33,7 +36,7 @@ $(document).on('turbolinks:load', function () {
     } else {
       index++;
     }
-    // 表示
+    // 取り除いたあとにまた、クラスを付け加えている。
     $('.main-img').eq(index).addClass('current-img');
   }, 3000);
 });

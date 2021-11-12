@@ -19,7 +19,8 @@ class ChatsController < ApplicationController
       @room = user_rooms.room
     end
     # このチャットはルームに基づくチャットという記述
-    @chats = Chat.includes(:user).where(room_id: @room.id)
+    @chats = @room.chats.includes(:user)
+    #viewページのフォームにあたいを送るための記述
     @chat = Chat.new(room_id: @room.id)
   end
 

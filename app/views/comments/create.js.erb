@@ -1,6 +1,6 @@
 
 <%#非同期通信のためのコードで、remote:true にしているのでcreateボタンを押すとjsファイルを探しに来る%>
-$("#post_<% @post.id %>").html("コメント数: <%= @post.comments.count %>");
+$("#post_<%= @post.id %>").html("<%= j(link_to @post.comments.count, post_path(@post)) %>");
 <%# コメントクラスのタグをhtmlによって部分テンプレートをjsファイルに書き換えている記述　%>
 $(".comment-list").html("<%= j(render 'comments/index', post: @post, comments: @comments) %>");
 <%# 投稿後に入力欄を空白にするための記述%>
