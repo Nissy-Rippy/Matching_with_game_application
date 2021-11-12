@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     @tags = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts.includes(:user, :tags, :post_tags) : Post.includes(:user, :tags, :post_tags)
     @posts = @tags.order(params[:sort])
     # find(params[:id])になおす
-    @post = Post.find_by(params[:id])
+    @post = Post.find_by(id: params[:id])
   end
 
   def new
@@ -18,16 +18,16 @@ class PostsController < ApplicationController
     @posts_all = Post.includes(:tags, :post_tags, :user)
     #カレントユーザーがフォローしている人のデータ取得
     @followings = current_user.followings
-    if @followings.present?
-       @posts = @posts_all.where(user_id: @followings).order("created_at DESC")
-      if @posts.nil?
-        redirect_to user_path(current_user)
-        flash[:notice] = "( ﾟдﾟ)ﾊｯ!ﾅｲﾀﾞﾄｯ！！"
+      if @followings.present?
+         @posts = @posts_all.where(user_id: @followings).order("created_at DESC")
+        if @posts.nil?
+          redirect_to user_path(current_user)
+          flash[:notice] = "( ﾟдﾟ)ﾊｯ!ﾅｲﾀﾞﾄｯ！！"
+        end
+      else
+         redirect_to user_path(current_user)
+         flash[:notice] = "ﾌｫﾛｰｼﾃないだと・・・"
       end
-    else
-      redirect_to user_path(current_user)
-      flash[:notice] = "ﾌｫﾛｰｼﾃないだと・・・"
-    end
   end
 
   def show
@@ -56,11 +56,13 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.find(params[:id])
-    if @post.destroy
+    @post = Post.find_by(id: params[:id])
+   if @post.destroy
      flash[:notice] = "投稿を削除しちゃった(*´σｰ｀)ｴﾍﾍ"
      redirect_to posts_path
-    end
+   else
+     render :index
+   end
   end
 
   private

@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create!(name: "管理者",
-             playing_game: "FF",
+             playing_game: "PS4::始まりの軌跡",
              address: "北海道",
              age: "20",
              sex: "man",

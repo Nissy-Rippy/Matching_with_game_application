@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Getching</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <!--/font-awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <!--/Font Awesome Animationを読み込むためのリンク先-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=devise-width,initial-scale=1">
-  </head>
+   
+    <head>
+      <title>Getching</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <!--/font-awesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <!--/Font Awesome Animationを読み込むためのリンク先-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css" type="text/css" media="all" />
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <meta name="viewport" content="width=devise-width,initial-scale=1">
+    </head>
 
   <body>
     <header>
@@ -43,7 +44,7 @@
                 <li><%= link_to "マッチング",  user_relationships_index_path(current_user), class: "fas fa-heart faa-pulse animated nav-link text-light" %></li>
               <span class="fa-stack">
                 <li>
-                <% if unchecked_notifications.any?%>
+                <% if unchecked_notifications.any? %>
                   <%= link_to notifications_path do %>
                    <i class="fas fa-bell fa-stack-2x"></i>
                    <i class="fas fa-circle n-circle fa-stack-1x"></i>
@@ -61,25 +62,23 @@
       </nav>
     </header>
 
-    <div class="wrapper">
-      <h3 class="text-center mt-2 mb-2">
-        <%= flash[:notice] %>
-      </h3>
-        <%= yield %>
-    </div>
+      <div class="wrapper">
+        <h3 class="text-center mt-2 mb-2">
+          <%= flash[:notice] %>
+        </h3>
+          <%= yield %>
+      </div>
 
-       <footer>
-            <div class="mx-auto text-center bg-dark text-light">
-             <%= link_to "お問い合わせフォーム", new_contact_path %>
-                <div>株式会社Getching<br/>
-                ・ 営業時間：　8:00　~　22:00<br/>
-                ・ 営業場所:   新宿三丁目サンセットビル　23階<br/>
-                ・ 企業情報:   令和三年設立、1部上場
-                </div>
-            </div>
-       </footer>
+     <footer>
+      <div class="mx-auto text-center bg-dark text-light">
+       <%= link_to "お問い合わせフォーム", new_contact_path %>
+        <div>株式会社Getching<br/>
+        ・ 営業時間：　8:00　~　22:00<br/>
+        ・ 営業場所:   新宿三丁目サンセットビル　23階<br/>
+        ・ 企業情報:   令和三年設立、1部上場
+        </div>
+      </div>
+     </footer>
   </body>
-
-
 
 </html>

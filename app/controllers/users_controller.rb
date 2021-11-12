@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
-  before_action :set_user
   before_action :ensure_authenticate, only: [:update, :destroy, :edit]
 
   def index
     # userをランダムにシャッフルに並べる記述
     @users = User.all.shuffle
   end
-  
+
   def show
     @user = User.find(params[:id])
     @video = Video.find_by(user_id: @user.id)
@@ -19,11 +18,16 @@ class UsersController < ApplicationController
   end
 
   def update
-    user = User.find(params[:id])
-    if user.update(user_params)
+    begin
+      user = User.find(params[:id])
+      if user.update(user_params)
+        redirect_to user_path(user)
+      else
+        render :edit
+      end
+    rescue
+      flash[:notice] = "IDが取得できませんでした！ごめんなさい！"
       redirect_to user_path(user)
-    else
-      render :edit
     end
   end
 
@@ -49,8 +53,7 @@ class UsersController < ApplicationController
    @keyword = params[:keyword]
    render :index
   end
-
-  private
+private
 
   def user_params
     params.require(:user).permit(:name, :age, :introduction, :address, :playing_game, :profile_image, :is_deleted)
@@ -63,6 +66,4 @@ class UsersController < ApplicationController
     end
   end
 
-  def set_user
-  end
 end

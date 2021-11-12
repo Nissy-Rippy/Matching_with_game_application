@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   
   #管理者側のルートnamesapaceを使って分けている。
   namespace :admin do
-    resources :users, only:[:index, :update]
+    resources :users, only: [:index, :update]
   end
   #action_mailerのルート
   resources :contacts, only: [:new, :create]
@@ -48,5 +48,10 @@ Rails.application.routes.draw do
   get "chats/:id" => "chats#show", as: "chat"
   resources :chats, only: [:create]
   #ビデオに関するroute
-  resources :videos
+  resources :videos do
+  collection do
+    get "search"
+   end
+  end
+
 end

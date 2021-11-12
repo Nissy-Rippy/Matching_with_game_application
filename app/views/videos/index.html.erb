@@ -1,27 +1,18 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12">
+        <div class="search-container text-center">
+      　　  <%= form_with url: search_videos_path, local: true, method: :get do |f| %>
+      　　   <%= f.text_field :key_word, value: @key_word, placeholder: "検索", id: "searching-form" %>
+      　　   <%= f.submit "検索" %>
+      　　<% end %>
+      　　   <div class="result">
+      　　     <ul></ul>
+      　　   </div>
+    　　</div>
     　　<h2 class="text-center mb-5">動画一覧ページ</h2>
-
-        <% @videos.each do |video| %>
-         <% if video.video.attached? %>
-          <div class="row mx-auto mt-12">
-            <div class="col-sm-4">
-                <!--動画を埋め込むコード,typeはmp４としていて、controlsにて動画を利用しやすくしている。-->
-                <!--<%# video_tag @video.video %>と書いてしまうと、データを /app/assets/ の方に探しに行ってしまうのでrails_blob_pathとしている-->
-             <video width="200" height="150" src="<%= rails_blob_path(video.video) %>" type="/mp4" controls ></video>
-            </div>
-            <div calss="col-sm-4">
-             <p class="pt-2"><strong>タイトル<br/></strong>「<%= link_to video.title, user_path(video.user_id) %>」</p>
-             <p><strong>説明文<br/></strong>「<%= video.introduction %>」</p>
-            </div>
-          </div>
-         <% end %>
-        <% end %>
-
+    　　<h3 class="text-center">あなたのお気に入りは・・・</h3>
+    　　<%= render "videos/index", videos: @videos %>
       </div>
     </div>
   </div>
-
-
-

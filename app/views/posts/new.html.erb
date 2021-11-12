@@ -7,23 +7,24 @@
               <ul class="list-group list-group-flush width: 540;">
                 <li class="list-group-item">(*´σｰ｀)<%= f.label :タイトル %>(∀｀*ゞ)</li>
                 <li class="list-group-item"><%= f.text_field :post_title, class: "form-control col-8" %></li>
-                <li class="list-group-item">タグ</li>
-                <li class="list-group-item">
-                 <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
-                  <div>
-                   <%= tag.label do %>
-                    <%= tag.check_box %>
-                    <%= tag.text %>
-                   <% end %>
-                  </div>
-                 <% end %>
-                </div></li>
+                  <li class="list-group-item">タグ</li>
+                   <li class="list-group-item">
+                     <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+                     <div>
+                      <%= tag.label do %>
+                      <%= tag.check_box %>
+                      <%= tag.text %>
+                      <% end %>
+                     </div>
+                     <% end %>
+                    </div></li>
+
                 <li class="list-group-item"><%= f.label :投稿内容 %></li>
                 <li class="list-group-item"><%= f.text_area :description, class: "form-control", placeholder: "なるべくゲームに関係する投稿記事にしましょう！"%></li>
                 <li class="list-group-item"><%= f.label :画像アップロード %></li>
                 <li class="list-group-item"><%= f.attachment_field :image, class: "form-control" %></li>
                 <li class="list-group-item"> <%= f.submit "投稿完了(´∀｀*)", class: "btn btn-success" %></li>
-           <% end %>
+                <% end %>
               </ul>
             </div>
           </div>

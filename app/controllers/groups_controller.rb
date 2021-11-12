@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+ 
   def index
     @groups = Group.all.order(created_at: :desc)
   end
@@ -31,13 +32,19 @@ class GroupsController < ApplicationController
     @group.users << current_user
     redirect_to group_path(@group)
   end
-#脱退機能
+    #脱退機能
   def destroy
     #まず、グループを特定取得
     @group = Group.find(params[:id])
     #特定したグループにいる複数のユーザーの中からカランとユーザーのみを削除する
-    @group.users.delete(current_user)
-    redirect_to groups_path
+    begin
+      @group.users.delete(current_user)
+      flash[:notice] = "グループを脱退しました"
+    rescue
+      flash[:notice] = "グループ脱退に失敗しました( ；∀；)"
+    ensure
+      redirect_to groups_path
+    end
   end
 
   def search
