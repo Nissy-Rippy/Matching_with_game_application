@@ -24,7 +24,7 @@ class RelationshipsController < ApplicationController
     @user = User.find(params[:user_id])
     @followers = @user.followers
   end
-
+fi
   def index
     @user = User.find(params[:user_id])
     #このコードにより、マッチングした相手の情報を取得している,

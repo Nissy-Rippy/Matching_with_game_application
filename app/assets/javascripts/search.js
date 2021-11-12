@@ -1,8 +1,8 @@
-
+// 初めに定義できるものは定義してしまう
 $(document).on('turbolinks:load', function(){
   const inputForm = $('#searching-form');
   const searchResult = $('.result ul');
-
+  // 関数の定義
   function builtHTML(data){
     let html = `
     <li><a href="/videos/${data.id}/edit" data-method="get">${data.title}<a></li>
@@ -17,6 +17,7 @@ $(document).on('turbolinks:load', function(){
     searchResult.append(html);
 
   }
+  
   inputForm.on('keyup', function(){
     const target = $(this).val();
     search(target);
@@ -29,7 +30,7 @@ $(document).on('turbolinks:load', function(){
       data: { key_word: target },
       dataType: 'json'
     })
-
+    // 成功した時の処理を.doneで行う。
     .done(function(data){
       searchResult.empty();
 
@@ -41,8 +42,9 @@ $(document).on('turbolinks:load', function(){
         NoResult('検索結果がありませんでした')
       }
     })
+    // 失敗した時の処理
     .fail(function(data){
-      alert("非同期通信が行えませんでした");
+      alert("そもそも、非同期通信が行えてないよ！");
     })
   }
 });
