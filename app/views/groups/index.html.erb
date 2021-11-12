@@ -4,7 +4,7 @@
       <h2>グループ一覧ページ</h2>
        <%= form_with url: group_search_path(@groups), method: :get, local: true do |f| %>
         <%= f.text_field :keywords, value: @keywords %>
-        <%= f.submit "カテゴリー検索",class: "mr-3" %><%= link_to "新規投稿", new_group_path, class: "btn btn-success col-4 text-center" %>
+        <%= f.submit "カテゴリー検索",class: "mr-3" %><%= link_to "グループ作成♪", new_group_path, class: "btn btn-success col-4 text-center" %>
        <% end %>
         <% @groups.each do |group| %>
           <div class="mt-5 mb-2"><%= attachment_image_tag group, :image, :fill,400,300, fallback: "no_image.jpg", size: "400x300" %></div>

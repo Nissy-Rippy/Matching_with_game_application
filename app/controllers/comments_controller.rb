@@ -10,7 +10,13 @@ class CommentsController < ApplicationController
     end
     @comments = @post.comments.includes(:user).order(created_at: :desc)
   end
-  
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    render index
+  end
+
 private
 
   def comment_params
