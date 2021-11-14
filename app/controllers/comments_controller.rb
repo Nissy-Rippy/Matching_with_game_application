@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+ 
   def create
     @post = Post.find(params[:post_id])
     comment = current_user.comments.new(comment_params)
@@ -12,9 +13,9 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = Comment.find(params[:id])
-    @comment.destroy
-    render index
+   @comment = Comment.find_by(post_id: params[:post_id])
+   @comment.destroy
+   redirect_to posts_path
   end
 
 private

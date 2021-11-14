@@ -10,8 +10,8 @@
         <% if current_user.admin? %>
             <%= link_to post_comments_path(post_comment.post_id), method: :delete, remote: true, class: "comment_destroy" do %>
               <i class="fas fa-trash" style="color: black;"></i>
-            <% end
-            
+            <% end %>
+
         <% end %>
           </th>
         </tr>

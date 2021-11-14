@@ -52,6 +52,8 @@ https://docs.google.com/spreadsheets/d/1_786mkUThoSpcJTnSFQ0l2vefNO2-E3xioEtBcor
 - tag機能の付与&タグ検索の実装
 - 管理者側の機能追加（会員情報の編集、投稿の削除機能）
 - batch機能を今のところは（開発環境でのみ実装しています。）
+- video投稿機能の実装
+- video検索をインクリメンタルサーチで実装（８割程度）
 ## 開発者
 - Toyoda Yoshiteru
 
