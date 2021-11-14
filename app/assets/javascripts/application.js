@@ -22,7 +22,7 @@
 
 //ターボリンクスを再読み込みするように設定している。
 $(document).on('turbolinks:load', function () {
-  // 初期画像の表示をここする
+  // 初期画像の表示をする
   let index = 0;
   // addclassで(main-img)に(current-img)のクラスを追加している。
   $('.main-img').eq(index).addClass('current-img');
