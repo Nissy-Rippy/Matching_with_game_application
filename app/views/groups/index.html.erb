@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 m-5 mx-auto">
-      <h2>グループ一覧ページ</h2>
+      <h2>!グループ一覧ページ!</h2>
        <%= form_with url: group_search_path(@groups), method: :get, local: true do |f| %>
         <%= f.text_field :keywords, value: @keywords %>
         <%= f.submit "カテゴリー検索",class: "mr-3" %><%= link_to "グループ作成♪", new_group_path, class: "btn btn-success col-4 text-center" %>
